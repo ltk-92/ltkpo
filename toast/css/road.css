@@ -1,0 +1,33 @@
+@charset 'utf-8';
+#map{
+    width:1180px;
+    height:980px;
+    border:10px solid #fff;
+}
+.lnb{
+        width:1000px
+    }
+@media all and (min-width: 0px) and (max-width: 900px){
+    
+    #main .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:13px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+    #map{
+        width:90%;
+        border:10px solid #fff;
+        height:500px;
+        margin:auto;
+    }
+    .address-mark{
+        width:300px;
+        text-align:center;
+        padding:6px 0;
+    }
+}

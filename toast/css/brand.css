@@ -1,0 +1,209 @@
+@charset "utf-8";
+@font-face{ 
+    font-family:'yangjin'; 
+    src:url('../font/yangjin.eot');
+    src:url('../font/yangjin.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'),
+        url('../font/yangjin.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+.lnb{
+    width:1000px
+}
+.brand-story-con{
+    padding:0;
+}
+.brand-story-con1{
+    background-image:url('../img/brandstory-bg2.jpg');
+    background-repeat:no-repeat;
+   height:700px;
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
+}
+.brand-story-con3{
+     background-image:url('../img/wood.jpg');
+    background-repeat:no-repeat;
+   height:700px;
+    background-size:cover;
+    background-position:center center;
+}
+
+.brand-story-con2{
+     background:url('../img/brandstory-bg3.jpg');
+    background-repeat:no-repeat;
+   height:700px;
+    background-size:cover;
+    background-position:2000px center;
+    
+}
+.brand-story-con2.ani{
+    background-position:center center;
+    transition:all 1s;
+}
+.brand-story-con>article{
+    width:100%;
+    height:100%;
+    padding:60px 0;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.brand-story-con1>article, .brand-story-con4>article{
+    background:rgba(0,0,0,0.5);
+    position:relative;
+}
+article p{
+    font-size:40px;
+    color:#fff;
+    text-align:center;
+    margin-bottom:30px;
+}
+.brand-text-box{
+    width:1200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);    
+}
+article .font-yj{
+    font-family:'yangjin';
+    font-size:100px;
+}
+.brand-story-con3>article{
+    background:url(../img/con2-drink.png),url(../img/con2-toast.png),url(../img/cupbob.png),url(../img/con2-ice.png);
+    background-size:250px,250px,350px,200px;
+    background-repeat: no-repeat;
+    background-position:-2000px center, 4000px 50px, 1500px 2000px,-1000px -1000px;
+    position:relative;
+}
+.brand-story-con3>article.ani{
+    background-position:100px center, 1400px 50px, 1500px 400px,300px 20px;
+    transition:all 1s;
+}
+.brand-story-con3 p{
+    margin-bottom:20px;
+    font-weight:bold;
+}
+.brand-story-con3 p:last-child{
+    font-size:80px
+}
+.con2-image-box{
+    width:400px;
+    height:300px;
+}
+.con2-image-box img{
+    width:400px;
+}
+.brand-story-con2>article{
+    background:url('../img/con3-shop.jpg'), url('../img/con3-shop2.jpg');
+    background-size:350px;
+    background-repeat:no-repeat;
+    background-position:-3000px 120px, -2000px 350px;
+}
+.brand-story-con2>article.ani{
+    transition:all 1s;
+    background-position:100px 120px,150px 350px;
+}
+.brand-story-con2 div{
+    margin:auto;
+    width:800px;
+}
+.brand-story-con2 p:first-child{
+    font-size:24px;
+    font-weight:bold;
+    font-family:'yangjin';
+}
+.brand-story-con2 p{
+    color:#333;
+    font-size:22px;
+    line-height:35px;
+    text-align:left;
+    font-weight:bold;
+}
+.brand-story-con4{
+    height:700px;
+    background-image:url('../img/sign.jpg');
+    background-size:cover;
+    background-position:center center;
+}
+.brand-story-con4 >article>div{
+    width:1000px;
+}
+.number-box{
+    float:left;
+    width:50%;
+}
+.number-box>p{
+    font-size:30px;
+}
+.brand-text-box::after{
+    clear:both;
+    content:"";
+    display:block;
+}
+.number-box>p:last-child{
+    font-size:60px
+}
+@media all and (min-width: 0px) and (max-width: 900px){
+    #sub-header .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:13px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+    #main .brand-text-box{
+        width:75%;
+        z-index:2;
+    }
+    #main article .font-yj{
+        font-size:36px;
+        line-height:40px;
+    }
+    article p{
+        font-size:16px;
+    }
+     .brand-story-con1 .brand-text-box p:first-child{
+        font-size:25px;
+    }
+    .brand-story-con2 p{
+        font-size:13px;
+        line-height:25px;
+    }
+    .brand-story-con2 p:first-child{
+        line-height:45px;
+    }
+    .brand-story-con2>article{
+        background-image:url('../img/con3-shop.jpg'), url('../img/con3-shop2.jpg');
+        background-color:rgba(255,255,255,0.5);
+    }
+    .brand-story-con2>article::after{
+        display:block;
+        width:100%;
+        height:100%;
+        content:"";
+        background:rgba(255,255,255,0.8);
+        left:0;
+        top:0;
+    }
+    #main .number-box>p{
+        font-size:18px;
+        text-align:center
+    }
+    #main .number-box>p:last-child{
+        font-size:25px;
+    }
+    .brand-story-con3>article{
+        background-size:20%;
+    }
+    .brand-story-con3>article.ani{
+        background-position: 5% 90%, 90% 10%, 90% 90%, 5% 5%;
+    }
+    .brand-story-con3 p{
+        margin-bottom:18px;
+    }

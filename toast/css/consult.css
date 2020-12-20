@@ -1,0 +1,142 @@
+@charset utf-8;
+#sub-visual{
+    background-image:url('../img/consult-bg.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+
+}
+.lnb{
+    width:1000px;
+}
+form{
+    width:100%;
+    background-color:#fff;
+    padding:30px;
+}
+form p{
+    margin-bottom:30px;
+}
+legend{
+    display:block;
+    width:400px;
+    margin:auto;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+label, .address-title, .area-title{
+    display:inline-block;
+    width:200px;
+    height:40px;
+    text-align:left;
+    font-weight:bold;
+    font-size:20px;
+    margin-right:10px;
+    
+}
+.area-title, textarea{
+    float:left;
+}
+input[type=text], textarea{
+    width:900px;
+    height:40px;
+    padding:10px 10px;
+    box-sizing:border-box;
+    font-size:20px;
+    background-color:#eee;
+    border:0;
+    
+}
+.sub-content textarea{
+    height:400px;
+}
+.area-box::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+#consult_email, #consult_email2{
+    width:300px;
+}
+select{
+    width:200px;
+    height:40px;
+    box-sizing:border-box;
+    margin-right:10px
+}
+.btn-wrap{
+    width:320px; 
+    margin:auto;
+}
+input[type="submit"],input[type="reset"]{
+    width:150px;
+    height:40px;
+    font-size:20px;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+input[type="submit"]{
+     background-color:#419400;
+    color:#fff;
+    margin-right:10px;
+}
+.sub-content-con{
+    height:auto;
+}
+@media all and (min-width: 0px) and (max-width: 900px){
+    #sub-header .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:13px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+    form{
+        padding:0;
+    }
+    fieldset{
+        width:360px;
+    }
+    form p{
+        width:80%;
+        margin:auto;
+    }
+    label, .address-title, .area-title{
+        display:block;
+        padding-top:10px;
+        clear:Both;
+    }
+    form p span{
+        display:inline-block;
+        width:7%;
+        text-align:center;
+    }
+    input[type=text], textarea{
+        width:100%;
+    }
+    #consult_email, #consult_email2{
+        width:45%;
+    }
+    #emailDomain{
+        margin-top:10px;
+    }
+    #emailDomain, .resion1, #consult_email2{
+        float:right;
+    }
+    select{
+        width:45%;
+        margin-right:0;
+    }
+    .btn-wrap{
+        width:50%;
+        margin:30px auto;
+        padding-bottom:30px;
+    }
+    input[type="submit"], input[type="reset"]{
+        width:45%;
+    }
+}

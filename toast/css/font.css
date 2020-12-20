@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Slabo+27px');
+
+@font-face{
+    font-family:"ng";
+    src:url(../font/NanumGothic.woff) format("woff"),
+        ,url(../font/NanumGothic,eot) format("embedded-opentype");
+        
+}
+
+h1{font-family: 'ng'}
+
+/*
+ eot(embeded-opentype)= 익스9이하버전
+ woff(web open font format)
+*/
+.en{font-family: 'Slabo 27px', serif;}
+.en2{font-family: 'Cinzel', serif;}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('reset.css');
+@media all and (min-width: 0px) and (max-width: 900px){
+    #main{
+        width:100%;
+    }
+    section{
+        width:100%;
+    }
+    #main .drink-visual, #main .sidemenu-visual,#main .ice-visual{
+         background-position:center center;   
+    }  
+    .sub-visual-con,.sub-content-con{
+        width:inherit;    
+    }
+    .lnb{
+        width:100%;
+        margin:auto;
+    }
+    .lnb li{
+        width:25%;
+    }
+    .lnb a{
+        width:100%;
+    }
+    .tab-bar{
+        width:100%;
+        padding:0 1%;
+    }
+    .tab-bar>li{
+        width:16.66%;
+    }
+    .sub-tab>li:nth-child(3n){
+    margin-right:4%;
+}
+    .sub-tab>li:nth-child(2n){
+        margin-right:0px;
+    }
+    .sub-tab .cook-name{
+        font-size:15px;
+    }
+    .sub-tab .cook-eng{
+        font-size:12px
+    }
+    .quarter-bar>li{
+        width:25%
+    }
+    .tab-bar>li>a{
+        font-size:14px;
+    }
+    .sub-tab{
+        width:92%;
+        margin:auto;
+    }
+    .sub-tab>li{
+        width:48%;
+        height:200px;
+        margin: 0 4% 4% 0;
+    }
+    .sub-tab>li>a{
+        padding-top:20px;
+    }

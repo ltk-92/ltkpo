@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import url('reset.css');
+#main{
+    position:relative;
+}
+#sub-visual, #sub-content{
+    width:100%;
+}
+.sub-visual-con, .sub-content-con{
+    width:1200px;
+    height:100%;
+    margin:auto;
+}
+#sub-visual{
+    height:300px;
+    background-image:url('../img/vege.jpg');
+    background-size:cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+#main .drink-visual{
+    background-image:url('../img/drink-bg.jpg');
+    background-position:center -280px;
+}
+#main .sidemenu-visual{
+    background-image:url('../img/sidemenu-bg.jpg');
+    background-position:center -300px;
+}
+#main .ice-visual{
+    background-image:url('../img/ice.-bg.jpg');
+    background-position:center -600px;
+}
+.sub-visual-con{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+.sub-content{
+    background-color:#eee;
+    padding:60px 0;
+}
+.sub-content::after{
+    clear:both;
+    display:block;
+    content:"";
+}
+.sub-content-con{
+    position:relative;
+}
+.sub-title{
+    width:100%;
+    text-align:center;
+    padding-top:130px;
+    color:#fff;
+    
+}
+#sub-header{
+    position:relative;
+    width:100%;
+    background-color:#fff;    
+     border:1px solid #eee;
+    height:40px;
+    top:0;
+    left:0;
+    z-index:10;
+}
+#main .sub-header-static a{
+    color:#000;
+    font-weight:normal;
+}
+.lnb{
+    position:absolute;
+    top:0;
+    left:50%;
+ transform:translateX(-50%)
+}
+.lnb::after{
+    display:inline-block;
+    content:"";
+     clear:both;   
+}
+.lnb>li{
+    float:left;
+}
+.lnb a{
+    display:inline-block;
+    width:200px;
+    height:100%;
+    color:#ccc;
+    text-align:center;
+    line-height:40px;
+}
+#main .lnb .green-checked{
+    color:#419400;
+}
+.lnb>li:last-child>a{
+    border-right:0;    
+}
+.tab-bar{
+    width:100%;
+    height:60px;
+    background-color:#fff;
+    position:absolute;
+    top:-90px;
+    padding:0 150px;
+    box-sizing:border-box;
+    background-color:#419400;
+}
+.tab-bar>li{
+    float:left;
+    width:150px;
+    height:100%;
+}
+.quarter-bar>li{
+    width:225px;
+}
+.tab-bar>li>a{
+    display:inline-block;
+    width:100%;
+    margin:15px 0;
+    line-height:30px;
+    text-align:center;
+    font-weight:bold;
+    font-size:17px;
+    border-right:1px solid #ddd;
+    color:#fff;
+}
+.tab-bar>li:last-child>a{
+    border-right:0;
+}
+.tab-bar .selected{
+    color:orange;
+}
+.sub-tab{
+    width:100%;
+    height:auto;
+}
+#main .sub-tab::after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.sub-tab>li{
+    width:380px;
+    height:400px;
+    margin:0 30px 30px 0;
+    float:left;
+    
+}
+.sub-tab>li:nth-child(3n){
+    margin-right:0px;
+}
+.sub-tab>li a{
+ display:inline-block;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    box-sizing:border-box;
+    padding-top:80px;
+    border-radius:30px 30px 0 0;
+    border:1px solid #fff;
+    transition:all 0.3s;
+}
+.sub-tab>li a:hover{
+    box-sizing:none;
+    border:10px solid #419400;
+}
+.sub-tab>li img{
+    width:100%;
+}
+.sub-tab span{
+    display:inline-block;
+        width:100%;
+    text-align:center;
+    margin-top:10px;
+    
+}
+.sub-tab .cook-name{
+    font-weight:bold;
+    font-size:25px;
+    
+}
+.sub-tab .cook-eng{
+    color:#ec6e00;
+    font-size:18px;
+    letter-spacing:2px;
+}
+.orange-text{
+    color:#ffb24d;
+}
+.green-text{
+    color:#419400;
+}
+.bold{
+    font-weight:bold;
+}
