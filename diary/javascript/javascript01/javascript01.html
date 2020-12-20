@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 스크립트 구조와 변수</title>
+<meta charset="UTF-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div class="article">
+        <h2>JavaScript 스크립트 구조와 변수</h2>
+    </div>
+    
+    <h3>JavaScript 스크립트 구조와 변수</h3>
+<pre>&lt;script language=&quot;JavaScript&quot;&gt;
+    <span class="green">&lt;!--</span>
+    <span class="green">//만든이 : 오윤석</span>
+    <span class="green">/* email : ashram7@hanmail.net
+    homepage : http://www.hschool.co.kr/  */ </span>
+
+    document.write(&quot;안녕하세요.&quot;)
+    document.write(&quot;&lt;br&gt;&quot;)
+    document.write(&quot;여러분&quot;)
+    <span class="green">//--&gt;</span>
+&lt;/script&gt;
+
+&lt;noscript&gt;
+    &lt;body bgcolor=&quot;green&quot;&gt;
+    &lt;p&gt;당신의 웹브라우저는 자바 스크립트를 지원하지 않네요.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/noscript&gt;
+</pre>
+
+
+
+  <p>&nbsp;</p>
+  <p>문제) 다음 태그를 이용하여 자바스크립트로 홈페이지를 꾸며보세요.</p>
+  
+<pre>&lt;body style=&quot;margin-top: 50px;&quot;&gt;
+    &lt;div style=&quot;color: #ff6400; text-align: center; margin: 0 auto; width: 720px;&quot;&gt;
+        안녕하세요. 저의 집에 오신 것을 환영합니다.
+        &lt;img src=&quot;hello.png&quot; width=&quot;720&quot; height=&quot;720&quot; /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>변수 정의하기</h3>
+    <p>잘된 사용예<br>
+        thing=10<br>
+        document.write(thing)</p>
+    <p>잘못된 사용예<br>
+        this=10<br>
+        document.write(this)</p>
+        
+        
+        
+    <p>&nbsp;</p>
+    <h3>문자변수와 숫자변수 (var은 지역변수임)</h3>
+    <p>var x, y<br>
+        x=7+5<br>
+        y=&quot;7&quot;+5<br>
+        document.write(x)<br>
+        document.write(&quot;&lt;br/&gt;&quot;)<br>
+        document.write(y)</p>
+        
+        
+        
+    <p>&nbsp;</p>
+    <h3>10진수로 숫자변수 나타내기</h3>
+    <p>var x, y<br>
+        x=1230000<br>
+        y=1.23E6<br>
+        document.write(x)<br>
+        document.write(&quot;&lt;br/&gt;&quot;)<br>
+        document.write(y)</p>
+        
+        
+        
+    <p>&nbsp;</p>
+    <h3>문자변수 나타내기</h3>
+    <p>var x, y, z<br>
+        x=&quot;MY BIRTH DAY&quot;<br>
+        y=&quot;11&quot;<br>
+        z=&quot;월 입니다.&quot;<br>
+        document.write(x)<br>
+        document.write(y)<br>
+        document.write(z)</p>
+        
+        
+        
+    <p>&nbsp;</p>
+    <h3>참, 거짓 변수</h3>
+    <p>a=false<br>
+        document.write(a)</p>
+    <p class="green">// <strong>FALSE</strong>는 <strong>1</strong>, <strong>TRUE</strong> 는 <strong>0</strong></p>  
+</div>
+</body>
+</html>
