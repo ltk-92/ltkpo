@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 내장 함수인 메소드들</title>
+<meta charset="UTF-8" />
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="article">
+        <h2>JavaScript 내장 함수인 메소드들</h2>
+	</div>
+	<h3>내장 함수인 메소드들</h3>
+	<p>alert와 confirm, prompt은 원래 window.alert()식으로 표현된다<br>
+    그러나 window객체는 window라는 객체를 생략해서 사용하고 있기 때문에 window객체의 메소드보다는 내장함수로 분류해서 사용한다</p>
+	<p>&nbsp;</p>
+	<h3>시간에 따라 명령을 수행하게 해주는 메소드들</h3>
+	<p>setTimeout(a,b) - a : 함수나 명령어<br>
+    b : 지연 시간 (1/1000초 단위)<br>
+    clearTimeout(a) - setTimeout()으로 설정한 내용을 중지한다</p>
+    
+    
+    
+	<p>&nbsp;</p>
+	<h3>시간에 따라 반복하여 명령을 수행하는 메소드들</h3>
+	<p>A = setInterval(a,b) - a : 함수나 명령어<br>
+    b : 지연 시간 (1/1000초 단위)<br>
+    clearInterval(A)     - 변수 A에 정의된 setInterval()의 실행을 중지</p>
+    <p>사용예) 시계만들기</p>
+    
+<pre>
+다음 내용을 &lt;head&gt;태그 사이에 입력한다.
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;시계만들기&lt;/title&gt;
+&lt;script&gt;
+<span class="green"></span>    function start_clock() 
+    {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();<br>        var date = now.getDate();
+
+        if(seconds &lt; 10) seconds = &quot;0&quot; + seconds;
+        if(minutes &lt; 10) minutes = &quot;0&quot; + minutes;
+        if(date &lt; 10) date = &quot;0&quot; + date;
+        if(hours &lt; 12) minutes = minutes + &quot; A.M &quot;;
+            else if(hours &gt;= 12) minutes = minutes + &quot; P.M &quot;
+        if(hours == 0) hours = hours + 12; 
+            else if(hours &gt; 12) hours = hours - 12;
+            
+        var time = hours + &quot;:&quot; + minutes + &quot;:&quot; + seconds; 
+        document.time_form.clock.value = time;
+        setTimeout(&quot;start_clock()&quot;, 100);
+    }
+<span class="green"></span>&lt;/script&gt;
+&lt;/head&gt;
+
+
+앞에 입력했던 start_clock()함수를 실행하는 이벤트 핸들러를 &lt;body&gt;태그에 삽입한다. onload=&quot;start_clock&quot;를 입력
+&lt;body background=&quot;back4.jpg&quot; <span class="red">onLoad =&quot;start_clock()&quot;</span>&gt;
+
+다음 소스를 &lt;bady&gt;태그 사이 시계를 삽입할 위치에 입력한다
+    &lt;form name = &quot;time_form&quot;&gt;
+        &lt;input name = &quot;clock&quot; size = &quot;12&quot; value = &quot;   TIME  &quot;&gt;
+    &lt;/form&gt;
+</pre>
+
+
+
+	<p>&nbsp;</p>
+    <p>사용예) 그림이 커졌다 작아졌다 변하게 만들기</p>
+    
+<pre>
+다음 내용을 &lt;head&gt;태그 사이에 입력한다
+
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;title&gt;크기가 변하는 그림&lt;/title&gt;
+&lt;script&gt; 
+<span class="green"></span>    var b = 1; 
+    var c = true; 
+    var img_width =600;
+    var img_height =413;
+    
+    function fade(){ 
+        if(c == true) b++ 
+        if(b==100) {b-- ; c = false } 
+        if(b==10) {b++; c = true; } 
+        if(c == false) b-- 
+        u.width=img_width + b; 
+        u.height=img_height - b; 
+        setTimeout(&quot;fade()&quot;,50); } 
+<span class="green"></span>&lt;/script&gt;
+&lt;/head&gt;
+
+
+앞에 입력했던 fade()함수를 실행하는 이벤트 핸들러를 &lt;body&gt;태그에 삽입한다.
+onload=&quot;fade()&quot;를 입력 다음 소스를 &lt;bady&gt;태그 사이에 효과를 적용할 그림을 삽입한다.
+효과를 적용할 그림을 선택하기 위해서는 &lt;img&gt; 태그에 'u'라는 name속성을 사용한 후, 자바스크립트에서 제어한다.
+    <span class="red">&lt;center&gt;&lt;img src=&quot;bt.jpg&quot; name=&quot;u&quot; border=&quot;1&quot;&gt;&lt;/center&gt;</span>
+    
+&lt;body onLoad=&quot;fade()&quot;&gt;
+    &lt;center&gt;&lt;img src=&quot;bt.jpg&quot; name=&quot;u&quot; border=&quot;1&quot;&gt;&lt;/center&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+	<p>&nbsp;</p>
+    <h3>윈도우 창 속성을 설정해 주는 window 객체 메소드 </h3>
+	<p>문서를 프린트해주는 메소드<br>
+    print() : 현재 열려있는 문서를 인쇄한다</p>
+	<p>사용예)</p>
+<pre>
+비천무.html문서를 불러와 &quot;인쇄하기&quot; 실행 단추에 입력한 내용을 다음과 같이 수정한다.
+  
+&lt;input type=&quot;button&quot; value=&quot;인쇄하기&quot; onClick=&quot;window.print()&quot;&gt;
+</pre>
+
+
+
+	<p>&nbsp;</p>
+	<h3>윈도우 창 크기를 조절해 주는 메소드들</h3>
+    resizeBy(a,b) - a : 변경할 가로 길이(픽셀)<br>
+    b : 변경할 세로 길이(픽셀)<br>
+    resizeTo(a,b) - 가로a, 세로b 만큼 창의 크기를 설정<br>
+    <p>사용예)</p>
+    
+<pre>
+창크기를 조절할 단추를 두개 만든다.
+
+&lt;body&gt;<br>&lt;form&gt;
+    &lt;input type=&quot;button&quot; value=&quot;축소하기&quot; onclick=&quot;window.resizeBy(-50,-50)&quot;&gt;
+    &lt;input type=&quot;button&quot; value=&quot;600*460크기&quot; onclick=&quot;window.resizeTo(600,460)&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+
+
+이벤트 핸들러를 사용하여 &quot;축소하기&quot; 단추에는 resizeBy 핸들러를 &quot;600*460크기&quot; 단추에는 resizeTo 핸들러가 실행되도록 한다.
+
+    &lt;input type=&quot;button&quot; value=&quot;축소하기&quot; onclick=&quot;window.resizeBy(-50,-50)&quot;&gt;
+    &lt;input type=&quot;button&quot; value=&quot;600*460크기&quot; onclick=&quot;window.resizeTo(600,460)&quot;&gt;
+</pre>
+
+
+
+	<p>&nbsp;</p>
+	<h3>창 위치를 조절해주는 메소드들</h3>
+	<p>moveBy (a,b) - a : 이동할 가로 길이(픽셀)<br>
+    b : 이동할 세로 길이(픽셀)<br>
+    moveTo (a,b) - 화면 왼쪽 상단을 기준으로 창의 위치를 가로 a, 세로 b 만큼 이동</p>
+    <p>사용예)</p>
+    
+<pre>
+창위치를 조절할 단추를 두개 만든어 메소드를 적용한다
+
+&lt;body&gt;
+&lt;form&gt;
+    &lt;input type=&quot;button&quot; value=&quot;오른쪽으로 이동하기&quot; onclick=&quot;window.moveBy(200,0)&quot;&gt;
+    &lt;input type=&quot;button&quot; value=&quot;왼쪽 상단에 정렬하기&quot; onclick=&quot;window.moveTo(0,0)&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+	<p>&nbsp;</p>
+	<h3>문서를 스크롤 해주는 메소드들</h3>
+	<p>scrollBy (a,b) - a : 스크롤할 가로 길이(픽셀)<br>
+    b : 스크롤할 세로 길이(픽셀)<br>
+    resizeTo (a,b) - 화면 좌측 상단을 기준으로 가로a 또는 세로b 만큼 윈도우 내용을 스크롤</p>
+    <p>사용예)</p>
+<pre>
+자우림.htm을 불러온 다음 &lt;input&gt; 태그 안에 이벤트 핸들러를 사용해서 단추를 클릭하면 
+화면 아래로 2500픽셀 만큼 스크롤 하도록 내용을 입력
+
+    &lt;input type=&quot;button&quot; value=&quot;문서 스크롤&quot; onclick=&quot;scrollBy(0,2500)&quot;&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예) 문서를 자연스럽게 스크롤하게 만들기</p>
+	<pre>자우림.htm을 불러온 다음 &lt;head&gt;태그 사이에 다음 내용을 입력한다.
+    
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;자우림&lt;/title&gt;
+    &lt;script&gt;
+        function scr()
+        {
+            scrollBy(0,10)
+            setTimeout('scr()',100)
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+  
+다음 내용을 &lt;bady&gt;태그 안에 문서가 열릴 경우에 동작하게 해주는 이벤트 핸들러를 입력한다
+
+&lt;body bgcolor=&quot;#76006c&quot; <span class="blue">onload=&quot;scr()&quot;</span>&gt;
+</pre>
+	<p>&nbsp;</p>
+</div>
+</body>
+</html>

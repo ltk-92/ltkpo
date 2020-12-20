@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 최상위 계층구조 Window객체</title>
+<meta content="charset=utf-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<DIV id="wrap">
+    <div class="article">
+        <h2>JavaScript Window 객체 메소드 사용하기</h2>
+    </div>
+    <h3>윈도우 창을 열어주는 open() 메소드</h3>
+    <p>window.open(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)</p>
+    <p>- a: 열리게 할 문서의 파일 이름<br>
+    - b: 열리게 할 문서의 창 이름<br>
+    - c: 새롭게 열릴 창의 속성</p>
+    <p>&nbsp;</p>
+    
+    <h3>창 속성 설정에 관련된 매개 변수</h3>
+	<p>toolbar		yes/no	툴바 메뉴를 보이게 할 지를 설정<br>
+	  location	yes/no	주소 표시줄을 보이게 할 지를 설정<br>
+	  directories	yes/no	연결 표시줄을 보이게 할 지를 설정<br>
+	  status		yes/no	상태 표시줄을 보이게 할 지를 설정<br>
+	  menubar		yes/no	메뉴를 보이게 할 지를 설정<br>
+	  scrollbars	yes/no	스크롤 바를 보이게 할 지를 설정<br>
+	  resizable	yes/no	창 크기 조절을 허용할 지를 설정<br>
+	  copyhistory	yes/no	히스토리 정보를 저장할 지를 설정<br>
+	  width		픽셀	창의 가로 길이를 설정<br>
+	  height		픽셀	창의 세로 길이를 설정  </p>
+    <p>사용예) 윈도우 창 열기<br>
+    
+<pre>
+&lt;body background=&quot;back4.jpg&quot; style=&quot;padding-top: 100px;&quot; <span class="blue">onLoad=&quot;win()&quot;</span>&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        &lt;img src=&quot;logo.gif&quot; width=&quot;364&quot; height=&quot;78&quot; border=&quot;0&quot;&gt;
+    &lt;/p&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;p style=&quot;color: white; text-align: center; font-weight: bold;&quot;&gt;
+        | movie | animation | music | guest book |
+    &lt;/p&gt;
+&lt;/body&gt;
+
+
+위의 홈페이지 &lt;head&gt; 태그 사이에 다음 내용을 입력
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;lets go&lt;/title&gt;
+    &lt;script&gt;
+	    window.open(&quot;news.htm&quot;, &quot;&quot;, &quot;&quot;)
+    &lt;/script&gt;
+&lt;/head&gt;	
+
+
+다시 open() 메소드에 resizable 속성을 사용하여 창 크기를 조절할 수 있도록 내용을 수정
+	  window.open(&quot;news.htm&quot;, &quot;&quot;, &quot;resizable=yes&quot;)
+      
+다시 open() 메소드에 toolbar 속성을 사용하여 표준 단추 메뉴가 보이도록 설정
+	  window.open(&quot;news.htm&quot;, &quot;&quot;, &quot;resizable=yes,toolbar=yes&quot;)
+
+다시 open() 메소드에 width와 height 속성을 사용하여 창 크기를 조절
+	  window.open(&quot;news.htm&quot;, &quot;&quot;, &quot;resizable=yes,toolbar=yes,width=400,height=400&quot;)
+</pre>
+
+
+
+	<p>&nbsp;</p>
+	<h3>창을 닫아주는 close() 메소드</h3>
+	  window.close() 또는 self.close() 현재 열려 있는 창을 닫아 준다<br>
+	<p>(사용예)	</p>
+    
+<pre>
+news.htm 문서를 연 &lt;input&gt; 태그 안에 단추를 클릭하면 창을 닫아 주도록 내용을 입력
+
+&lt;input type=&quot;submit&quot; value=&quot; 창&amp;nbsp;&amp;nbsp;닫&amp;nbsp;&amp;nbsp;기 &quot; onclick=&quot;window.close()&quot;&gt;
+
+
+윈도우 창 열고 닫기 - 아래의 html 소스를 복사하여 붙여서 문서 내용을 확인한다.
+
+&lt;body leftmargin=&quot;0&quot; topmargin=&quot;0&quot; background=&quot;beda.gif&quot;&gt;
+    &lt;p align=&quot;left&quot;&gt;
+        &lt;img src=&quot;logo_shop.gif&quot; width=&quot;738&quot; height=&quot;204&quot; border=&quot;0&quot;&gt;
+    &lt;/p&gt;
+	&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;2&quot; width=&quot;500&quot;&gt;
+        &lt;tr&gt;
+            &lt;td width=&quot;267&quot; rowspan=&quot;2&quot;&gt;
+                &lt;p align=&quot;right&quot;&gt;&amp;nbsp;
+                    &lt;img src=&quot;cm.gif&quot; width=&quot;145&quot; height=&quot;149&quot; border=&quot;0&quot;&gt;
+                &lt;br&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;227&quot; height=&quot;15&quot; bgcolor=&quot;navy&quot;&gt;
+                &lt;p align=&quot;center&quot;&gt;
+                &lt;font color=&quot;white&quot;&gt;video camera&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width=&quot;227&quot; height=&quot;75&quot;&gt;
+                &lt;p&gt;&lt;FONT face=&quot;굴림체&quot; color=&quot;silver&quot; size=&quot;2&quot;&gt;
+                &amp;nbsp;&amp;nbsp;●2.5인치 액정 모니터&lt;br&gt;&amp;nbsp;&amp;nbsp;
+                ●고화질  컬러뷰파인더&lt;br&gt;&amp;nbsp;&amp;nbsp;●재생 줌 기능&lt;br&gt;&amp;nbsp;&amp;nbsp;
+                ●장시간 쵤용 가능&lt;/font&gt;&lt;font color=&quot;white&quot; size=&quot;2&quot;&gt;&lt;br&gt;&lt;/font&gt;
+                &lt;p align=&quot;center&quot;&gt;
+                &lt;input type=&quot;submit&quot; value=&quot; 그 림 확 대 &quot;&gt; 
+                &lt;input type=&quot;submit&quot; value=&quot; 창&amp;nbsp;&amp;nbsp;닫&amp;nbsp;&amp;nbsp;기 &quot;&gt;
+                &lt;font color=&quot;white&quot; size=&quot;2&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width=&quot;496&quot; colspan=&quot;2&quot;&gt;
+                &lt;p align=&quot;right&quot;&gt;&amp;nbsp;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p align=&quot;left&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/body&gt;
+
+
+다음 내용을 &lt;head&gt; 태그 사이에 입력한다
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;shopping mall&lt;/title&gt;
+    &lt;script&gt;
+<span class="green"></span>        function mkwin() {
+            camwin=window.open(&quot;cam.htm&quot;,&quot;&quot;,&quot;toolbar=no, width=400, height=400&quot;)
+        }
+
+        function closewin() {
+            camwin.close()
+        }
+<span class="green"></span>    &lt;/script&gt;
+&lt;/head&gt;
+
+
+다음 내용을 &lt;input&gt;에 추가 - <span class="red">onclick=&quot;mkwin()&quot;   /   onclick=&quot;closewin()&quot;</span>
+
+&lt;input type=&quot;submit&quot; value=&quot; 그 림 확 대 &quot;  <span class="blue">onclick=&quot;mkwin()&quot;</span> /&gt; 
+&lt;input type=&quot;submit&quot; value=&quot; 창&amp;nbsp;&amp;nbsp;닫&amp;nbsp;&amp;nbsp;기 &quot;  <span class="blue">onclick=&quot;closewin()&quot;</span> /&gt;
+</pre>
+	<p>&nbsp; </p>
+</div>
+</body>
+</html>

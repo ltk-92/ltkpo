@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 문서 정보를 제어하는 Document객체</title>
+<meta content="charset=utf-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="article">
+      <h2>JavaScript 문서 정보를 제어하는 Document객체</h2>
+	</div>
+	<h3>문서 정보를 표시해주는 속성들</h3>
+    document.title - 문서의 제목을 표시한다<br>
+    document.location - 문서의 위치 경로를 표시한다<br>
+	<p>사용예) </p>
+    
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt; Test &lt;/title&gt;
+    &lt;script&gt;
+<span class="green"></span>        document.write(&quot;이 홈페이지의 제목은&quot;, document.title,&quot;입니다.&quot;, &quot;&lt;br&gt;&quot;)
+        document.write(&quot;이 홈페이지의 위치는&quot;, document.location, &quot;입니다.&quot;)
+<span class="green"></span>    &lt;/script&gt;
+&lt;/head&gt;
+</pre>
+
+
+
+  <p>&nbsp;</p>
+	<h3>최종 수정 날짜를 표시해주는 속성</h3>
+    document.lastModified<br>
+  <p>사용예)</p>
+    
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;연습&lt;/title&gt;
+    &lt;script&gt;
+<span class="green"></span>        function modifi()
+        {
+            a=new Date(document.lastModified)
+            x=a.getYear()
+            y=a.getMonth()+1
+            z=a.getDate()
+            document.write(&quot;이 홈페이지의 최종 수정 날짜는&quot;, x, &quot;년&quot;, y, &quot;월&quot;, z, &quot;일입니다.&quot;)
+        }
+<span class="green"></span>    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body <span class="blue">onload=&quot;modifi()&quot;</span>&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+  <p>&nbsp;</p>
+	<h3>문서 색상 정보를 제어하는 속성들</h3>
+	  document.bgColor=&quot;색깔&quot;		문서의 배경색을 설정<br>
+	  document.fgColor=&quot;색깔&quot;		문서의 글자색을 설정<br>
+	  document.linkColor=&quot;색깔&quot;	링크가 설정된 글자의 색을 설정<br>
+	  document.alinkColor=&quot;색깔&quot;	링크가 실행될 때의 글자색을 설정<br>
+	  document.vlinkColor=&quot;색깔&quot;	링크가 실행된 후의 글자의 색을 설정</br>
+
+  <p>사용예) 무지개 색으로 배경색 바꾸기</p>
+<pre>
+&lt;body bgcolor=&quot;#ffcc00&quot;&gt;
+&lt;table align=&quot;right&quot; border cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;500&quot; height=&quot;10&quot;&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;white&quot; onmouseover=&quot;document.bgColor='white'&quot;&gt;
+            &lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;2&quot;&gt;COLOR&lt;/font&gt;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;red&quot; onmouseover=&quot;document.bgColor='red'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;orange&quot; onmouseover=&quot;document.bgColor='orange'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;yellow&quot; onmouseover=&quot;document.bgColor='yellow'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;green&quot; onmouseover=&quot;document.bgColor='green'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;blue&quot; onmouseover=&quot;document.bgColor='blue'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;navy&quot; onmouseover=&quot;document.bgColor='navy'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+        &lt;td width=&quot;87&quot; bgcolor=&quot;violet&quot; onmouseover=&quot;document.bgColor='violet'&quot;&gt;
+            &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+</pre>
+
+	<p>&nbsp;</p>
+	<p>창의 내용을 보여주는 메소드들</p>
+	  <p>a.document.open() - 새로운 창에 내용을 나타나게 만든다.<br>
+      a.document.close() - 새로운 창에 나타나게 할 내용을 종료한다 </p>
+    <p>사용예)</p>
+    
+<pre>
+다음 부분을 &lt;body&gt;태그 부분에 삽입한다
+
+&lt;script&gt;
+<span class="green"></span>function win()
+{
+    a=window.open()
+    a.document.open()
+    a.document.write(&quot;저의 집에 오신 것을 환영합니다.&quot;)
+    a.document.close()
+}	
+
+function win_close()
+{
+    a.document.open()
+    a.document.write(&quot;&quot;)
+    a.document.close()
+}
+<span class="green"></span>&lt;/script&gt;
+	
+다음 부분을 &lt;body&gt;태그 부분에 삽입한다
+
+&lt;form&gt;
+    &lt;input type=&quot;button&quot;  value=&quot;메시지 창 띄우기&quot;  onclick=&quot;win()&quot; /&gt;
+    &lt;input type=&quot;button&quot;  value=&quot;내용 지우기&quot;  onclick=&quot;win_close()&quot; /&gt;
+&lt;/form&gt;
+</pre>
+
+<p>&nbsp;</p>
+<p>사용예) 그림이 순서대로 바뀌는 효과</p>
+
+<pre><span class="gray">&lt;img src=&quot;fall1.gif name=&quot;shot&quot;&gt; - fall1.gif그림에 shot라는 이름을 설정한다.
+document.shot.complete - 문서에서 shot 이름을 가지고 있는 그림이 전송 완료되었는지 확인
+document.shot.src=&quot;fall&quot;+num+&quot;.gif&quot; - 그림을 fall2, fall3, fall4의 순서대로 바꿔준다.
+setTimeout(&quot;timer()&quot;,2000); - 재귀적 용법으로 2초마다 time()함수를 실행 </span>
+
+1) 가을동화.html 파일을 불러와 &lt;img&gt; 태그 안에 name 속성을 'shot'로 설정
+    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;fall1.gif&quot; <span class="red">name=&quot;shot&quot;</span> border=&quot;1&quot;&gt;&lt;/p&gt;
+    
+2) 다음 내용을 &lt;head&gt; 태그 사이에 입력한다
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;가을동화&lt;/title&gt;
+    &lt;script&gt;
+        var num = 2;
+        function timer () {
+            if(<span class="red">document.shot.complete</span>) {
+                <span class="red">document.shot.src = &quot;fall&quot; + num + &quot;.gif&quot;</span>;
+                num++; if(num &gt; 4) num = 1;
+            }
+            <span class="red">setTimeout(&quot;timer()&quot;, 2000);</span>
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+3) 다음 내용을 &lt;body&gt; 태그 사이에 입력한다 
+&lt;body  style=&quot;background: #e89828 url(back.gif) no-repeat;&quot;  <span class="red">onLoad=&quot;timer();&quot;</span>&gt;
+</pre>	
+
+</div>
+</body>
+</html>
