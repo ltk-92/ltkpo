@@ -1,0 +1,6 @@
+	@charset 'utf-8';
+	#wrapper{width:1500px; height:100%; }
+			#header{width:230px;height:100%;background-color:#fff;position:fixed; left:0;top:0}
+			#main{margin-left:230px; border:1px solid #ccc; background-color:#fff}
+			#footer{width:230px;height:230px; position:fixed; left:0; top:560px;   }
+			#visual{height:500px;background-color:#ff0; background-repeat:no-repeat; background-size:cover; position:relative }

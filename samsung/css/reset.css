@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+*{margin:0; padding:0}
+			a{text-decoration:none; color:#333}
+			ul, ol, li{list-style:none}
+			body{font-family: 나눔고딕, sans-serif; font-size:90%; color:#000; background-color:#eee}
+			html,body{height:100%}
+			img{border:0 none}
+			.hidden{position:absolute; left:-999%; font-size:0; line-height:0; width:1px; height:1pxs}
+			fieldset{border:0 none}
+			a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+			a:hover, a:focus{color:#f00; text-decoration:underline;}
+			
+			header, footer, section, article, nav, aside{display:block}
+
+			
+			@media all and (min-width:1281px) {body{background-color:green}}
+			@media all and (min-width:960px) and (max-width:1280px){body{background-color:#ff0}}
+			@media all and (min-width:768px) and (max-width:959px){body{background-color:#f00}}
+			@media all and (min-width:481px) and (max-width:767px){body{background-color:#00f}}
+			@media all and (max-width:480px){body{background-color:#ffcc99}}
