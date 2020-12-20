@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>html의 기본구조</title>
+		<style type="text/css">
+			.wrapper{
+				display:table;
+				width:600px;
+				height:200px;
+				border:1px solid red;
+				background-color:pink;			
+			}
+			.box-group{
+				width:600px;
+				height:100px;
+				display:table-row;
+			}
+			.box{
+				display:table-cell;
+				width:600px;
+				height:100px;
+				background-color:blue;
+				vertical-align:middle;
+				text-align:center;
+			}	
+		</style>	
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box-group">
+				<div class="box">저는 부모의 세로 중앙에 위치할 에정입니다.<br/>저는 부모의 세로 중앙에 위치할 에정입니다.<br/>저는 부모의 세로 중앙에 위치할 에정입니다.</div>
+			</div>
+		</div>
+	</body>
+</html>

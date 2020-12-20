@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>html의 기본구조</title>
+		<style type="text/css">
+			.box-group{
+				position:relative;
+				width:600px;
+				height:500px;
+				border:1px solid red;
+			}
+			.box-item01{
+				position:absolute;
+				z-index:1;
+				top:20px;
+				left:40px;
+				width:140px;
+				height:140px;
+				background-color:yellow;
+			}
+			.box-item02{
+				position:absolute;
+				width:150px;
+				height:150px;
+				background-color:blue;
+			}
+		</style>	
+	</head>
+	<body>
+		<div class="box-group">
+			<div class="box-item01">box1</div>
+			<div class="box-item02">box2</div>
+		</div>
+	</body>
+</html>

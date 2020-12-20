@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>html의 기본구조</title>
+		<style type="text/css">
+			.container{
+				display:flex;
+				/*flex-direction: row-reverse;*/
+				justify-content:flex-end;
+				border:1px solid #f00;
+				width:800px;
+				height:600px;
+
+			}
+			.item{
+				width:60px;
+				height:60px;
+				background-color:#0f0;
+
+			}
+
+			.item+ .item{
+				margin-left:20px;
+			}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">아이템1</div>		
+			<div class="item">아이템2</div>
+			<div class="item">아이템3</div>
+			<div class="item">아이템4</div>
+			<div class="item">아이템5</div>
+			<div class="item">아이템6</div>
+		</div>
+	</body>
+</html>
