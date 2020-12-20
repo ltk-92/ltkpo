@@ -1,0 +1,904 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0; 
+    border: 0 none;
+}
+ul , li {
+    list-style: none
+}
+a:link,a:visited{
+    text-decoration:none;
+    color:#fff;
+}
+a:hover,a:active{
+    text-decoration:none;
+    color:none
+}
+body{
+    overflow-x:hidden
+}
+header{
+    width: 15%; 
+    height: 100%; 
+    background-color: #000;
+    position: fixed; top: 0; left: 0;z-index:2
+}
+header>h1{
+     position: absolute;top: 70px;left: 25%;
+}
+#gnb{
+    position: absolute;
+    top: 150px; 
+    left:10%;
+}
+#gnb-m{display:none;   
+}
+#gnb>li{
+    margin-top:20px
+}
+#gnb>li>a{
+    display: block; 
+    font:bold 16px/1.8 '나눔고딕';
+    color: #fff; 
+    text-align: left;
+    transition: all 0.5s;
+}
+#gnb>li>a:hover {
+    color: skyblue;
+}
+header>#snsSet{
+    width: 90px;
+    height: 47px;
+    margin-right: -45px;
+    position: absolute;
+    bottom: 50px; 
+    right: 50%;
+}
+header>#snsSet>a{
+    float: left;
+}
+nav{width: 85%;
+    margin-left: 15%;
+    background-color: #212121;
+    position: relative;
+    transition: all 0.3s;
+}
+section{
+    width: 85%;
+    margin-left: 15%;
+    position: relative;
+    transition: all 0.3s;
+}
+.mobile-button{
+    display:none
+}
+article{
+    float: left;
+}
+article:nth-child(1){
+    width: 75%; 
+    height: 735px;
+}
+article:nth-child(2){
+    width: 25%; 
+    height:245px;
+    background-color:#0f0
+}
+article:nth-child(3){
+    width: 25%;
+    height:245px; 
+    background-color:#00f
+}
+article:nth-child(4){
+    width: 25%;
+    height:245px;
+    background-color:#0ff
+}
+
+article:nth-child(5){
+    width: 100%;
+    height:213px
+}
+article:nth-child(6){
+    width: 33.3%;
+    height:545px;
+    overflow: hidden
+}
+
+article:nth-child(7){
+    width: 33.3%
+        ;height:545px
+}
+article:nth-child(8){
+    width: 33.4%;
+    height:545px
+}
+article:nth-child(9){
+    width: 75%;
+}
+article:nth-child(10){
+    width: 25%;
+}
+article>div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+article>div>span{
+    font: 20px/1 'HY견고딕';
+    color:#fff; 
+    display:inline-block;
+    height:30px;
+}
+article>span{
+    font: 20px/1 'HY견고딕';
+    color:#fff; 
+    display:inline-block;
+    height:30px;
+}
+article .bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.3s;
+}
+article .bg1  {
+    background-image: url(../images/sony_visual4.jpg);
+    position:relative;
+}
+article .bg1:hover span{
+    bottom:0
+}
+article>.bg1>span{
+    width:100%;
+    height:100px;
+    position:absolute; 
+    bottom:-100px;
+    display:inline-block;
+    transition:all 0.3s;
+    background-color:rgba(0,0,0,0.5);
+    font-size:30px
+
+}
+article>.bg1>span>a{width:100%;height:100%;
+    display:inline-block;
+    text-align: center
+}
+article .bg2  {
+    background-image: url(../images/sony_visual5.jpg);
+    position:relative;
+}
+article>.bg2>span{
+    width:100%;
+    height:40px;
+    position:absolute;
+    bottom:-40px;
+    display:inline-block;
+    transition:all 0.3s;
+    background-color:rgba(0,0,0,0.2)
+}
+article>.bg2:hover span{
+    bottom:0
+}
+article>.bg2>span>a{width:100%;height:100%;
+    display:inline-block;
+    text-align: center
+}
+article .bg3  {background-image: url(../images/sony_visual7.jpg);
+    transition:all 0.3s;
+    position:relative
+}
+article>.bg3>span{width:100%;height:40px;position:absolute; bottom:-40px;
+    display:inline-block;
+    transition:all 0.3s;
+    background-color:rgba(0,0,0,0.2)}
+
+
+article>.bg3:hover span{
+    bottom:0
+}
+article>.bg3>span>a{
+    width:100%;
+    height:100%;
+    display:inline-block;
+    text-align: center
+}
+article .bg4  {
+    background-image: url(../images/sony_visual6.jpg);
+    position:relative
+}
+article>.bg4>span{
+    width:100%;
+    height:40px;
+    position:absolute;
+    bottom:-40px;
+    display:inline-block;
+    background-color:rgba(0,0,0,0.2);
+    transition:all 0.3s
+}
+article>.bg4>span>a{
+    width:100%;
+    height:100%;
+    display:inline-block;
+    ;text-align: center
+}
+article>.bg4:hover span{
+    bottom:0
+}
+article .bg5  {
+    background-image: url(../images/sony_visual12.jpg);
+    position: relative;
+    overflow:hidden;
+    transition:all 0.3s
+}
+article .bg5:hover p{
+    position:absolute;
+    right:-100px;
+}
+article .bg5:hover img{
+    animation: ani 2s linear ;
+    transform:Scale(1,1);
+}
+article .bg5>span{  
+    position:absolute;
+    top:0px; 
+    left:-10%;
+    z-index:1;
+    width:100%;
+    height:100%;
+    display:inline-block
+}
+article .bg5>span>img{  
+     width:100%;
+    height:100%
+}
+ @keyframes ani{
+           20%  {transform:Scale(0.95,0.95)}
+            50% {transform:scale(1.2,1.2)}
+            100% {transform:scale(1.0,1.0)}
+}
+article .bg5>p{
+    height:100%;
+    width:400px;
+    transform:skewX(-45deg);
+    background-color:#000;
+    position:absolute;
+    right:-300px;
+    z-index: 2;
+    transition:all 0.3s;
+}
+article .bg5>p>a{
+    display: inline-block; 
+    font:bold 21px/1 'hy견고딕';
+    color:#fff;
+    letter-spacing: 6px;
+    position:absolute; top:20%;left:38%;
+    transform:skewX(45deg);
+}
+article .bg5>p>a>span{
+    display:block;
+    line-height: 70px;
+    font-size:60px;
+    transition:all 0.3s
+}
+article .bg5>p>a:hover span{
+    color:lightskyblue
+}
+article:nth-child(6){
+    width: 33.3%;
+    height:545px; 
+    overflow: hidden
+}
+article .bg6  {
+    background-image: url(../images/sony_visual9.jpg);
+    background-size:110%;
+    background-position: center center;
+    transition:all 0.3s;
+    overflow:hidden;
+    position:relative
+}
+article .bg6>img{position:absolute;left:50%;top:35%;z-index:1;margin-left:-64px;
+    opacity: 0;
+   transition: all 1s ease-out 0.3s; 
+}
+.bg6:hover img{
+    opacity:1
+}
+article .bg6>span{
+    position:absolute;
+    left:50%;
+    top:60%;
+    z-index:1;
+    opacity: 0; 
+    transition: all 1s ease-out 1.3s;
+    margin-left:-33px
+}
+article .bg6:hover span{
+    opacity:1
+}
+.copy{
+    background:rgba(0,0,0,0.1);
+    width:100%;
+    height:100%;
+    color:#fff
+}
+.copy>p:first-child{
+    position:absolute; 
+    bottom:5%; 
+    right:5%;
+    font:bold 15px/1 '나눔고딕'
+}
+.copy>p:last-child{
+    position:absolute; 
+    bottom:10%; 
+    right:5%;
+    font:bold 24px/1 'HY견고딕'
+}
+.copy3{background:rgba(0,0,0,0.1);
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+.bg6>.black{width:100%;height:0%;
+    background:rgba(0,0,0,0.3);
+    position:absolute;
+    transition:all 0.5s
+}
+.b1{
+    top:0px
+}
+.bg6:hover .b1{
+    height:100%
+}
+ .b2{
+     bottom:0px
+}
+.bg6:hover .b2{
+    height:100%
+}
+article .bg6:hover {
+    background-size: 150%; 
+}
+article .bg7  {
+    background-image: url(../images/sony_visual10.jpg);
+    background-size:100%; 
+    transition:all 0.1s;
+    overflow:hidden;
+    position:relative
+}
+article .bg7:hover {
+    background-size: 150%; 
+}
+.bg7:hover .b1{
+    height:100%
+}
+.bg7:hover .b2{
+    height:100%
+}
+.bg7>div{
+    width:100%;
+    height:0%;
+    background:rgba(0,0,0,0.2);
+    position:absolute;
+    transition:all 0.5s
+}
+
+article .bg7>span{
+    position:absolute;
+    left:50%;
+    top:60%
+    z-index:1;
+    opacity: 0; 
+    transition: all 0.3s ease-out 0.5s;
+    margin-left:-35px
+}
+article .bg7:hover span{
+    opacity:1
+}
+.bg7>.copy2{
+    background:rgba(0,0,0,0.1);
+    width:100%;height:100%;
+    color:#fff
+}
+.bg7>.copy2>p:first-child{
+    position:absolute; 
+    bottom:5%; 
+    right:5%;
+    font:bold 15px/1 '나눔고딕'
+}
+.bg7>.copy2>p:last-child{
+    position:absolute; 
+    bottom:10%; 
+    right:5%;
+    font:bold 24px/1 'HY견고딕';
+}
+.bg7>img{
+    position:absolute;
+    left:50%;
+    top:35%;
+    z-index:1;
+    margin-left:-64px;
+    opacity: 0;
+    transition: all 1s ease-out 0.3s;
+}
+.bg7:hover img{
+    opacity:1 
+}    
+article:nth-child(8){
+    width: 33.4%;
+    height:545px
+}
+article .bg8  {
+    background-image: url(../images/sony_visual8.jpg);
+    background-size:150%;
+    transition:all 1s;
+    overflow:hidden;
+    position:relative;
+}
+.bg8>.black{
+    width:100%;
+    height:0%;
+    background:rgba(0,0,0,0.2);
+    position:absolute;
+    transition:all 0.5s
+}
+.bg8:hover .b1{
+    height:100%
+}
+.bg8:hover .b2{
+    height:100%
+}
+article .bg8:hover {
+    background-size: 220%; 
+}
+article .bg8>span{
+    position:absolute;
+    left:50%;
+    top:60%;
+    z-index:1;
+    opacity: 0; 
+    transition: all 1s ease-out 0.5s;
+    margin-left:-24px
+}
+article .bg8:hover span{
+    opacity:1
+}
+
+article .bg8>.copy3>p:first-child{
+    position:absolute; 
+    bottom:5%; 
+    right:5%;
+    font:bold 15px/1 '나눔고딕';color:#fff
+}
+article .bg8>.copy3>p:last-child{
+    position:absolute;
+    bottom:10%; 
+    right:5%;
+    font:bold 24px/1 'HY견고딕';
+    color:#fff
+}
+.bg8>img{
+    position:absolute;
+    left:50%;
+    top:35%;
+    z-index:1;
+    margin-left:-64px;
+    opacity: 0;
+    transition: all 1s ease-out 0.3s;
+    transform:scale(0.8,0.8)
+}
+.bg8:hover img{
+    opacity:1 
+}    
+article .bg9 {
+    height:693px
+}
+article .bg9>span{
+    display:inline-block; 
+    width:100%;
+    height:100%; 
+}
+article .bg10 {
+    height:693px;
+    position: relative; 
+    transition:all 1s;
+}
+article .bg10>span:first-child{ 
+    display: inline-block; 
+    margin-left: -91px;
+    margin-top: -25px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;        
+}
+article .bg10>span>a{
+    display:inline-block;
+    width:180px;height:47px;   
+    transition:all 1s;
+    font:47px/1 '나눔고딕'; color:#000;
+    display:inline-block;
+    text-align: center;
+   margin:323px px 323px 
+}
+article .bg10:hover span>a{
+    color:#fff
+}
+article .bg10:hover {
+    background-color:#000
+}
+article .bg10>span:nth-child(2)>a{
+    font:73px/1 'HY견고딕';
+    position:absolute;left:50%;top:55%;
+    margin-left:-91px;
+}
+article .bg10>span:nth-child(2)>a{
+    font:73px/1 'HY견고딕';
+    color:#fff;
+    position:absolute;
+    left:50%;
+    top:55%;
+    margin-left:-91px;
+}
+iframe{
+    width:100%;
+    height:100%;
+}
+footer{
+    width:100%;
+    height:250px; 
+    background-color:#646464; 
+    position:absolute;
+    top:2180px;
+    z-index:1
+}
+footer>.foot{
+    position:absolute; 
+    left:16%; 
+    top:20%;
+    font-size:12px; 
+    color:#fff
+}
+footer>.foot>.f1>li{
+    float:left; 
+    margin-right:10px;
+    font:bold 12px/30px '나눔고딕'
+}
+footer>.foot>.f2>li:first-child>address{
+    clear:both;
+    font-style:normal
+}
+footer>.foot>.f2>li:nth-child(4){
+    float:left;
+    border-right:1px solid #000
+}
+/*------------반응형-----------------*/
+@media screen and (min-width:1024px) and (max-width:1599px) {  
+	
+	/*레이아웃*/
+	header { 
+        position:fixed; 
+        width:100%; 
+        height:80px;
+    }
+    section{
+        margin:80px 0 0 0;
+        width:100%;
+    }
+	nav { 
+        width:100%;
+        margin-left:0%;
+    }		
+	article:nth-child(1) { 
+        width:100%;
+    }	
+	article:nth-child(2) { 
+        width:33.3%;
+    }	
+	article:nth-child(3) { 
+        width:33.3%;
+    }	
+	article:nth-child(4) {
+        width:33.4%;
+    }	
+	article:nth-child(5) {
+        width:100%;
+    }	
+	article:nth-child(6) {
+        width:50%;
+        height:538px
+    }
+    .mobile-button{
+        display:none;
+    }
+	article:nth-child(7) {
+        width:50%;
+        height:269px
+    }
+    article>.bg7>img{
+        top:20%
+    }
+    article>.bg7>span{
+        top:72%
+    }
+    .bg7>.copy2>p:last-child{
+        bottom:15%; 
+        right:5%;
+    }
+	
+    article:nth-child(8) { 
+        width:50%;
+        height:269px
+    }
+    article .bg8>.copy3>p:last-child{
+        bottom:15%;
+        right:5%;
+    } 
+    article>.bg8>img{
+        top:10%
+    }
+    article>.bg8>span{
+        top:62%
+    }
+	article:nth-child(9) { 
+        width:100%;
+    }	
+	article:nth-child(10) { 
+        width:100%;
+    }	
+    footer{
+        top:3190px
+    }
+	/* header 컨텐츠 */
+	header h1 { 
+        width:20px;
+        height:40px;
+        background-image:url(../img/logo2.png);
+        top:20px;
+        left:20px; 
+        margin-left:0px;
+    }	
+	#gnb {
+        top:0px; 
+        left: 200px;
+    }
+    #gnb-m{
+        display:none;   
+    }
+	#gnb li { 
+        float:left; 
+        margin-left:20px;
+    }
+	.snsSet {
+        bottom:20px;
+        right:80px;
+    }
+}
+@media screen and (min-width:640px) and (max-width:1023px) {  
+	
+	/*레이아웃*/
+	header { 
+        position:relative;
+        width:100%; 
+        height:80px;
+    }
+	nav { 
+        width:100%;
+        margin-left:0%;
+    }	
+    #gnb { 
+        top:0px; 
+        left: 200px;
+    }
+     #gnb-m{
+        display:none;   
+    }
+	#gnb li { 
+        float:left; 
+        margin-left:20px
+    }
+	section { 
+        width:100%; 
+        margin-left:0px;
+    }		
+	article:nth-child(1) {
+        width:100%;
+    }
+	article:nth-child(2) { 
+        width:50%; 
+        height:400px
+    }	
+	article:nth-child(3) { 
+        width:50%;
+        height:200px
+    }	
+	article:nth-child(4) { 
+        width:50%;
+        background-color:#f00;
+        height:200px
+    }	
+	article:nth-child(5) {
+        width:100%
+    }
+     article .bg1{
+        background-image:url(../images/sony_visual_m.jpg);
+    }
+    article .bg5:hover p{
+        position:absolute;
+        right:-180px;
+    }
+    article .bg5>p>a{
+        left:23%
+    }
+	article:nth-child(6) {
+        width:100%;
+    }
+    article .bg6{
+        background-size: 100%
+    }
+    .bg6>.copy>p:last-child{
+        bottom:10%
+    }
+	article:nth-child(7) { 
+        width:100%;
+    }	
+	article:nth-child(8) { 
+        width:100%;
+    }	
+	article:nth-child(9) { 
+        width:100%;
+    }	
+	article:nth-child(10) { 
+        width:100%;
+    }	
+	footer{
+        top:4449px
+    }
+	/* header 컨텐츠 */
+	header h1 { 
+        width:200px;	
+        height:40px;	
+        background-image:url(../img/logo2.png);	
+        top:20px;	
+        left:20px;	
+        margin-left:0px;
+    }
+	#gnb { 
+        top:20px;
+        right:30px;
+    }	
+	#gnb li { 
+        float:left;
+    }	
+	.snsSet {	
+        display:none;
+    }
+    .mobile-button img{
+        width:100%;
+    }
+}
+@media screen and (max-width:639px) {  
+	
+/*레이아웃*/
+	header { 
+        position:relative; 
+        width:100%;
+        height:80px;
+    }
+	nav { 
+        width:100%;
+        height:auto; 
+        margin-left:0%;
+    }	
+    nav #gnb { 
+        display:none;
+    }
+     #gnb-m{
+         display:block;
+        position:absolute;
+        width:200px;
+        top:80px;
+        left:200%;  
+    }
+	section {
+        width:100%; 
+        margin-left:0px;
+    }		
+	article:nth-child(1) {
+        width:100%;
+    }
+	article:nth-child(2) { 
+        width:50%;
+        height:200px
+    }	
+	article:nth-child(3) { 
+        width:50%;
+        height:100px
+    }	
+	article:nth-child(4) {
+        width:50%;
+        background-color:#f00;
+        height:100px
+    }	
+	article:nth-child(5) {
+        width:100%;
+        height:150px
+    }
+    article .bg5:hover p{
+        position:absolute;
+        right:-180px;
+    }
+    article .bg5>p>a{
+        left:23%
+    }
+	article:nth-child(6) {
+        width:100%;}
+    
+    article .bg6{
+        background-size: 100%
+    }
+    .bg6>.copy>p:last-child{
+        bottom:10%
+    }
+	article:nth-child(7) { 
+        width:100%;
+    }	
+	article:nth-child(8) { 
+        width:100%;
+    }	
+	article:nth-child(9) { 
+        width:100%;
+    }	
+	article:nth-child(10) {
+        width:100%;
+    }	
+	footer{
+        top:4200px
+    }
+/* header 컨텐츠 */
+	header h1 {
+        width:70px;
+        height:40px;	
+        background-image:url(../img/logo2.png);
+        top:20px; 
+        left:50%; 
+        margin-left:-20px;
+    }	
+    header img{
+        width:100%
+    }	
+    #gnb-m li { 
+        width:200px; 
+        background-color:#000;
+        margin:0;
+        border-bottom:1px solid #fff
+    }	
+	#gnb-m a{ 
+        display:inline-block;
+        padding:10px 10px;
+        width:100%;
+        height:100%
+    }
+    #gnb-m a:hover{ 
+        color:skyblue;
+        transition:all 0.3s
+    }
+      .mobile-button{
+        display:block;
+        position:absolute;
+        right:0;
+        top:50%;
+        width:50px;
+        height:50px;
+        z-index:10;
+        transform: translateY(-50%);
+        cursor:pointer
+    }
+    .mobile-button img{
+        width:100%;
+    }
+	 /*con*/
+    article .bg1{
+        background-image:url(../images/sony_visual_m.jpg);
+    }
