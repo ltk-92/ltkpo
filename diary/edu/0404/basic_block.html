@@ -1,0 +1,40 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+		<style type="text/css" >
+			h3{width:300px;border-left:10px solid red; border-bottom:1px solid red; text-indent:1em}
+			span{width:300px;background-color:gold; color:white;}
+			#inline_test{text-align:center;}
+			img{width:138px; height:130px;}
+
+			#left{ width:30%; background-color:gold; float:left/*width, height 고려, -> float, 끊을 위치 :#clear*/}
+			#right{float:right /*w, float, 끊을 위치 - #clear*/ width:70%; background-color:orange; float:right}
+			#clear{clear:both/*flaot 끊기*/}
+		</style>
+	</head>
+	<body>
+	
+		<div>
+			<h3>box model</h3>
+			<p>콘텐츠가 자리하는 영역</p>
+			
+			<h4>블록요소</h4>
+			<p><span>특징 :</span> 줄바꿈이 일어난다/width, height값 줄 수 있음</p>
+
+			<h4>인라인 요소</h4>
+			<p><span>특징 :</span> 줄바꿈이 안 일어난다/ width, height값 줄 수 없음</p>
+			<p id="inline_test"><img src="images/img14.jpg" alt="김유나  사진"/>인라인 중 img 태그는 width, height 줄 수 있음</p>
+
+			<h3>float</h3>
+			<p id="left">정의 : 박스를 배치하는 기술. [left, right]로 배치하고 주변콘텐츠들이 주변을 흐르게 만듦</p>
+			<p id="right">주의사항:[width, float 끊기]</p>
+			<p id="clear">float 끊기 - 바로 아래 콘텐츠에 clear-both</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{font-size:}
+		li{list-style:none;}
+		img{border:0 none}
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		.borderTest{width:0px; height:0px; border:50px solid #000;
+					border-color:red green blue gold; text-indent:-9999px}
+					.bt2{border-color:red transparent transparent transparent}
+					.bt3{border-color:transparent green transparent transparent}
+					.bt4{border-color:transparent transparent blue transparent}
+					.bt5{border-color:transparent transparent transparent gold}
+					img{border:0 none}
+
+					.basic2{width:500px; height:400px; overflow:hidden}
+					.basic2 p{width:200px; height:200px; float:left; position:relative}
+					.r1{border-radius:50%; border:10px solid #f00; text-align:center; line-height:180px;
+						}
+						.basic2 p a{display:block; width:100%; height:100%; position:relative; border-radius:50%}
+
+					.basic2 p a:before{display:block; position:absolute; left:-30px;top:90px; content:""; border-color:transparent;width:0; height:0;border:10px solid transparent; border-right-color:#f00;}					
+					/*.basic2 500 overflow
+					  .basic2 p 200*200 float:left position:relative 
+					  .basic2 p a:link, .basic2 a:visited 링크영역확대 180*180
+					  10px solid red
+					  border-radius 50%
+					  text-align:center; line-height:180px 
+					  border 10px solid  red
+					  border-radius 50%
+					  text-align center line-height 180px
+					  글자색상, 사이즈
+					  
+					  .basic2 p a:hover, .basic2 p a:focus 꾸미기
+
+
+					  .basic2 p a:before
+						content:""; display:block;
+						0*0
+						border:50px solid transparent
+						border-color-right:red;
+						position:absolute top/left
+					  */
+					
+
+
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div id="basic">
+			<h3>border</h3>
+			<p>기본 사용법1: border:10px solid red</p>
+			<p>기본 사용법2:border-left:10px solid red</p>
+			<p>기본 사용법3:border-weight/ border-style/ border-color</p>
+			<p class="borderTest bt1">test1</p>
+			<p class="borderTest bt2">test2</p>
+				<p class="borderTest bt3">test2</p>
+					<p class="borderTest bt4">test2</p>
+					<p class="borderTest bt5">test2</p>
+		</div>	
+		<div class="basic2">
+			<h3>배너</h3>
+			<p><img src="images/img19_1.jpg" alt="설리사진"></p>
+			<p class=" round r1"><a href="#">sale</a></p>
+		</div>
+	</body>
+</html>

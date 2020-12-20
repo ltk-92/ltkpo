@@ -1,0 +1,6 @@
+.a31.a3 p{  width:47%; text-align:justify;}
+/*   ver-1 */   
+.fr a span{   display:inline;   }     .fr a .p_cnt{  display:block; }   
+
+/*   ver-2  .fr a span{   display:inline-block; width:100%;   }       */
+/*   ver-3  .fr a:link {  height:97px; }    .fr li{ height:104px;  }   */

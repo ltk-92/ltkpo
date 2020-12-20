@@ -1,0 +1,94 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<style type="text/css">
+			*{margin:0; padding:0}
+			.positionEx{width:200px; height:250px; background-color:#ffcc66; margin:10px;}
+			.pbox{width:100px; height:80px}
+			.red{background-color:red}
+			.green{background-color:green}
+			.blue{background-color:blue}
+
+			.ex1 .green{position: static; top:50px; left:50px}
+			.ex2 .green{position: relative; top:50px; left:50px;}
+			.ex3 .green{position: absolute; bottom: 50px; right:50px;}
+			.ex4 {position:relative}
+			.ex4 .green {position: absolute; bottom:0px; right:0px}
+			.ex5{position:fixed; right:0; top:200px;width:80px; height:200px}
+		</style>
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+	</head>
+	<body>
+		<div id="basic">
+			<h3>position</h3>
+			<p>정의 : [박스를 원하는 위치에 배치하는 방법]</p>
+			<p>종류 : [static,relative, absolute, fixed][</p>
+			<dl>
+				<dt>position:static</dt>
+				<dd>정의 : [원래 그대로의 상태, 움직이거나 겹칠 수 없다./ top, right, left, bottom(오프셋) 사용안됨 ]</dd>
+				<dd>
+					<div class="positionEx ex1">
+						<p class="pbox red">red</p>
+						<p class="pbox green">GREEN</p>
+						<P class="pbox blue"> BLUE</p>
+					
+					</div>
+				</dd>
+			</dl>
+			<!--position:static-->
+			<dl>
+				<dt>position:relative</dt>
+				<dd>정의 : [박스를 원하는 위치에 배치/ 박스자리에 유지됨.]</dd>
+				<dd>기준점 :[현재위치]</dd>
+				<dd>
+					<div class="positionEx ex2">
+						<p class="pbox red">red</p>
+						<p class="pbox green">GREEN</p>
+						<P class="pbox blue"> BLUE</p>
+					
+					</div>
+					<!--position:relative-->
+					<dl>
+				<dt>position:absolute</dt>
+				<dd>정의 : [박스를 원하는 위치에 배치/ 박스자리에 유지 안됨]</dd>
+				<dd>기준점 : [브라우저]</dd>
+				<dd>
+					<div class="positionEx ex3">
+						<p class="pbox red">red</p>
+						<p class="pbox green">GREEN</p>
+						<P class="pbox blue"> BLUE</p>
+					</dl>
+				<dl>
+				<dt>position:relative+absolute</dt>
+				<dd>정의 : [relative: 박스를 원하는 위치에 배치,  박스자리에 유지 됨]</dd>
+				<dd>기준점 : [position:relative 감싸는 박스(부모)가 기준점.position:absolute(자식)]</dd>
+				<dd>
+					<div class="positionEx ex4">
+						<p class="pbox red">red</p>
+						<p class="pbox green">GREEN</p>
+						<P class="pbox blue"> BLUE</p>
+				</dl>
+				
+				<dl>
+				<dt>position:fixed</dt>
+				<dd class="positionEx ex5">정의 : 박스배치시 기준점이 [브라우저] 고정</dd>
+				
+				
+					
+				</dl>
+
+
+
+
+					</div>
+				</dd>
+			</dl>
+				</dd>
+			</dl>
+		</div>
+	
+	</body>
+</html>

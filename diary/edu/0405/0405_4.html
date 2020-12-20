@@ -1,0 +1,29 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<style type="text/css">
+			*{margin:0; padding:0;}
+			.floattest{overflow:hidden; width:600px; margin:50px auto; background-color:rosybrown; color:white}
+			.f4 .left{float:left;width:250px; height:100px; float:left; background-color:#00cccc;}
+			.f4 .right{float:right;width:250px; height:100px; float:right; background-color:#0099cc}
+			
+
+ 			.right .w50{width: 48%; background:red;} 
+ 			 
+		</style>
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+	</head>
+	<body>
+		<div class="floattest f4">
+			<h4> [4]감싸는 박스에 float</h4>
+			<p class="left">LEFT</p>
+			<div class="right">
+ 				<p class="left w50">sub</p>
+				<p class="right w50">sub2</p> 
+			</div>		
+		</div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+		<style>
+			/*1)display_ex3 200*40
+			  2)display_ex3 li 가로방향으로 배치
+			  3)display_ex3 li a 96*38 중앙정렬 1px solid #ccc
+			  4)마우스를 올리거나 탭키를 누를 때 색상반전
+			
+			*/
+			*{margin:0; padding:0}
+			.display_ex3{width:200px; height:40px; text-align:center}
+			.display_ex3 li{display:inline-block; width:96px; height:38px;}
+			.display_ex3 li a:visited, .display_ex3 li a:link{display:inline-block; width:100%; height:100%; border:1px solid #ccc; background-color:#f00;
+			color:#fff; text-decoration:none}
+
+			.display_ex3 li a:hover{background-color:#0f0}
+			.display_ex3 li a:focus{background-color:#0f0}
+			
+		</style>
+	</head>
+	<body>
+		<div class="basic">
+			<h4>display:inline-block</h4>
+			<p> 특징 : [inline]속성을 유지하되 [block]특징을 사용가능하도록 함.</p>
+			<p>사용 : [줄바꿈] 안되고 [width,margin,padding,height]등의 사용이 가능함</p>
+			<ul class="display_ex3">
+				<li><a href="#">KOREA</a></li><!--
+				--><li><a href="#">ENGLISH</a>
+			</ul><!--ul-->
+		
+			<h4>diplay:none 대신에 없앨 수 있는 방법 3개</h4>
+			<h5 style="position:absolute; left:-9999%;
+						font-size:0px; line-height:0;
+						width:1px; height:1px; overflow:hidden" >
+						[SEO 검색엔진최적화]에서 문제발생함
+						</h5>
+			
+			<p>특징: [화면에 안보이게 숨기기]</p>
+			<p>주의사항: [h]태그에 사용하면 안됨, [SEO 검색엔진최적화]에서 문제 발생함</p>
+			<P style="display:none">화면에 안보여요!</p>
+		</div><!--basic -->
+
+		
+	</body>
+</html>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body{  font-family:"Malgun Gothic" , dotum , sans-serif; font-size:90%;
+				  background-color:#eee; color:#000;}
+		a:link, a:visited{  color:#000;   text-decoration:none; }
+		a:hover, a:focus{  color:#f00;   text-decoration:underline; }
+		/*  숨김요소:   .gnbbox h2 */
+		.hidden  {position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0; }
+		input, label{  vertical-align:middle;  }
+		

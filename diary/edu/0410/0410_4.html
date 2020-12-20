@@ -1,0 +1,80 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+		<style type="text/css">
+			*{margin:0; padding:0}
+			li{list-style:none;}
+			img{border:0 none}
+			
+
+			body{
+				height:1000px;
+				background-color:#ffcccc;
+				background-image:url("images/circle.png");
+				background-repeat:no-repeat;
+				background-position: right bottom;
+				background-attachment:fixed;}
+		
+			.basic{width:80%; margin:50px auto; border-top:5px solid #ddd;
+					background-color:white; padding:50px;}
+
+					/*.social 중앙정렬* 700 100 center/ 
+					/*.social 가로방향으로 배치* float/ 
+					/*.social a 100*100 글자 안보이게 숨기기 display:block; text-indent/ 이미지 스프라이트 기법을 이용해 마우스를 올리면 배경이 바뀌게 만들기*/
+				.social{width:700px; height:100px; text-align:center}
+				.social>.s{ float:left; width:100px; height:100px;background-image:url("images/img53_2.png");}
+				
+				.social>.s>a:link, .social>.s>a:visited{display:block; width:100px; height:100px; text-indent:-9999px;
+				background-image:url("images/img53_2.png");
+				
+				background-repeat:no-repeat;
+				
+				}
+				.social>.s1>a:link, .social>.s1>a:visited{background-position: 0 -100px}
+				.social>.s2>a:link, .social>.s2>a:visited{background-position:-100px -100px}
+				.social>.s3>a:link, .social>.s3>a:visited{background-position:-200px -100px}
+				.social>.s4>a:link, .social>.s4>a:visited{background-position:-300px -100px}
+				.social>.s5>a:link, .social>.s5>a:visited{background-position:-400px -100px}
+				.social>.s6>a:link, .social>.s6>a:visited{background-position:-500px -100px}
+				.social>.s7>a:link, .social>.s7>a:visited{background-position:-600px -100px}
+				
+				
+				
+				
+				
+				
+				
+				.social>.s1>a:hover, .social>.s1>a:focus{background-position:0 0}
+				.social>.s2>a:hover, .social>.s2>a:focus{background-position:-100px 0}
+				.social>.s3>a:hover, .social>.s3>a:focus{background-position:-200px 0}
+				.social>.s4>a:hover, .social>.s4>a:focus{background-position:-300px 0}
+				.social>.s5>a:hover, .social>.s5>a:focus{background-position:-400px 0}
+				.social>.s6>a:hover, .social>.s6>a:focus{background-position:-500px 0}
+				.social>.s7>a:hover, .social>.s7>a:focus{background-position:-600px 0}	
+				
+				
+		</style>
+	</head>
+	<body>
+	
+		<div class="basic">
+			<h3>social</h3>
+
+	
+			<ul class="social">
+				<li class="s s1"><a href="#">facebook</a></li>
+				<li class="s s2"><a href="#">twitter</a></li>
+				<li class="s s3"><a href="#">youtube</a></li>
+				<li class="s s4"><a href="#">instagram</a></li>
+				<li class="s s5"><a href="#">linkedin</a></li>	
+				<li class="s s6"><a href="#">tumblr</a></li>
+				<li class="s s7"><a href="#">google plus</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<style type="text/css">
+			*{margin:0; padding:0}
+			img{border:0 none;}
+			li{list-style:none}
+			body{font-family:"Malgun Gothic", sans-serif; color:#000; font-size:12px}
+			display:a:link, a:visited{color:#000; text-decoration:none;}
+			a:hover, a:focus{color:#f00; text-decoration:underline;}
+			.naver_color{color:#333}
+		/*  p : w 100px h 80px.
+			p a:link, a:visited 링크영역 확대 100 80 #009933
+			  a:hover, a:focus 배경색상꾸미기
+				  span			 줄바꿈
+			     	   class="naver_color" 
+					   색상: #333
+				 
+		*/
+			.display_ex{width:100px; height:80px; margin-top:50px}
+			.display_ex a:link,.display_ex a:visited{display:block; width:100%; height:70px; padding-top:10px;
+													background-color:#009933; color:white; text-align:center;}
+
+
+			.display_ex a:hover, .display_ex a:focus{background-color:#333;}
+			.display_ex a:hover .naver_color{background-color:#009933}
+			.display_ex a:focus .naver_color{background-color:#009933}
+			.display_ex a span{display:block; color:#fff}
+			.naver_color{background-color:#333}
+		</style>
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+	</head>
+	<body>
+		<div class="basic">
+			<h3>DISPLAY</h3>
+			<p>정의 :요소의[성격을 바꾸는 성질]</p>
+			<p>종류 : [inline,block,inline-block,none]</p>
+
+			<h4>display:block</h4>
+			<p>특징 : [인라인 ]속성을 [블록]속성으로</p>
+			<p>사용 : [줄바꿈]</p>
+			<p>사용2: [링크영역 확대]</p>
+			<!--마우스를 올리거나, 탭키를 누를 때 다음과 같이 작동되도록 만들기 -->
+			<p class="display_ex">
+				<a href="http://www.naver.com" title="네이버 사진"><span class="naver_color">NAVER</span><span>BAND</span></a>
+			</p>
+		</div>
+	</body>
+</html>

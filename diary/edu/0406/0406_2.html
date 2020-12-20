@@ -1,0 +1,44 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<style type="text/css">
+			*{margin:0; padding:0}
+			a:link{color:blue}
+			a:visited{color:gray}
+			a:hover, a:focus{color:red}
+			a:active{color:orange}
+			h3{margin-top:10px}
+			p{margin-top:10px}
+			h4{margin-top:10px}
+		</style>
+		<title>link,a</title>
+	</head>
+	<body>
+		<div>
+			<h3>link,a</h3>
+			<p>파일 뿐만 아니라 웹페이지의 특정부분을 가리킬 수 있음</p>
+			<h4>1) 웹페이지의 링크 /title="~바로가기 링크"</h4>
+			<p><!--문제1 http://www.naver.com으로 a태그로 링크--><a href="http://naver.com" title="네이버 홈페이지  바로가기">네이버 홈페이지</a>
+			</p>
+
+			<h4>2)target="_blank"</h4>
+			<p><!--문제2 네이버 로고 클릭시 네이버로 새창열림으로 열리게 만들기-->
+				<a href="http://www.naver.com" title="네이버 홈페이지 바로가기"><img src = "images/naver.gif" alt="naver logo"/></a>
+			</p>
+
+			<h4> 3) 링크 속성 꾸미기</h4>
+			<p> a:link 방문한 적이 없는 일반적인 링크</p>
+			<p>a:visited 방문한 적이 있는 일반적인 링크</p>
+			<p>a:hover 마우스를 올릴 때 링크</p>
+			<p>a:focus 요소에 초점이 맞춰질 때 링크</p>
+			<p>a:active 링크 연결하는 중</p>
+			<p><a href="http://google.com" title="구글 사이트로 바로가기 링크">구글</a></p>
+			<!--문제3 방문한 적이 없다면 글자색상이 파랑, 방문한적이 있다면 gray, 
+					마우스를 올리거나 요소에 초점이 맞춰질때, red, 링크를 연결하는 중 orange-->
+		</div>
+	</body>
+</html>

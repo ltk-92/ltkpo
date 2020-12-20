@@ -1,0 +1,61 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+		<style type="text/css">
+		/*#calc 460*540 #f00
+		 .calc_view 460-68, 540-60 background:fff
+		.num 100%*168 margin-top 12
+		.mum li 72*80 마진 오른쪽 8px  background :pink. color fff
+				li a 링크영역 확대 100% 100% 가운데 정렬 라인헤이트 80
+		6,7,8,9번째(.mt) 마진 탑 8
+		cal_r 마진 0 높이 168 float:right
+		
+		
+		*/
+		*{margin:0; padding:0}
+		ul, li{list-style:none}
+		h3{position:absolute; left:-999999%; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden}
+		#calc{width:460px; height:510px; background-color:#eee; margin:0 auto; padding-top:30px; border:1px solid #333}
+		.calc_view{width:392px; height:120px; background-color:#003d03; margin:auto}
+		.num{width:392px; height:168px; margin-top:12px; margin:0 auto}
+		.num li{width:72px; height:80px; margin:8px 8px 0 0; background-color:#3da1ff;color:#fff; float:left}
+		.num li>a{display:block; width:100%; height:100%; text-align:center; line-height:80px;  text-decoration:none}
+		.mt{margin-top:8px;}
+		.num .cal_r{margin-right:0; width:72px; height:168px; float:right; }
+		.num .cal_r a{line-height:168px}
+		.num .b{width:152px}
+		</style>
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+		<title>기본태그연습</title>
+	</head>
+	<body>
+		<div id="calc">
+			<h3>계산기</h3>
+			<div class="calc_view"></div>
+			<ul class="num n1">
+			<li class="cal_r"><a href="#">c</a></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">8</a></li>
+			<li><a href="#">9</a></li>
+			<li><a href="#">+</a></li>
+			<li class="mt"><a href="#">4</a></li>
+			<li class="mt"><a href="#">5</a></li>
+			<li class="mt"><a href="#">6</a></li>
+			<li class="mt"><a href="#">-</a></li>
+			</ul>
+			<ul class="num n2">
+			<li class="cal_r"><a href="#">=</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li class="mt"><a href="#">*</a></li>
+			<li  class="mt b"><a href="#">0</a></li>
+			<li  class="mt"><a href="#">.</a></li>
+			<li  class="mt"><a href="#">/</a></li>
+		
+			</ul>
+		</div>
+	</body>
+</html>

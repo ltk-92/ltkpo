@@ -1,0 +1,57 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+	<head>
+
+		<meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+
+		<title>tmpt</title>
+		<style type="text/css">
+			.login_box {width:800px; margin:auto; text-align:center}
+			 h3{color:#47444b; font-size:180%; letter-spacing:0.2em; margin-top:100px; margin-bottom: 20px;}
+			  p{ margin:20px 0 13px 0; line-height:22px; }
+			.required{color:crimson; font-weight:bold}
+			fieldset{border:0 none; }
+			legend{position:absolute; left:-999%; width:1px; height:1px; font-size:0; line-height:0; overflow:hidden}
+			label{display:inline-block;width:20%; text-transform:uppercase;}
+			input[type="text"], input[type="password"]{display:inline-block;width:25%; margin:3px 8px ; background-color:#efece7; border:1px solid #a19197; line-height:20px; vertical-align:middle}
+			
+			input[type="submit"], input[type="button"]{color:#eee; background-color:#123456; width:400px}
+			input[type="submit"]:hover, input[type="button"]:hover,input[type="submit"]:focus, input[type="button"]:focus{background:#fff; color:#000}
+
+			label[for="userid"]{font-weight:bold}
+			label[for="userpass"]{text-decoration:underline}
+			/*
+
+				1)#login_box w100% *h
+				2)h3 #47444b; 180%; 자간 0.2em; 위쪽여백 100px, 아래쪽 여백 20px, 중앙정렬
+				3)p 중앙정렬 위아래여백 20px 13px 행간 22
+				4).required crimson
+				5)fieldset 선 없애기
+				6)legend 스크린리더기는 읽게, 브라우저는 안보이게
+				7)label 가로사이즈 20% 다 대문자 uppercase
+				8)input 가로사이즈 25% 위아래여백3px 좌우여백8px 배경색 #efece7
+							선 1px solid #a19197 행간 20px
+				9)submit,button은  배경색은 #123456; 글자색 #eee			
+				[]: 번호, {}영역
+
+				연습문제 1)label에서 for="userid" 인 것을 선택해서 굵게
+				연습문제 2)label에서 for="userpass"인 것을 선택해서 밑줄
+			*/
+		</style>
+	</head>
+	<body>
+		<div class="login_box">
+			<h3>WELCOME TO MYPAGE SMARTWEB</h3>
+			<p>WELCOME TO MYPAGE MASERATL 2016 NEW YEARS PROMOTION</p>
+			<p><strong class="required">(*)</strong>필수 입력사항입니다.</p>
+			<form action="http://search.naver.com/search.naver" method="get">
+				<p><strong class="required">(*)</strong><label for="userid">E-MAIL</label><input type="text" id="userid"/></p>
+				<p><strong class="required">(*)</strong><label for="userpass">PASSWORD</label><input type="password" id="userpass"/></p>
+				<p><input type="checkbox" id="remember"/><label for="remember">REMEMBER ME</label></p>
+				<p><input type="submit" id="submit" value="LOGIN"/><input type="button" id="join" value="JOIN"/></p>
+			</form>
+		</div>
+	</body>
+</html>

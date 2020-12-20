@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>TMPT</title>
+  <style>
+	*{margin:0;padding:0;}
+	li{list-style:none;}
+	img{border:0 none;}
+	body{font-size:90%; font-family:"Malgun Gothic", dotum, sans-serif; color:#000; background-color:#eee}
+	a:link, a:visited{color:#000; text-decoration:none;}
+	a:hover, a:focus{color:#f00; text-decoration:none;}
+	.basic{width:80%; background-color:#fff; border-top:5px solid #ddd; padding:5%}
+/* 	reset
+	.ps{width:100%}
+	.ps h3{margin:20px auto;border-left:5px solid #ccff33;padding-left:10px}
+	.gallery{background:url('../images/tooptip-borderRadius.png') no-repeat;width:500px;height:400px;}
+	.gallery li{}
+	.gallery li a{}
+	.gallery li a span{display:inline-block;overflow:hidden;}
+	.line1{border:5px solid white}
+	.line2{border:5px solid black}
+	.gallery li a img{border-radius:50px;}
+	.gallery li a .img{width:120px;height:120px;overflow:hidden;border-radius:50%}
+	.gallery li a .img img{width:140px;height:140px}
+	.gallery li a .money{position:relative;border-radius:70px;border:1px solid transparent;width:120px;height:120px;text-align:center;line-height:120px;background-color:#ccffcc}
+	.gallery li a .money:after{content:"";position:absolute;display:block;width:0;height:0;} */
+			
+
+	.basic{width:80%; margin:50px auto;  border-top:5px solid #ddd; background-color:#fff; padding:5%; }
+	 span, img {   vertical-align: middle; }
+	.ps{}
+	.ps h3{  border-left:5px solid crimson;   margin:30px 0;  text-indent:1em; }
+	.gallery  {   width: 500px; height:270px;       padding-top: 130px;
+		           background:url("./images/tooptip-borderRadius.png") no-repeat 0 0;}
+	.gallery li{   height:140px;       padding-right: 15px; }
+	.gallery li a:link, .gallery li a:visited{display:block;  height:100%; width:100%; 	text-align:right; }
+	.gallery li a span{   display:inline-block;  width:120px; height:120px;   margin:0 9px;  }
+	.gallery li a span.img{ border:5px solid #eee; overflow: hidden;  border-radius:50%;  }
+	.gallery li a span.img  img{     width: 140%;  }
+	.money{ opacity:0;   transition:all 0.4s ease-in 0.1s; 
+		background-color:brown;  	text-align: center; 	line-height: 120px;   border-radius:50%; 
+		position:relative;   font-size:150%;  color: antiquewhite;
+	}
+    .money:before {	content: "";	display: block;width: 0;	height: 0;	
+							border: 25px solid transparent;  border-right-color: brown;
+							position:absolute;     left: -40px;   top: 26%;
+	}
+	.gallery li a:hover  .money  , .gallery li a:focus .money{   opacity:1; }
+  </style>	
+ </head>
+ <body>
+   <div class="basic">
+		<div class="ps">
+			<h3>2017년! 신데렐라로 다시태어나던가!</h3>
+			<ul class="gallery">
+				<li><a href="#"><span class="img line1"><img src="./images/nose.png" alt="" /></span><span class="money">20만원</span></a></li>
+				<li><a href="#"><span class="img line2"><img src="./images/line.jpg" alt="" /></span><span class="money">40만원</span></a></li>
+			</ul>
+		</div>
+	</div> 
+ </body>
+</html>
+<!--  -->

@@ -1,0 +1,68 @@
+<!doctype html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>기본태그연습</title>
+		<style type="text/css">
+			#wrapper{background-color:#000; width:1200px; height:1080px; margin:0 auto}
+			#header{background-color:#f00; width:100%; height:10%}
+			#visual{background-color:#0f0;width:100%;height:20%}
+			#main{background-color:#444; width:100%; height:60%}
+			#main  .container{width:100%; height:100%}
+			#main .mc1{background-color:#00f; height:100%; width:100%}
+			#main .mc2{background-color:orange;height:100%; width:100%}
+			#main .mc3{background-color:brown;height:100%; width:100%}
+			#main .mc2 .a2{float:left; width:50%; height:100%}
+			#main .mc2 .a21{background-color: yellow}
+			#main .mc2 .a22{background-color: orange}
+			#main .mc3 .a4{float:left; width:25%;height:100%}
+			#main .mc3 .a41,#main .mc3 .a43{background-color:green}
+			#main .mc3 .a42,#main .mc3 .a44{background-color:purple}
+			#footer{background-color:yellow; width:100%; height:10%}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+			</div>
+			<div id="visual">
+				<div class="container">
+				</div><!--container end-->
+			</div>
+			<div id="main">
+				<div class="m_content mc1">
+					<div class="container">
+						
+					</div><!--container end-->
+				</div><!--mc1 end-->
+
+				<div class="m_content mc2">
+					<div class="container">
+						<div class="a2 a21"></div><!--a21 end-->
+						<div class="a2 a22"></div><!--a22 end-->
+					</div><!--container end-->
+				</div><!--mc2 end-->
+				<div class="m_content mc3">
+					<div class="container">
+						<div class="a4 a41"></div><!--a41 end-->
+						<div class="a4 a42"></div><!--a42 end-->
+						<div class="a4 a43"></div><!--a43 end-->
+						<div class="a4 a44"></div><!--a44 end-->
+					</div><!--container end-->
+				</div><!--mc3 end-->
+			
+			<!--main End-->
+			<div id="footer">
+				<div class="ft_content fc1">
+					<div class="container"></div><!--container end-->
+				</div><!--fc1 end-->
+				
+				<div class="ft_content fc2">
+					<div class="container"></div><!--container end-->
+				</div><!--fc2 end-->
+			</div><!--footer end-->
+		</div><!--wrapper End-->
+	</body>
+</html>
