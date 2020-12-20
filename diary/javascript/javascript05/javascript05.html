@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 산술연산자 함수와 함수의 재규적 호출, 이벤트 핸들러</title>
+<meta content="charset=utf-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div class="article">
+        <h2>JavaScript 산술연산자 함수와 이벤트 핸들러</h2>
+	</div>
+    <h3>산술연산자 함수</h3>
+    <p>(사용예) 산술계산을 해주는 eval()함수</p>
+    
+<pre>
+&lt;script&gt;
+      document.write(eval(3+6-4+8))
+&lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 계산기 만들어 보기</p>
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;math&lt;/title&gt;
+    &lt;script&gt;
+        x=prompt(&quot;수식을 입력하세요&quot;)
+        y=eval(x)
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;img src=&quot;math.gif&quot; width=&quot;302&quot; height=&quot;266&quot; style=&quot;display: block; margin: 0 auto; border:0;&quot; /&gt;
+    &lt;script&gt;
+        document.write(&quot;&lt;p style='text-align: center;'&gt;&quot;)
+        document.write(x,&quot;=&quot;,y)
+        document.write(&quot;&lt;/p&gt;&quot;)
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 숫자인지를 확인해 주는 isNaN()함수</p>
+<pre>
+&lt;body&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;script&gt;
+        x=isNaN(123456)
+        y=isNaN(&quot;haha&quot;)
+        document.write(x ,&quot;&lt;br /&gt;&quot;, y)
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 숫자를 입력하면 다음 페이지로 이동하게 만들기</p>
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;password&lt;/title&gt;
+    &lt;script&gt;
+        x=prompt(&quot;암호를 입력하세요&quot;)
+        y=isNaN(x)
+        if(y==true){
+            function password()
+            {
+                document.write(&quot;&lt;p style='text-align: center;'&gt;&quot;)
+                document.write(&quot;숫자만 입력이 가능합니다.&quot;)
+                document.write(&quot;&lt;/p&gt;&quot;)
+            }
+        }
+        else window.open(&quot;a.htm&quot;)
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body style=&quot;margin-top: 50px;&quot;&gt;
+    &lt;img src=&quot;pass.gif&quot; width=&quot;203&quot; height=&quot;216&quot; style=&quot;display: block; margin: 0 auto; border: 0;&quot; /&gt;
+    &lt;script&gt;
+        password()
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 함수의 재규적 호출</p>
+<pre>
+&lt;body&gt;
+    &lt;script&gt;
+        function A(x)
+        {
+            if(x&gt;1)
+            {
+                var y=x*A(x-1)
+                return y
+            }
+            else return x
+        }
+    document.write(A(5))
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>이벤트 핸들러 사용하기</h3>
+    <p>이벤트 핸들러의 종류</p>
+    <p>OnAbort 이미지를 읽다가 중지했을 경우<br>
+      OnBlur 대상에서 포커스가 이동되었을 경우<br>
+      OnChange 대상에 입력되어 있는 값이 바뀌었을 경우<br>
+      OnClick 대상을 클릭했을 경우<br>
+      OnDbclick 대상을 더블 클릭했을 경우<br>
+      OnDragDrop 대상을 클릭한 상태에서 이동했을 경우<br>
+      OnError 에러가 발생했을 경우<br>
+      OnFocus 대상에 포커스가 들어 왔을 경우<br>
+      OnKeyDown 키를 입력했을 경우<br>
+      OnKeyPress 키를 눌렀을 경우<br>
+      OnKeyUp 키를 누른 후 놓았을 경우<br>
+      OnLoad 대상을 열었을 경우<br>
+      OnMouseDown 마우스 단추를 눌렀을 경우<br>
+      OnMouseMove 마우스를 움직였을 경우<br>
+      OnMouseOut 대상에서 마우스 포인터가 벗어났을 경우<br>
+      OnMouseOver 대상에 마우스 포인터가 위치했을 경우<br>
+      OnMouseUp 마우스 포인터를 누른 후 놓았을 경우<br>
+      OnMove 윈도우나 프레임을 움직였을 경우<br>
+      OnReset 대상을 재시작 시켰을 경우<br>
+      OnResize 윈도우나 프레임의 크기를 변경했을 경우<br>
+      OnSelect 입력 양식의 한 필드를 선택했을 경우<br>
+      OnSubmit 입력 양식을 서버로 보냈을 경우<br>
+      OnUnload 대상을 종료했을 경우</p>
+      
+    <p>&nbsp;</p>
+    <p>(사용예) 인사 메세지 나타나게 하기 (onunload)</p>
+<pre>
+&lt;body style=&quot;background-color: #ff9326;&quot; <span class="blue">onload</span>=&quot;alert('안녕하세요.')&quot; <span class="blue">onunload</span>=&quot;alert('또 오세요')&quot;&gt;
+    &lt;img src=&quot;girl.png&quot; width=&quot;1400&quot; style=&quot;display: block; margin: 0 auto; border:0;&quot; &gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 퀴즈 만들기 (onclick)<br>
+<pre>
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;title&gt;QUIZ QUIZ&lt;/title&gt;
+  &lt;script&gt;
+      function memo()
+      { document.write(&quot;6월 6일&quot;) }
+  &lt;/script&gt;
+  &lt;/head&gt;</p> <p>&lt;body&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;table align=&quot;center&quot; border=&quot;1&quot; cellspacing=&quot;0&quot; width=&quot;400&quot; 
+            bordercolordark=&quot;black&quot; bordercolorlight=&quot;black&quot;&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;740&quot; height=&quot;41&quot; bgcolor=&quot;green&quot;&gt;
+            &lt;p&gt;&lt;font color=&quot;white&quot;&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;QUIZ QUIZ&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;740&quot; height=&quot;45&quot; bgcolor=&quot;#a0e862&quot;&gt;
+            &lt;p&gt;[Q]2002 년 월드컵은 몇 월 몇일날 개장하나요?&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td width=&quot;740&quot; height=&quot;46&quot; bgcolor=&quot;#f4bcf3&quot;&gt;
+            &lt;p onclick=&quot;memo()&quot;&gt;[정답보기]&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+</pre>
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 롤오버 효과 (onMouseOver/onMouseOut)</p>
+<pre>
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;ko-KR&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;title&gt;button&lt;/title&gt;
+        &lt;style&gt;
+            *{border:0px; padding:0px; margin:0px;}
+            .fl{float:left;}
+            ul{list-style: none;}
+            ul li{list-style: none; line-height:0px;}
+            #menu{height:210px; width:140px; background: #ffffff; border: 1px solid #666666;} 
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;menu&quot; class=&quot;fl&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;img src=&quot;button/menu_click.gif&quot; alt=&quot;click&quot; /&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/home_b1.gif&quot; onmouseover=&quot;this.src='button/home_b2.gif'&quot; 
+                                                    onmouseout=&quot;this.src='button/home_b1.gif'&quot; alt=&quot;home&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/now_b1.gif&quot; onmouseover=&quot;this.src='button/now_b2.gif'&quot; onmouseout=&quot;this.src='button/now_b1.gif'&quot; alt=&quot;now&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/exhibition_b1.gif&quot; onmouseover=&quot;this.src='button/exhibition_b2.gif'&quot; onmouseout=&quot;this.src='button/exhibition_b1.gif'&quot; alt=&quot;exhibition&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/director_b1.gif&quot; onmouseover=&quot;this.src='button/director_b2.gif'&quot; onmouseout=&quot;this.src='button/director_b1.gif'&quot; alt=&quot;director&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/aboutus_b1.gif&quot; onmouseover=&quot;this.src='button/aboutus_b2.gif'&quot; onmouseout=&quot;this.src='button/aboutus_b1.gif'&quot; alt=&quot;aboutus&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/sitemap_b1.gif&quot; onmouseover=&quot;this.src='button/sitemap_b2.gif'&quot; onmouseout=&quot;this.src='button/sitemap_b1.gif'&quot; alt=&quot;sitemap&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+                    &lt;img src=&quot;button/guestbook_b1.gif&quot; onmouseover=&quot;this.src='button/guestbook_b2.gif'&quot; onmouseout=&quot;this.src='button/guestbook_b1.gif'&quot; alt=&quot;guestbook&quot; /&gt;
+                &lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  
+</div>
+</body>
+</html>
