@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>온라인 상담신청</title>
+    <link href="css/toast.css" type="text/css" rel="stylesheet">
+    <link href="css/sub.css" type="text/css" rel="stylesheet">
+    <link href="css/consult.css" type="text/css" rel="stylesheet">
+     <link href="css/response.css" type="text/css" rel="stylesheet">
+    <link href="css/sub_response.css" type="text/css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+     <script src="js/toast.js"></script>
+     <script src="js/consult.js"></script>
+     <script src="js/sub.js"></script>
+      <!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<style type="text/css">
+			   #gnb>ul li{
+                   height:115px;
+               }
+                #all_list{
+                   background-image:url('img/all_list-bg-ie8.png');
+                }
+                #all_list_center{
+                    height:100%;
+                }
+                #all_listCenter ul+ul+ul+ul+ul+ul{
+                    margin-right:0;
+                }
+                .lnb{
+			        margin-left:-25%;
+			    }
+			    
+                #footer dl+dl+dl+dl+dl+dl{
+                    margin-right:0;
+                }
+			</style>
+		<![endif]-->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+      <div id="wrap">
+       <header id="header-wrap">
+           <h1><a href="index.html">석봉토스트</a></h1>
+           
+           <div id="top">
+               <ul>
+                   <li><a href="#">로그인</a></li>
+                   <li><a href="#">회원가입</a></li>
+                   <li><a href="#">점주의방</a></li>
+               </ul>
+           </div>
+           <nav id="gnb" class="clearfix">
+               <ul>
+                   <li>
+                       <a href="./brand-story.html">석봉토스트</a>
+                  </li>
+                   <li>
+                       <a href="./menu-cook.html">석봉메뉴</a> 
+                  </li>
+                   <li>
+                       <a href="./map.html">매장안내</a> 
+                  </li> 
+                   <li>
+                       <a href="./consult.html">창업안내</a>
+                  </li>
+                   <li><a href="./event.html">이벤트</a>   
+                   </li>
+                   <li><a href="#">석봉아카데미</a>       
+                   </li>
+               </ul>
+               <div id="all_list">
+                      <div id="all_listCenter" class="clearfix">
+                          <div class="all_list_set">
+                              <ul>
+                                   <li><a href="#">석봉토스트 소개</a></li>
+                                   <li><a href="#">석봉토스트 비전</a></li>
+                                   <li><a href="#">석봉토스트 연혁</a></li>
+                                   <li><a href="#">언론에서 본 석봉토스트</a></li>
+                                   <li><a href="./road.html">오시는 길</a></li>
+                               </ul>
+
+
+                            <ul>
+                                <li><a href="./menu-cook.html">식품</a></li>
+                                <li><a href="./menu-drink.html">음료</a></li>
+                                <li><a href="./menu-sidemenu.html">사이드메뉴</a></li>
+                                <li><a href="./menu-ice.html">빙수</a></li>
+                               </ul>  
+
+                            <ul>
+                                <li><a href="#">신규오픈매장</a></li>
+                                <li><a href="#">우리동네 매장찾기</a></li>
+                                <li><a href="#">Best Store</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#">창업조건</a></li>
+                                <li><a href="#">인테리어 안내</a></li>
+                                <li><a href="#">매장사진</a></li>
+                                <li><a href="#">온라인 상담신청</a></li>
+                                <li><a href="#">e카탈로그</a></li>
+                            </ul>
+
+                            <ul>
+                               <li><a href="#">진행중인 이벤트</a></li>
+                           </ul>
+
+                            <ul>
+                               <li><a href="#">석봉 아카데미</a></li>
+                           </ul>
+                         </div>
+                      </div> 
+                   </div>
+           </nav>
+            <nav class="gnb_m_box">
+            <div class="m_play ">
+                <a href="#">
+				    <span class="play_arrow1"></span>
+				    <span class="play_arrow2"></span>
+				    <span class="play_arrow3"></span>
+				    <span class="play_arrow4"></span>
+				    <span class="play_arrow5"></span>
+			    </a>
+		    </div>
+			<ul class="gnb_m">
+				<li>
+					<a href="./brand-story.html">석봉토스트</a>
+					<ul class="gnb_m_sub">
+							<li><a href="./brand-story.html">석봉토스트 소개</a></li>
+							<li><a href="#">석봉토스트 비전</a></li>
+							<li><a href="#">석봉토스트 연혁</a></li>
+							<li><a href="#">언론에서 본 석봉토스트</a></li>
+							<li><a href="./road.html">오시는 길</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="./menu-cook.html">석봉메뉴</a>
+					<ul class="gnb_m_sub">
+							<li><a href="./menu-cook.html">식품</a></li>
+                               <li><a href="./menu-drink.html">음료</a></li>
+                               <li><a href="./menu-sidemenu.html">사이드메뉴</a></li>
+                               <li><a href="./menu-ice.html">빙수</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="./map.html">매장안내</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">신규오픈매장</a></li>
+							<li><a href="./map.html">우리동네 매장찾기</a></li>
+							<li><a href="#">Best store</a></li>
+					
+				   </ul>
+				</li>
+				
+				
+				<li>
+					<a href="#">창업안내</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">창업조건</a></li>
+							<li><a href="#">인테리어 안내</a></li>
+							<li><a href="#">매장사진</a></li>
+							<li><a href="#">사업설명회</a></li>
+							<li><a href="./consult.html">온라인 상담신청</a></li>
+							<li><a href="#">e카탈로그</a></li>
+							
+							
+							
+						</ul>
+				</li>
+				
+				<li>
+					<a href="#">이벤트</a>
+					<ul class="gnb_m_sub">
+							<li><a href="./event.html">이벤트</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="#">석봉아카데미</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">석봉아카데미</a></li>
+				    </ul>
+				</li>
+			</ul>
+		</nav>	 
+       </header>
+
+       <main id="main">
+            <section id="sub-header">
+               <ul class="lnb">
+                    <li><a href="#">창업조건</a></li>
+                    <li><a href="#">인테리어 안내</a></li>
+                    <li><a href="#">매장사진</a></li>
+                    <li><a href="#" class="green-checked">온라인 상담신청</a></li>
+                    <li><a href="#">e카탈로그</a></li>
+               </ul>
+            </section>
+             <section id="sub-visual">
+                <article class="sub-visual-con">
+                    <h2 class="sub-title">온라인 상담신청</h2>
+                </article>
+           </section>
+           <section class="sub-content">
+               <article class='sub-content-con'>
+                   <form action="#" method="get">
+                     <fieldset>
+                          <legend>문의하기</legend>
+                           <p>
+                               <label for="consult_name">이름</label>
+                               <input type="text" id="consult_name"/>
+                            </p>
+                           <p>
+                               <label for="consult_call">연락처</label>
+                               <input maxlength="15" name="contact" id="consult_call"  type="text" value="" />
+                            </p>
+                           <p>
+                              <label for="consult_email">이메일</label>
+                               <input maxlength="50" name="email1" type="text" value="" id="consult_email">
+                               <span>@</span>
+                               <input maxlength="50" name="email2" type="text" value="" id="consult_email2" />
+                               <select id="emailDomain" name="dmain">
+                                    <option value="">직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="hotmail.com">hotmail.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="empas.com">empas.com</option>
+                                    <option value="dreamwiz.com">dreamwiz.com</option>
+                                    <option value="lycos.co.kr">lycos.co.kr</option>
+                                    <option value="korea.com">korea.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="hanmir.com">hanmir.com</option>
+                                </select>
+                           </p>
+                           <p>
+                           <span class="address-title">주소</span>   
+                            <select name="region1" class="resion1">
+                                <option value="">시/도</option>
+                                <option value="001">서울특별시</option>
+                                <option value="002">경기도</option>
+                                <option value="003">인천광역시</option>
+                                <option value="004">대전광역시</option>
+                                <option value="005">세종특별자치시</option>
+                                <option value="006">충청남도</option>
+                                <option value="007">경상남도</option>
+                                <option value="008">울산광역시</option>
+                                <option value="009">부산광역시</option>
+                                <option value="010">대구광역시</option>
+                                <option value="011">제주특별자치도</option>
+                                <option value="012">전라북도</option>
+                                <option value="013">충청북도</option>
+                                <option value="014">광주광역시</option>
+                                <option value="015">전라남도</option>
+                                <option value="016">경상북도</option>
+                                <option value="017">강원도</option>
+                            </select>
+                            <select name="region2">
+                                <option value="">시/군/구</option>
+                            </select>
+                        </p>
+                        <p>       
+                            <label for="consult_subject">제목</label><input maxlength="50" name="subject" placeholder="제목을 입력해주세요" type="text" value="" id="consult_subject"/>
+                        </p>    
+                        <p class="area-box">
+                             <span class="area-title">내용</span>
+                             <textarea></textarea>
+                        </p>
+                        <p>        
+                            <label class="form_file"></label>
+                            <input data-maxsize="2" data-maxupload="1" id="file" name="file" type="file" />
+                        </p>
+                        <div class="btn-wrap">
+                            <input type="submit" value="신청">
+                            <input type="reset" value="취소">
+                        </div>
+                  </fieldset>
+                   </form>
+                </article>
+           </section>
+        </main>
+        <footer id="footer">
+            <div id="foot1">
+               <div id="foot_menu">
+                <dl>
+                    <dt>석봉토스트</dt>
+                    <dd><a href="#">석봉토스트 소개</a></dd>
+                    <dd><a href="#">석봉토스트 비전</a></dd>
+                    <dd><a href="#">석봉토스트 연혁</a></dd>
+                    <dd><a href="#">언론에서 본  석봉토스트</a></dd>
+                    <dd><a href="#">오시는 길</a></dd>
+                </dl>
+                <dl>
+                    <dt>석봉메뉴</dt>
+                    <dd><a href="./menu-cook.html">식품</a></dd>
+                    <dd><a href="./menu-drink.html">음료</a></dd>
+                    <dd><a href="./menu-sidemenu.html">사이드메뉴</a></dd>
+                    <dd><a href="./menu-ice.html">빙수</a></dd>
+                </dl>
+                <dl>
+                    <dt>매장안내</dt>
+                    <dd><a href="#">신규오픈매장</a></dd>
+                    <dd><a href="#">우리동네 매장찾기</a></dd>
+                    <dd><a href="#">Best store</a></dd>
+                </dl>
+                <dl>
+                    <dt>창업안내</dt>
+                    <dd><a href="#">석봉토스트 가치</a></dd>
+                    <dd><a href="#">창업조건</a></dd>
+                    <dd><a href="#">인테리어 안내</a></dd>
+                    <dd><a href="#">매장사진</a></dd>
+                    <dd><a href="#">사업설명회</a></dd>
+                    <dd><a href="#">온라인 상담신청</a></dd>
+                    <dd><a href="#">e카탈로그</a></dd>
+                </dl>
+                <dl>
+                    <dt>이벤트</dt>
+                    <dd><a href="#">이벤트</a></dd>
+                </dl>
+                <dl>
+                    <dt>석봉아카데미</dt>
+                    <dd><a href="#">석봉 아카데미</a></dd>
+                </dl>
+                </div>
+            </div>
+            <div id="foot2">
+                <div id="foot2_wrap">
+                    <ul id="foot2-logo">
+                        <li>
+                            <img src="img/footer-logo.png" alt="푸터 석봉토스트 로고">
+                        </li>
+                        <li>    
+                            <img src="img/bi20202.svg" alt="푸터 본인 로고">
+                        </li>                                
+                    </ul>
+                    <div id="foot2_list">
+                        <ul class="footer-policy">
+                            <li><a href="#">회원약관 </a></li>
+                            <li><a href="#">개인정보정책 </a></li>
+                            <li><a href="#">사업제휴문의 </a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                        <ul class="producer-info">
+                            <li><address>경기도 고양시 일산동구 하늘마을로 158번지 C동 301호(중산동. 대방트리플리온비즈니스타워)</address></li>
+                            <li>개인정보관리 책임자 : 김현철</li>
+                        </ul>
+                        <ul class="tel">
+                            <li>TEL. 031-973-1240 / 02-832-1240~1</li>
+                            <li>FAX 031-973-1247</li>
+                            <li>사업자등록번호 108-81-76671</li>
+                        </ul>
+                        <p>copyright 2006 ⓒALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div> 
+</body>
+</html>
