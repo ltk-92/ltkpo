@@ -3,7 +3,7 @@
 	body{
         font-family: "나눔고딕";
         background-color:#ccc;
-        background-image:url(../images/song.png); 
+        background-image:url(../img/song.png); 
         background-repeat:no-repeat;
         background-attachment: fixed;
         background-position:bottom 20px right;
