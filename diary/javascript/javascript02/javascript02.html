@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 연산자와 조건문</title>
+<meta charset="UTF-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div class="article">
+        <h2>JavaScript 연산자와 조건문</h2>
+    </div>
+    <h3>산술연산자</h3>
+ 
+    <p>==, +, -, *, /, %</p>
+    <p>사용예) 산술연산자와 문자열과 숫자열 표현</p>
+    
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; x=75
+    &nbsp;&nbsp;&nbsp;&nbsp; y=87
+    &nbsp;&nbsp;&nbsp;&nbsp; add=x+y
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;국어 점수 :&quot;+x+&quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;수학 점수 :&quot;+y+&quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;합계 :&quot;+add+&quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;평균은 :&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(add/2)
+    &lt;/script&gt;
+</pre>
+    
+    
+    
+<p>&nbsp;</p>
+    <h3>대입연산자</h3>
+    <p>A+ = B  (A와 B를 더한 값을 A에 할당)<br>
+    A- = B  (A와 B를 뺀 값을 A에 할당)<br>
+    A* = B  (A와 B를 곱한 값을 A에 할당)<br>
+    A/ = B  (A와 B를 나눈 값을 A에 할당)<br>
+    A% = B  (A와 B를 나눈뒤 나머지 값을 A에 할당)</p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; x=75
+    &nbsp;&nbsp;&nbsp;&nbsp; y=87
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;영어 점수 :&quot;+x+&quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;수학 점수 :&quot;+y+&quot;&lt;br&gt;&quot;)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; x+=y<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;합계 :&quot;+x+&quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;평균은 :&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x/2)
+    &lt;/script&gt;
+</pre>
+   
+   
+    
+    <p>&nbsp;</p>
+    <h3>증감연산자</h3>
+    <p>Y=++Y<br>
+    Y=--Y<br>
+    Y=Y++<br>
+    Y=Y--</p>
+    <p>사용예)</p>
+
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; x=1
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x++)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x++)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x++)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x++)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;&lt;br&gt;&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; x=1
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(++x)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(++x)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(++x)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(++x)
+    &lt;/script&gt;
+</pre>
+ 
+ 
+ 
+    
+    <p>&nbsp;</p>
+    <h3>관계연산자</h3>
+    <p> A == B (A와 B가 같다)<br>
+A != B (A와 B가 같지 않다)<br>
+A &lt; B  (A가 B보다 작다)<br>
+A &lt;= B (A가 B보다 작거나 같다)<br>
+A &gt; B  (A가 B보다 크다)<br>
+A &gt;= B (A가 B보다 크거나 같다)</p>
+    <p>사용예)</p>
+
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; x=10
+    &nbsp;&nbsp;&nbsp;&nbsp; y=20
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x+&quot;&gt;=&quot;+y+&quot;: &quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x&gt;=y)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;&lt;br&gt;&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x+&quot;&lt;=&quot;+y+&quot;: &quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x&lt;=y)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;&lt;br&gt;&quot;)
+
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x+&quot;!=&quot;+y+&quot;: &quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x!=y)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;&lt;br&gt;&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x+&quot;==&quot;+y+&quot;: &quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x==y)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;&lt;br&gt;&quot;)
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>논리연산자</h3>
+    <p>A&amp;&amp;B (A와 B가 모두 True일 경우에만 True) <br>
+    A||B (A또는 B가 True일 경우 True)<br>
+    !A   (A가 True이면 False, False이면 True)<br>
+  A^B  (A와 B가 모두 True거나 False이면 True)</p>
+  
+    <p>사용예) 4번째는 실행 결과값이 1이 출력 <span class="red">(1은 False)</span></p>
+
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; x=(7&gt;6)&amp;&amp;(1&gt;8)
+    &nbsp;&nbsp;&nbsp;&nbsp; y=(7&gt;6)||(1&gt;8)
+    &nbsp;&nbsp;&nbsp;&nbsp; z=!(7&gt;6)
+    &nbsp;&nbsp;&nbsp;&nbsp; t=(7&gt;6)^(1&gt;8)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;7이 6보다 크고 1이 8보다 크면 논리값은?&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(x + &quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;7이 6보다 크거나 1이 8보다 크면 논리값은?&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(y + &quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;7이 6보다 크지 않으면 논리값은?&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(z + &quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(t + &quot;&lt;br&gt;&quot;)
+    &lt;/script&gt;
+</pre>
+    
+    
+    
+    <p>&nbsp;</p>
+    <h3>조건연산자</h3>
+    <p>(조건) ?  A : B </p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; <span class="green">//your=&quot;easy&quot;</span>
+    &nbsp;&nbsp;&nbsp;&nbsp; your=&quot;hard&quot;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; study=(your==&quot;hard&quot;) ? &quot; you are very fool.&quot; : &quot; you are very smart.&quot; 
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;If you feel like &quot; + your + &quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(study)
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>연산자 우선순위</h3>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; x=10
+    &nbsp;&nbsp;&nbsp;&nbsp; y=20<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write( x + y / 2 )
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;&lt;br&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write( ( x + y ) / 2 )
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>조건문</h3>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; your_sex=&quot;남자&quot;
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;당신의 성별은&quot; + your_sex + &quot;이므로&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; if (your_sex==&quot;남자&quot;) document.write(&quot;주민등록 번호 앞자리는 1 또는 3을 사용하셔야 합니다.&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; if (your_sex==&quot;여자&quot;) document.write(&quot;주민등록 번호 앞자리는 2 또는 4를 사용하셔야 합니다.&quot;)
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; weight=70
+    &nbsp;&nbsp;&nbsp;&nbsp; height=170
+    &nbsp;&nbsp;&nbsp;&nbsp; test=(height-100) * 0.9 
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; if(weight&gt;test)document.write(&quot;당신은 비만이예요&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; else document.write(&quot;당신은 정상이네요&quot;)
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; score=74
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(&quot;당신이 취득한 점수는&quot;+score+&quot;점이므로&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; if(score&gt;=90)document.write(&quot;A 학점입니다.&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; else if(score&gt;=80)document.write(&quot;B 학점입니다.&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; else if(score&gt;=70)document.write(&quot;C 학점입니다.&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; else if(score&gt;=60)document.write(&quot;D 학점입니다.&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; else document.write(&quot;F 학점입니다. &quot;)
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; day=&quot;월&quot;
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(day + &quot;요일에는&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; switch(day)
+    &nbsp;&nbsp;&nbsp;&nbsp; {
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;월&quot;  : document.write(&quot;오전 10시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;화&quot; : document.write(&quot;오후 2시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;수&quot; : document.write(&quot;오전 10시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;목&quot;  : document.write(&quot;오후 2시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;금&quot; : document.write(&quot;오전 11시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; default: document.write(&quot;월요일에서 금요일까지만 입력하세요&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; }
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; day=&quot;월&quot;
+    &nbsp;&nbsp;&nbsp;&nbsp; document.write(day + &quot;요일에는&quot;)
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; switch(day)
+    &nbsp;&nbsp;&nbsp;&nbsp; {
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;월&quot; : 
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;수&quot; : document.write(&quot;오전 10시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;화&quot; : 
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;목&quot; : document.write(&quot;오후 2시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; case &quot;금&quot; : document.write(&quot;오전 11시에 수업 시작&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; break
+    
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; default: document.write(&quot;월요일에서 금요일까지만 입력하세요&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; }
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예)</p>
+  
+<pre>
+    &lt;script&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; var current= new Date()
+    &nbsp;&nbsp;&nbsp;&nbsp; var day_time=current.getHours()<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; if (day_time &lt;18) document.write(&quot;&lt;img src='day.gif' style='display: block; margin: 0 auto;'&gt;&quot;)
+    &nbsp;&nbsp;&nbsp;&nbsp; else document.write(&quot;&lt;img src='night.gif' style='display: block; margin: 0 auto;'&gt;&quot;)
+    &lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p class="red">과제) 위 예제를 이용하여 자신의 하루 일과를 if문으로 나타내 보세요.</p>
+    
+</div>
+</body>
+</html>
