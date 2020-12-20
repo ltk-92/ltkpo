@@ -1,0 +1,19 @@
+<!doctype html>	
+	<html lang="ko">
+		<head>
+			<meta charset="utf-8"/>
+			<style type="text/css">
+				.box{
+					width: 200px;
+					height: 100px;
+					border: 1px solid red;
+				}
+				.box::before{content:'가나다';}/*브라우저 때문에 :이 두개*/
+				.box:after{content:'라마바';}
+			</style>
+		</head>
+		<body>
+			<div class="box">박스입니다</div>
+
+		</body>
+	</html>

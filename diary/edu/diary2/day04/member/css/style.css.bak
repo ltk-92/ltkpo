@@ -1,0 +1,97 @@
+@charset "utf-8";
+.wrap{
+	width:600px;
+	margin:0 auto;
+	border:1px solid #ddd;padding: 20px;
+}
+table{
+	border-collapse:collapse;
+	width:100%;
+}
+caption{
+	text-align:left;
+	font-size:20px;
+	font-weight:bold;
+}
+td{	
+	padding:10px 0;
+}
+th{
+	text-align:left;
+	padding:10px 0;
+}
+.multi-type{
+	list-style:none;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+}
+.multi-type li{
+	float:left
+}
+.address-width{
+	width:100px;	
+}
+button{
+	background-color:#000;
+	color:#fff;
+	border:none;
+	height:30px;
+	width:100px;
+}
+.height{display:inline-block;height:24px
+}
+.input-width{
+	width:200px;
+
+}
+select{
+	width:80px;
+	height:30px;
+}
+.phone-width{
+	width:80px;
+}
+.number-bar{
+	margin:0 10px;
+}
+.file-border{
+	display:inline-block;
+	width:400px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	padding: 10px 0 10px 2px;
+	
+}
+.title-width, textarea{
+	width:100%;
+}
+textarea{
+
+	height:100px
+}
+.agree{
+	width:218px;
+	margin:0 auto;
+	font-size:20px;
+}
+.button-box{
+	width:210px;
+	margin:20px auto;
+}
+.button-box li:first-child{
+	margin-right:10px
+}
+.confirm-button{
+	background-color:#ddd;
+	color:#555;
+	border:none; 
+	height:30px;
+	width:100px;
+}
+.cancel-button{
+	background-color:#fff;
+	border:1px solid #000;
+	height:30px;
+	width:100px;
+}

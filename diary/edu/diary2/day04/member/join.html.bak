@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>html의 기본구조</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style type="text/css">
+			
+		</style>	
+	</head>
+	<body>
+		<div class="wrap">
+			<form>
+				<fieldset>		
+					<table>
+						<caption>회원가입</caption>
+						<colgroup>
+							<col width="110px">
+							<col>
+							
+						</colgroup>
+						<tbody>
+							<tr>
+								<th><label for="userName">이름</label></th>
+								<td><input type="text" id="userName" class="input-width height"/></td>
+							</tr>
+							<tr>
+								<th><label for="userId">아이디</label></th>
+								<td><input type="text" id="userId" class="input-width height"/></td>
+							</tr>
+							<tr>
+								<th><label for="userPass">비밀번호</label></th>
+								<td><input type="password" id="userPass" class="input-width height"/></td>
+							</tr>
+							<tr>
+								<th><label for="userJen">성별</label></th>
+								<td>
+									<ul class="multi-type">
+										<li>
+											<input type="radio" name="gender" id="user-male"/>남
+										</li>
+										<li>
+											<label><input type="radio" name="gender" id="user-female"/>여
+										</li>
+									</ul>
+								</td>					
+							</tr>
+							<tr>
+								<th>
+									<label for="userTel">연락처</label>
+								</th>
+								<td>
+									<ul class="multi-type">
+										<li>
+											<select>
+												<option selected>010</option>
+												<option>011</option>
+											</select>
+										</li>
+										<li>
+											<span class="number-bar height">-</span>
+										</li>
+										<li>
+											<input type="text" class="phone-width height" >
+										</li>
+										<li>
+											<span class="number-bar">-</span>
+										</li>
+										<li>
+											<input type="text" class="phone-width height" >
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th rowspan="2">주소</th>
+								<td>
+									<input type="text" class="address-width height" >
+									<button type="button">우편번호</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" class="address-width2 height">
+									<input type="text" class="address-width3 height">
+							</tr>
+							<tr>
+								<th>파일첨부</th>
+								<td><span class="file-border"><input type="file" ></span></td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td><input type="text" class="height title-width"></td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td><textarea></textarea></td>
+							</tr>
+																
+						</tbody>
+					</table>	
+					<div class="agree">
+						<label><input type="checkbox" >개인정보 동의합니다.</label>
+					</div>
+					<div>
+						<ul class="multi-type button-box">
+							<li><input type="submit" value="확인" class="confirm-button"></li> 
+							<li><input type="reset" value="취소" class="cancel-button"></li>
+						</ul>	
+					</div>
+				</fieldset>
+			</form>
+		</div>			
+	</body>
+</html>
