@@ -1,0 +1,59 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{font-size:}
+		li{list-style:none;}
+		img{border:0 none}
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+		.basic{width:80%; background-color:#fff; border-top:5px solid #ddd; padding:5%;}
+		.br, .tr{background-color:#ffccff; width:200px; height:200px;}
+		.b1{border-radius:10px}
+		.b2{border-radius:10px 30px 50px 70px}
+		.b3{border-radius:100px}/*반지름*/
+		/* .t1{transition:background-color 0.4s ease-in 0.1s , border-radius 0.3s ease-in 0.2s} */
+		dl{width:100%;}
+		.t1{transition:all 0.4s ease-in 0.1s}
+		.t1:hover{background-color:#0033ff; border-radius:100px}
+		.t2{width:100px; height:100px; margin:auto; background-color:transparent}
+		.t2 a{display:block; width:100px; height:100px; transition: ease-in 2s all 0.1s;
+				} 
+		.t2:hover a, .t2 a:focus{border:5px solid #ccccff; border-radius:10px; border-color:crimson; margin:auto; background-color:#fff; box-sizing:border-box; font-size:20px; left:144px; top:200px}
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div id="basic">
+			<dl>
+				<dt>border-radius:10px</dt>
+				<dd class="br b1">TEST1</dd>
+				<dt>border-radius:10px 30px 50px 70px</dt>
+				<dd class="br b2">TEST2</dd>
+				<dt>연습문제 : 완벽한 원형으로 만들기</dt>
+				<dd class="br b3">TEST3</dd>
+			</dl>
+			<h3>[2]transition:장면전환, 변화하는 과정이 보이게 하도록. </h3>
+			<dl>
+				<dt>transition: 바꿀 속성 몇초동안 어떤 모양으로 몇초 뒤에 </dt>
+				<dd class="tr t1">transition</dd>
+				<dt>연습문제 : 마우스를 올리거나 탭키를 누르면
+								-기본모양에 선추가 : border:5px solid #ccccff;/ 전체사이즈 100px*100px
+								-네모에서 상하좌우가 10px인 모양으로
+								-border 색상을 crimson으로, 배경색 white, 중앙배치</dt>
+				<dd class="tr t2"><a href="#">TRANSITION</a></dd>
+				
+			</dl>
+		</div>	 
+	</body>
+</html>

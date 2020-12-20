@@ -1,0 +1,70 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{font-size:}
+		li{list-style:none;}
+		img{border:0 none}
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+		#basic{width:1000px;height:250px; background-color:#fff;}
+		h3{height:50px;
+			border-left:10px solid #cc9900; 
+	       padding-left:20px; margin-left:20px;
+		   font-size:25px; line-height:50px; }
+		.space{width:100%; height:100%;}
+		.space li{width:25%;float:left;}
+		.space li a:link,.space li a:visited{display:block;  height:100%; border-radius:50%;
+					border:5px solid #cc9900;
+					box-shadow:10px 0 10px rgba(0,0,0,0.5);
+					font-size:20px; color:#fff;text-align:center; line-height:250px; letter-spacing:18px;
+					background-image:url("images/img54_2bg.jpg"); 
+					background-position:top top;
+					transition: all 0.3s ease-in-out 0.1s}
+		
+		.space li a:hover,.space li a:focus{border-color:#fff;
+					font-size:20px; color:#f00;text-align:center; line-height:250px;
+					background-position:center center;
+					}
+
+		/*mobile ~480px*/
+			@media all and (min-width:1600px) {body{}}
+			@media all and (min-width:1024px) and (max-width:1599px){
+							#basic {width:70%;margin:auto} 
+							.space li{width:25%; height:100%;}
+							.space li a{width:90%; height:90%; border:5%; margin:5%}
+			
+			
+			
+			
+			
+			}
+			@media all and (min-width:768px) and (max-width:1023px){#basic{width:80%}}
+			@media all and (min-width:481px) and (max-width:767px){#basic{width:80%}}
+			@media all and (max-width:480px){body{background-color:#ffcc99}}
+
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div id="basic">
+			<h3>TEXT-SHADOW 테스트</h3>
+			<ul class="space">
+				<li><a href="#" title="one 클릭">I</a></li>
+				<li><a href="#" title="two 클릭">see</a></li>
+				<li><a href="#" title="three 클릭">the</a></li>
+				<li><a href="#" title="four 클릭">universe</a></li>
+			</ul>
+		</div>	 
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+		
+		<style>
+		/* 
+		.basic w200px h200px 그라디언트   아래로 짙은 회색에서 하양으로     
+		 h3 letter-spacing : 10px; font-size 40px text-align:center; line-height:140px; 
+		  p margin-bottom:50px
+			strong #f00
+			input[type="text"] 회색 배경 짙은회색 보더
+
+
+		*/
+
+		.basic{width:60%; height:800px; margin:auto;background-image:linear-gradient(to bottom, #ccc, #fff)}	2017-05-17
+		h3{letter-spacing:7px; font-size:20px; text-align:center; line-height:140px;
+		}
+		p{margin-bottom:50px; width:100%; margin-bottom:20px; text-align:center}
+		.login_info{text-align:left}
+		p strong{color:#f00}
+		input[type="text"]{background-color:#bbb; border:1px solid #eee;}
+		input[type="button"],input[type="submit"]{background-color:#00f; color:#fff}
+		input, label{display:inline-block; width:220px; height:30px}
+	
+		
+		
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div class="basic">
+			<h3>WELCOME TO MYPAGE MASERATI</h3>
+			<p>WELCOME TO MYPAGE MASERATI 2016 NEW YEAR'S PROMOTION</p>
+			<p class="login_info"><strong>(*)</strong>필수입력사항입니다.</p>
+
+			<form>
+				<fieldset>
+					<legend>로그인 입력창</legend>
+					<p> <label for="userid"><strong>(*)</strong>id</label><input type="text" placeholder="admin@email.com" required="required" name="userid" id="userid" autocomplete="off"/></p>
+					<p><label for="userid"><strong>(*)</strong>password</label><input type="password" name="userpass" id="userpass" autocomplete="off"/></p>
+					<p><input type="checkbox" id="remember" name="remember"/>
+					<label>REMEMBER ME</label></p>
+					<p class="login_control">
+						<input type="submit" value="LOGIN"/>
+						<input type="button" value="JOIN"/>
+					</p>
+
+				</fieldset>
+			</form>
+
+		</div>
+	</body>
+</html>

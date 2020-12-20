@@ -1,0 +1,107 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"    lang="ko"  xml:lang="ko" >
+ <head>
+  <meta  http-equiv="Content-type"     content="text/html;  charset=UTF-8"  />
+  <title>TMPT</title>
+  <style type="text/css">
+	*{  margin:0; padding:0; }
+	body{   font-family:"Malgun Gothic"; font-size:90%;  color:#FFF; }
+	html, body{  height:100%; }
+	#wrapper{  width:1500px; height:100%;  }
+	#header{ width:230px; height:100%;   position:fixed; top:0; left:0; }
+	#main{   margin-left:230px;     border-left:1px solid #ccc; }
+	#footer{    width:230px; height:230px;  background-color:#333;    position:fixed; bottom:0; left:0; }
+
+	#visual{   height:500px; background-color:#ffcc99;}
+	.newsArea.news1{   height:180px; background-color:#ffcccc;}
+		.a3{float:left; height:100%;}
+		.w50{width:50%; background-color:#cc0066;}
+		.w25{width:25%; background-color:#cc00ff;}
+		.a3.a33{background-color:#99cc00;}
+	.newsArea.news2{   height:450px; background-color:#ffccff;}
+	.newsArea.news3{   height:125px; background-color:#ccccff;}
+
+	@media  all  and  (min-width:1500px) {}
+	@media  all  and  (min-width:1281px)   and  (max-width:1499px)   {     
+			body{   background-color:gold; } 
+			#wrapper{  width:100%; height:100%}
+			#main{  height:100%}  	
+			#visual{   height:40%; background-color:#ffcc99;}
+			.newsArea.news1{   height:20%; background-color:#ffcccc;}
+			.newsArea.news2{   height:50%; background-color:#ffccff;}
+			.newsArea.news3{   height:30%; background-color:#ccccff;}		
+	}
+	@media  all  and  (min-width:960px)  and (max-width:1280px){ 
+			body{ background-color:#ff6666; }   
+			#wrapper{  width:100%; height:100%}
+			#header{   width:100%; height:5%;  position:static;} 
+			#main{     margin-left:0;  width:100%;  height:100%;  }  	
+			#footer{   width:100%; height:5%;  position:static;} 
+			#visual{   height:30%; background-color:#ffcc99;}
+			.newsArea.news1{   height:15%; background-color:#ffcccc;}
+			.newsArea.news2{   height:35%; background-color:#ffccff;}
+			.newsArea.news3{   height:20%; background-color:#ccccff;}
+	}
+	@media  all  and  (min-width:768px)  and (max-width:959px){ 
+			body{ background-color:#ff0066; }   
+			#wrapper{  width:100%; height:100%}
+			#header{   width:100%; height:5%;  position:static;} 
+			#main{     margin-left:0;  width:100%;  height:100%;  }  	
+			#footer{   width:100%; height:5%;  position:static;} 
+			#visual{   height:30%; background-color:#ffcc99;}
+			.newsArea.news1{   height:15%; background-color:#ffcccc;}
+			.newsArea.news2{   height:35%; background-color:#ffccff;}
+			.newsArea.news3{   height:20%; background-color:#ccccff;}
+			.w50{width:100%;}
+			.w25{width:50%;}
+	}
+	@media  all  and  (min-width:481px)  and (max-width:767px){ 
+			body{ background-color:#660066; }   
+			#wrapper{  width:100%; height:100%}
+			#header{   width:100%; height:5%;  position:static;} 
+			#main{     margin-left:0;  width:100%;  height:100%;  }  	
+			#footer{   width:100%; height:30%;  position:static;} 
+			#visual{   display:none; }
+			.newsArea.news1{   height:50%; background-color:#ffcccc;}
+			.newsArea.news2{   height:40%; background-color:#ffccff;}
+			.newsArea.news3{   height:10%; background-color:#ccccff;}
+			.w50{width:100%; height:50%}
+			.w25{width:50%;height:50%}
+	}
+	@media  all  and     (max-width:480px) {  
+			body{   background-color:#00cccc; }   
+			#wrapper{  width:100%; height:100%}
+			#header{   width:100%; height:5%;  position:static;} 
+			#main{     margin-left:0;  width:100%;  height:100%;  }   
+			#footer{   width:100%; height:30%;  position:static;} 
+			#visual{   display:none; }
+			.newsArea.news1{   height:50%; background-color:#ffcccc;}
+			.newsArea.news2{   height:40%; background-color:#ffccff;}
+			.newsArea.news3{   height:10%; background-color:#ccccff;}	
+			.a3{float:none;}
+			.w50{width:100%; height:50%}
+			.w25{width:100%;height:25%}
+	}	
+
+  </style>
+ </head>
+ <body>
+	<div id="wrapper">
+		<div id="header">HEADER</div><!--  header END  -->
+		<div id="main">
+			<div id="visual">MAIN(1/4) - VISUAL</div><!--  visual END  -->
+			<div class="newsArea news1">
+				<article class="a3 a31 w50">기사1</article>
+				<article class="a3 a32 w25">기사2</article>
+				<article class="a3 a33 w25">기사3</article>
+			</div><!--  news1 END  -->
+			<div class="newsArea news2">MAIN(3/4) - news2</div><!--  news2 END  -->
+			<div class="newsArea news3">MAIN(4/4) - news3</div><!--  news3 END  -->	
+		</div><!--  main END  -->
+		<div id="footer">FOOTER</div><!--  footer END  -->
+	</div><!--  wrapper END  -->
+
+ </body>
+</html>

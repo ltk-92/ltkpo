@@ -1,0 +1,82 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{font-size:}
+		li{list-style:none;}
+		img{border:0 none}
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+		.basic{width:80%; background-color:#fff; border-top:5px solid #ddd; padding:5%;}
+		.br, .tr{background-color:#ffccff; width:200px; height:200px;}
+		.b1{border-radius:10px}
+		.b2{border-radius:10px 30px 50px 70px}
+		.b3{border-radius:100px}/*반지름*/
+		/* .t1{transition:background-color 0.4s ease-in 0.1s , border-radius 0.3s ease-in 0.2s} */
+		dl{width:100%;}
+		.t1{transition:all 0.4s ease-in 0.1s}
+		.t1:hover{background-color:#0033ff; border-radius:100px}
+		.t2{width:100px; height:100px; margin:auto; background-color:transparent}
+		.t2 a{display:block; width:100px; height:100px; transition: ease-in 2s all 0.1s;
+				} 
+		.t2:hover a, .t2 a:focus{border:5px solid #ccccff; border-radius:10px; border-color:crimson; margin:auto; background-color:#fff; box-sizing:border-box; font-size:20px; left:144px; top:200px}
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div id="basic">
+			<h3>WELCOME TO OUT FAMILY</h3>
+			<p>안전한 개인정보보호를 위해 회원님의 동의 없이 제 3자에게 정보를 제공하지 않습니다,</p>
+
+			<form>
+				<legend>회원가입 페이지 만들기</legend>
+				<fieldset>
+					<p><strong>(*)</strong>필수입력사항입니다.</p>
+					<p></strong>(*)</strong><label for="name"><input type="text" id="name" name="name" placeholder="예)홍길동" autocomplete="off" required="required"/></p>
+					<p><strong>(*)</strong><label for="userid" placeholder="아이디는 8자이상">아이디</label><input type="text" name="userid" id="userid"/></p>
+					<p><strong>(*)</strong><label for="userpass">비밀번호</label><input type="password" name="userpass" id="userpass"/></p>
+					<p><strong>(*)</strong><label for="userpass2">비밀번호2</label><input type="password" name="userpass2" id="userpass2"/></p>
+					<p><strong>(*)</strong><label for="email">이메일</label><input type="text" id="email" name="email"/></p>
+					<p><strong><*)></strong><label for="phone">연락처</label><input type="tel" id="phone"/>-<input type="tel" id="phone"/>-<input type="tel" id="phone"/></p>
+					<p><strong>(*)</strong><span>주소 </span><label for="address">우편번호</label><input type="text" id="address"/>-<input type="text" id="address2" name="address2"/><input type="button" value="우편	번호"/><br/>
+					<label for="address3">상세주소</label><input type="text" id="address3" name="address3" /><input type="text" id="address4" name="address4" />
+					</p>
+					<p><span>관심분야</span>
+					
+						<input type="checkbox" id="check" name="check"/><label for="check">홈페이지</label>
+						<input type="checkbox" id="check" name="check"/><label for="check">반응형웹</label>
+						<input type="checkbox" id="check" name="check"/><label for="check">모바일웹</label>
+						<input type="checkbox" id="check" name="check"/></p><label for="check">인터렉티브 웹</label>
+
+				</p>
+
+					<p><span>직업</span>
+						<select>
+							<option value="--선택--" selected="selected">--선택--</option>
+						</select></p>
+					<p><span>SMS수신여부</span> 
+						<input type="radio" id="radio"/><label for="radio">홈페이지</label>
+						<input type="radio" id="radio2"/><label for="radio2">반응형 웹</label>
+						
+						
+					
+					</p>
+					<p>
+						<input type="submit" id="join" value="회원가입"/>
+						<input type="reset" id="cancel" value="취소"/>
+					</p>
+					
+				</fieldset>
+			</form>
+		</div>	
+</html>

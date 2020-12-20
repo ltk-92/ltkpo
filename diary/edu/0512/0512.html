@@ -1,0 +1,59 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{font-size:}
+		li{list-style:none;}
+		img{border:0 none}
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+		.basic{width:80%; background-color:#fff; border-top:5px solid #ddd; padding:5%;}
+		table{border-left: 1px solid #ccc;border-top: 1px solid #ccc; width:300px; height:300px; margin:50px; 
+		border-collapse:seperate; border-spacing:0px} 
+		tr{border-left:1px solid #ccc; border-top:1px solid #ccc}
+		td{border-bottom:1px solid #ccc; border-right:1px solid #ccc; padding:10px }
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div class="basic">
+			<h3>1)table table(표)/tr(표안에 줄)/td(표안에 칸)</h3>
+
+			<table>
+				<h3>2)colspan="합칠 칸수"</h3>
+				<tr><td colspan="2">1-1</td></tr>
+				<tr><td>2-1</td><td>2-2</td></tr>
+				
+			</table>
+			<h3>3) rowspan="합칠 칸 수"</h3>
+			<table>
+				<tr><td rowspan="2">1-1</td><td>1-2</td></tr>
+				<tr><td>2-2</td></tr>
+				
+			</table>
+			<table>
+				<tr>
+					<td colspan="2"></td>
+					<td rowspan="3"></td>
+				</tr>
+				<tr>
+					<td rowspan="2"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+
+			</table>
+	</body>
+</html>

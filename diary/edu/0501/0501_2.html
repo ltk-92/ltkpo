@@ -1,0 +1,57 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<link href="css/reset.css" type="text/css" />
+		<link href="css/base.css" type="text/css" />
+		
+		<style>
+		
+		
+		/*1.reset.css*/ 
+		
+		
+		/*2.base.css 지정*/
+
+		/*3.multibackground 939*344 페이지 정중앙에 배치*/
+		/*4.multibackground h3 숨김요소 지정*/
+		/*5.multibackground .banner 939*344*/
+		/*6..banner_logo .banner 안에서만 움직이게 설정*/
+		/*7.multibackground 속성을 이용해서 위치설정 마우스를 올리거나, 탭키룰 누르면*/
+		.multibackground{width:1000px; height:500px; background-color:#fff; border:5px solid #ddd;margin:auto}
+		.multibackground h3{width:1px; height:1px; font-size:0px; line-height:0px; position:absolute; left:-9999%;overflow:hidden }
+		.banner:link, .banner:visited{display:block; width:939px; height:344px; position:relative; 
+										border:1px solid #ddd; color:#123; margin:50px; auto;
+										background:url("images/airball.png") no-repeat 200% 0,
+													url("images/100.jpg") no-repeat 0 150%/300px,
+													url("images/100_2.png") no-repeat 120% -200px,
+													url("images/banner.gif") no-repeat -100% -50%;
+										transition:all 0.4s ease-in 0.3s;
+									
+
+							}
+		
+		.banner:hover,.banner:focus{background-position:515px 0, 25px 235px, 415px 25px, 25px 290px,0 0;}
+
+		.banner_logo{position:absolute; top:20px; left:270px; transition:all 0.4s ease-in 0.3s}
+		.banner_desc{position:absolute; top:200px; left:60px; font-size:25px; opacity:0; transition:all 0.4s ease-in 0.3s}
+		.banner_desc strong{color:#f00}
+		.banner:hover .banner_logo, .banner:focus .banner_logo{left:25px}
+		.banner:hover .banner_desc, .banner:focus .banner_desc{opacity:1}
+
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div class="multibackground">
+			<h3>Banner</h3>
+			<a href="#" class="banner">
+				<p><img src="images/park-sale.png" alt="브랜드특가전" class="banner_logo"></p>
+				<p class="banner_desc">마감임박<strong>지금 서두르세요</strong></p>
+
+			</a>
+		</div>	 
+	</body>
+</html>

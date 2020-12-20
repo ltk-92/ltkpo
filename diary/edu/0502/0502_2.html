@@ -1,0 +1,198 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		/*reset.css*/
+		*{margin:0; padding:0}
+		li{list-style:none;}
+		img, fieldset{border:0 none}
+		
+
+		
+		/*base.css*/
+		body{font-family:"Malgun Gothic", sans-serif; font-size:15px; color:#000;
+				background:#fbf8f4 url("images/wood_pattern.jpg") repeat top left;
+				overflow-x:hidden; overflow-y:scroll}
+		
+			
+			
+		
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+	
+		fieldset{border:0 none}
+		.hidden{position:absolute; left:-999%; width:1px; height:1px; font-size:0; line-height:0}
+		
+		#ad1{width:720px; height:300px; margin:40px auto; background-image:url("images/background.png");
+		background-repeat:no-repeat; 
+		background-position:center;
+		overflow:hidden;
+		position:relative; 
+		box-shadow:1px 1px 4px rgba(0,0,0, 0.4)}
+
+		.content{float:right; margin:40px; text-align:center; overflow:visible; position:relative; width:325px; font-family:'Alfa Slab One', cursive; font-weight:bold }
+		h3{color:#137dd5; font-size:46px; line-height:50px; text-shadow:0 0 5px #fff; animation: h3-animation 3s ease-in-out;}
+
+
+
+		h4{font-size:20px; text-align:center; margin-bottom:20px;font-weight:bold;animation: h4-animation 3s  ease-in-out 0.2s; }
+
+		
+		form{margin: 30px 0 0 28px; position:relative; animation: form-animation 2s  ease-in-out 0.3s;  z-index:30}
+		
+		@keyframes boat-animation{
+							0%{transform:rotate(1080deg);left:10px; top:40px; opacity:1; }
+							15%{ left:70px;top:20px;transform:rotate(720deg) scale(1)}
+							30%{top:40px;left:200px; transform:rotate(1080deg) scale(0); opacity:0.7}
+							61%{opacity:0}
+							100%{opacity:0 }
+		
+		}
+
+
+
+		@keyframes h3-animation{
+							0%{opacity:0}
+							50%{opacity:0}
+							100%{opacity:1}
+		
+		}
+
+
+		@keyframes h4-animation{
+							0%{opacity:0}
+							50%{opacity:0%}
+							100%{opacity:1}
+		
+		}
+
+
+		@keyframes form-animation{
+							0%{right:-200px; opacity:0}
+							
+							100%{right:0; opacity:1 }
+
+
+
+
+
+		
+		}
+		@keyframes  question-animation{
+		
+							0%{opacity:0}
+							100%{opacity:1}
+		
+		}
+
+				@keyframes  cloud1-animation{
+		
+							0%{left:0;}
+							100%{left:-720px}
+		
+		}
+
+		
+				@keyframes  cloud2-animation{
+		
+							0%{left:720px;}
+							100%{left:0px}
+		
+		}
+		
+		#email{width:200px; height:50px; background-color:#ccc}
+		#search{height:50px; border:0 none; color:#00f;width:80px;
+				background-image:-webkit-linear-gradient(top, #fff 0% ,  #eee 50% );
+				background-image:-moz-linear-gradient(top, #fff 0% ,  #eee 50% );
+				background-image:-o-linear-gradient(top, #fff 0% ,  #eee 50% );
+				background-image:linear-gradient(top, #fff 0% ,  #eee 50% );}
+			/*
+				ad 배경 하늘, 목판 w1000px height 500px
+				
+				.content w300px position:absolute right
+					
+				 h3 color: #00f bold size40px, w300px h40px 
+				 h4 color : #000 bold size35px, w300px h35px 
+				input[text] #333 w500px h40px 
+				input[submit] w100px h40px
+				
+				
+				.boat: 앱솔루트 left:0
+				.boat li  opactity 0~1
+			
+
+				.clouds  w100%; h50%
+				.clouds ul overflow:hidden; 
+				
+				.clouds ul li float:left
+ 			
+			*/
+		.boat{width:249px; height:215px;position:relative; ;background-image:url("images/boat.png"); background-repeat:no-repeat; top:40px; z-index:2; animation: boat-animation 10s  ease-in-out 3s; opacity:1}
+		
+		
+		#question{background-image:url("images/question-mark.png"); background-repeat:no-repeat; width:24px; height:50px; position:absolute; left:190px; top:-20px; animation: question-animation 2s  ease-in-out ;}
+
+		.water{width:1200px;}
+		.water li{width:1200px; position:relative}
+		.water_front{height:158px; background-image:url("images/water-front.png"); background-repeat:repeat-x;z-index:3}
+		.water_back{height:84px; background-image:url("images/water-back.png"); background-repeat:repeat-x; z-index:1; top:-170px}
+
+	
+
+
+		.cloud-group1{width:720px; position:absolute; left:0; top:20px; overflow:hidden; animation: cloud1-animation 2s  ease-in-out}
+			.cloud1{background-image:url("images/cloud-1.png");width:172px; height:121px; float:left; z-index:20}
+			.cloud2{background-image:url("images/cloud-2.png");width:121px;height:75px; float:left; z-index:20}
+			.cloud3{background-image:url("images/cloud-3.png");width:132px;height:105px; float:left; z-index:20;animation: cloud2-animation 2s  ease-in-out}
+		.cloud-group2{width:720px; position:absolute; left:720px;top:20px}
+		</style>
+		
+	</head>
+	<body>
+		<div id="ad1">
+			<div class="content">
+				<h3>LOST AT SEA?</h3>
+				<h4>Relax - we've got your rudder</h4>
+				<form action="#" method="get"> 
+					<fieldset>
+						<legend class="hidden">이메일 주소</legend>
+						<label for="email" class="hidden">이메일입력</label>
+						<input type="text" id="email" name="emailinput"/><input type="submit" id="search" name="button" value="Guide me"/>
+					</fieldset>
+				</form>
+			</div>
+			<div class="clouds">
+				<ul class="cloud-group1">
+					<li class="cloud1"></li>
+					<li class="cloud2"></li>
+					<li class="cloud3"></li>
+				</ul>
+				<ul class="cloud-group2">
+					<li class="cloud1"></li>
+					<li class="cloud2"></li>
+					<li class="cloud3"></li>
+				</ul>
+				
+			</div>
+			<ul class="boat">
+					<li>
+						<div id="question"></div>
+					<li>
+			</ul>
+			<ul class="water">
+					<li class="water_front"></li>
+					<li class="water_back"></li>
+			</ul>
+				</form>
+			</div>
+		</div>	 
+	</body>
+</html>

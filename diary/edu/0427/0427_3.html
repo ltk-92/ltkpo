@@ -1,0 +1,97 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{}
+		li{list-style:none;}
+		img{border:0 none}
+
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+		img{width:100%}
+		iframe{border:0 none}
+		#basic{width:1700px; height:670px; margin:auto; position:relative; z-index:2;
+				background-image:linear-gradient(top,rgba(0,105,175,0) 0% ,rgba(0,105,175,0.85) 35% );
+					background-image:-webkit-linear-gradient(top,rgba(0,105,175,0) ,rgba(0,105,175,0.85) );
+					background-image:-moz-linear-gradient(top,rgba(0,105,175,0) 0% ,rgba(0,105,175,0.85) 35% );
+					background-image:-o-linear-gradient(top,rgba(0,105,175,0) 0% ,rgba(0,105,175,0.85) 35%);
+					
+					}
+		
+		#basic2{width:1700px; height:670px; background-color:darkblue; margin:auto; position:relative;
+		
+				background-image:linear-gradient(top, rgba(0,80,130,0.95) 0%, rgba(0,80,130,0) 35% );
+				background-image:-webkit-linear-gradient(top, rgba(0,80,130,0.95)  0%, rgba(0,80,130,0) 35%  );
+				background-image:-moz-linear-gradient(top, rgba(0,80,130,0.95)  0%, rgba(0,80,130,0) 35% );
+				background-image:-o-linear-gradient(top, rgba(0,80,130,0.95)  0%, rgba(0,80,130,0) 35% );}
+		
+		h3{width:500px; height:50px;background-color:#000; color:#fff; line-height:50px; transform:skewY(20deg); margin-bottom:10px; position:absolute;
+		
+		top:180px;left:200px}
+
+		.front{width:500px; height:500px;background-color:#000; color:#fff;  transform:skewY(20deg);float:left;position:absolute; top:260px;left:200px;
+				background-image:linear-gradient(left, #000000,#313131 );
+				background-image:-o-linear-gradient(left, #000000,#313131 );
+				background-image:-webkit-linear-gradient(left, #000000,#313131 );
+				background-image:-moz-linear-gradient(left, #000000,#313131 );
+				
+				
+ }
+		.side{width:200px; height:500px;  background-color:#000;color:#fff;transform:skewY(-20deg); float:left;margin-top:55px;position:absolute; left:700px; top:260px;
+				line-height:30px;
+				background-image:linear-gradient(left, #000000,#313131 );
+				background-image:-o-linear-gradient(left, #000000,#313131 );
+				background-image:-webkit-linear-gradient(left, #000000,#313131 );
+				background-image:-moz-linear-gradient(left, #000000,#313131 );
+				
+				
+				}
+
+		
+		
+		.front_ref{width:500px; height:500px;background-color:#333; color:#fff;  transform:skewY(20deg);float:left;position:absolute; left:200px;top:70px; background:linear-gradient(top, rgba(182,182,182,1) 0% , rgba(182,182,182,0) 100%); opacity:0.25}
+		.side_ref{width:200px; height:500px;  background-color:#333;color:#fff;transform:skewY(-20deg); float:left;margin-top:55px;position:absolute; left:700px; top:70px;
+		background:linear-gradient(top, rgba(73,73,73,1) 0%,rgba(73,73,73,1) 100%); opacity:0.35}
+		
+
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div id="basic">
+			<h3>도리를 찾아서</h3>
+			<div class="front"><div class="video2">
+				<iframe width="500" height="400" src="https://www.youtube.com/embed/3RXbk15m-gU"  allowfullscreen></iframe>
+				
+			</div> </div>
+			<p class="side">“내가 누구라고? 도리? 도리!”
+무엇을 상상하든 그 이상을 까먹는 ‘도리’의 어드벤쳐가 시작된다!
+니모를 함께 찾으면서 베스트 프렌드가 된 도리와 말린은 
+ 우여곡절 끝에 다시 고향으로 돌아가 평화로운 일상을 보내고 있다. 
+  
+ 모태 건망증 도리가 ‘기억’이라는 것을 하기 전까지! 
+  
+ 도리는 깊은 기억 속에 숨어 있던 가족의 존재를 떠올리고 
+ 니모와 말린과 함께 가족을 찾아 대책 없는 어드벤쳐를 떠나게 되는데… 
+  
+ 깊은 바다도 막을 수 없는 스펙터클한 어드벤쳐가 펼쳐진다!</p>
+		</div>
+
+		<div id="basic2">
+			
+		
+			<div class="front_ref"></div>
+			<div class="side_ref"></div>
+		</div>	 
+	</body>
+</html>

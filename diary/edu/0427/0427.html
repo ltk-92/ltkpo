@@ -1,0 +1,57 @@
+<!DOCTYPE html >    
+<html  lang="ko">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>tmpt2</title>
+		<style>
+		/*1) .t2 100*100
+		  2) .t2 a:link, .t2 a:visited 링크영역 확장 90*90  5px solid #ccccff transition; line-height:90px*
+		 
+		  3) .t2 a:hover, .t2 a:focus border:radius:10px/ border-color, color:crimson*/
+		*{margin:0; padding:0}
+		body{font-size:}
+		li{list-style:none;}
+		img{border:0 none}
+		body{font-family:'나눔고딕', dotum, sans-serif; font-size:90%; background-color:#fff}
+		a:link, a:visited{color:#000; text-decoration:none;line-height:90px; }
+		a:hover, a:focus{color:#f00; text-decoration:underline;}
+		
+		.basic{width:80%; background-color:#fff; border-top:5px solid #ddd; padding:5%;}
+		
+
+		/*
+		h3 border left 5px yellow, padding 10px line-height:40px color:white
+		
+		basic : w1000px h1000px, margin auto; background black
+
+		p w 500px h500px   
+
+		p a    w 496px h 496px  background grey; border 2px  dotted white;     rotate 0edg 0.5s 0s;border-radius 10px
+
+		p a hover, focus = rotate 40edg 0.5s 
+		p a img w400px h400px margin : 50px 0  0 50px, box-shadow 0 0 2px   rotate 0edg  0.3s 0.2s
+		p a hover,focus img = rotate -20edg  0.7s 0.3s
+ 		*/
+
+		.basic{width: 1000px; height:1000px; margin:auto; background-color:#000}
+		h3{border-left:5px solid yellow; padding-left:10px; line-height:40px; color:#ccc;}
+		p {width:500px; height:500px;}
+		p a{display:block; width:496px; height:496px; background-color:#111; border:2px dotted #fff; transform:rotate(0deg) ; transition:1000000s; border-radius:10px}
+		p a:hover, p a:focus{ transform:rotate(7200000000deg)}
+		
+		p a img{ width:400px; margin:50px 0 0 50px; box-shadow: 0 0 10px; transform:rotate(0deg); transition: all 3000s ease-in-out 10s;transform:scale(1,1)}
+		p a:hover img,p a:focus img{transform:rotate(-40deg) }
+
+
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<div class="basic">
+			<h3>TRANSFORM</h3>
+			<p class="r1"><a href="#"><img src="images/one.png" alt="402 and 13 bonus points"></a></p>
+
+		</div>	 
+	</body>
+</html>
