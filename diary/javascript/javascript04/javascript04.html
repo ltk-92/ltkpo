@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 함수 정의하기</title>
+<meta charset="UTF-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div class="article">
+        <H2>JavaScript 함수 정의하기</H2>
+    </div>
+    <h3>함수 정의하기</h3>
+    <p>-함수에는 파라메터가 필요한 함수가 있고 필요없는 함수가 있다.<br>
+  -함수를 실행하려면 함수를 정의하고 정의된 함수를 실행해야 한다.</p>
+    <p>기본형식<br>
+    function 함수이름()<br>
+    {<br>
+   &nbsp;&nbsp;&nbsp;&nbsp; 문장<br>
+    }</p>
+    <p>&nbsp;</p>
+    <p>(사용예) 함수정의하고 사용하기</p>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;script&gt;
+        function love()
+        {
+            for(i=1;i&lt;=400;i++)
+            document.write(&quot;사랑해!&quot;)
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+        love()
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 함수의 매개변수 정의와 사용</p>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;script&gt;
+        function add(a,b)
+        {
+            var c
+            c=a+b
+            document.write(c)
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+        m=3
+        n=4
+        document.write(m + &quot;+&quot; + n + &quot;=&quot;)
+        add(m,n)
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>함수에서 변수 사용할 때 주의할점</h3>
+    var 변수 : 지역 변수로 정의함<br>
+    변수 : 전역 변수로 정의함</p>
+    <p>(사용예) 지역변수와 전역변수 설정</p>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;script&gt;
+        function sdsd(a,b)
+        {
+            var c=a+b         <span class="green">// 지역변수 선언 c=30, var 지우고 다시 실행</span>
+            document.write(c)
+            document.write(&quot;&lt;br /&gt;&quot;)
+        }
+
+        function sd()
+        {
+            d=c+2
+            document.write(d)
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script&gt;
+        sdsd(10,20)
+        document.write(c+1)
+        document.write(&quot;&lt;br&gt;&quot;)
+
+        sd()
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>내장함수  </h3>
+    <p>(사용예) 메세지 창을 열어주는 alert 내장함수 사용법</p>
+
+<pre>
+&lt;script&gt;
+        alert(&quot;저의 집에 오신 것을 환영합니다.&quot;)
+&lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) alert를 응용 퀴즈문제 만들기</p>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt; 퀴즈문제 &lt;/title&gt;
+    &lt;script languge=&quot;javascript&quot;&gt;
+        function quiz()
+        {
+            alert(&quot;I know what you did last summer.  &quot;)
+        }
+    &lt;/script&gt;
+&lt;/head&gt;<br>  <p>&lt;body style=&quot;background-color: black; color: white; margin-top: 50px;&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;quiz.jpg&quot; style=&quot;display: block; margin: 0 auto;&quot;&gt;&lt;/p&gt;
+    &lt;form name=&quot;form1&quot;&gt;
+        &lt;p style=&quot;text-align: center;&quot;&gt;위 영화 제목은
+        &lt;input type=&quot;submit&quot; value=&quot;  ??  &quot; onclick=&quot;quiz()&quot;&gt; 입니다.&lt;/p&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>선택대화상자를 만들어 주는 confirm()함수</h3>
+    <p>(사용예) 미성년자 출입금지</p>
+<pre>
+&lt;script&gt;
+<span class="green"></span>    haha=confirm(&quot;18세 이상이면 [확인] 단추를 클릭하세요&quot;)
+    if(haha==true) location.href=&quot;a.htm&quot;
+    else location.href=&quot;b.htm&quot;
+<span class="green"></span>&lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>(사용예) 창크기 조절해서 열기 <span class="blue">(익스10 O / 파폭 X 다르게 반응)</span></p>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt; 창크기조절 &lt;/title&gt;
+    &lt;script&gt;
+        haha=confirm(&quot;해상도가 모바일 (320*568)이면 [확인]단추를 <span class="blue">\n</span>태블릿 (1024*768)이라면[취소]단추를 클릭하세요&quot;)
+        if(haha==true) small()
+        else large()
+
+        function small()
+        {
+            window.resizeTo(320, 568)
+        }
+
+        function large()
+        {
+            window.resizeTo(1024, 768)
+        }
+    &lt;/script&gt;
+    &lt;style&gt;
+        #wrap{position: absolute; top: 50%; left: 50%; width: 200px; height: 200px;
+              margin-top: -100px; margin-left: -100px; background: url(polornote.gif) no-repeat;}
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id=&quot;wrap&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>입력 대화 상자를 만들어 주는 prompt()함수  </h3>
+    <p>(사용예) 비밀번호 홈페이지 만들기</p>
+
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt; 비밀번호 &lt;/title&gt;
+    &lt;script&gt;
+        code = prompt(&quot;비밀번호를 입력하세요.&quot;,&quot;&quot;)
+        if (code==&quot;1234&quot;) location.href=&quot;welcome.htm&quot;
+        else  document.write(&quot;비밀번호가 틀렸네요.&quot;)
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>문제) 비밀번호 홈페이지를 외부파일로 만들어 실행시켜 보세요.</p>
+    <p>&nbsp;</p>
+
+</div>
+</body>
+</html>
