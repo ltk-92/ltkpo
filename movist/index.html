@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<link href="img/mirae_favicon16.png" rel="shortcut icon"/>
+	<link href="img/mirae_favico32n.png" rel="apple-touch-icon"/>
+	<link href="img/mirae_favicon64.png" rel="icon"/>		
+	<link href="img/mirae_favicon128.png" rel="icon"/>	
+	<link href="img/mirae_favicon256.png" rel="icon"/>	
+	<link href="img/mirae_favicon512.png" rel="icon"/>
+	<link href="img/mirae_favicon.png" rel="icon"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+	<link rel="stylesheet" href="./css/base.css"/>
+	<link rel="stylesheet" href="./css/reset.css"/>
+	<link rel="stylesheet" href="./css/layout.css"/>
+	<link rel="stylesheet" href="./css/response.css"/>
+	<title>영화 웹진 무비스트</title>
+    <!--[if lt IE 9]>
+			 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<style type="text/css">	
+			html{overflow-x:hidden}
+			    body{
+			 `        background-color:#f00;
+			    }
+				.con1 .chart li{overflow:hidden}
+				.chart_arrow li>a{
+                   background-color:transparent;
+				    background-image:url('img/chart-round.png');
+				    background-repeat:no-repeat;
+               }
+                .chart_arrow li>a.selected4{
+				    background-color:transparent;
+				    background-image:url('img/chart-round-selected.png');
+				    background-repeat:no-repeat;
+				}
+				.con4 .w930 .fr li{position:relative;}
+				.con4 .w930 .fr li a:link, .con4 .w930 .fr li a:visited{
+                   background-color:transparent;
+                   border:0 none;
+                   position:absolute; 
+                   left:-32px;
+                   display:block;
+                   width:230px;
+                   padding-left:48px;
+                   padding-right:20px;
+                   color:#fff; 
+                   background-image:url('img/article-hover-ie8.png');
+                   height:51px;
+                    filter:alpha(opacity=0);
+                }
+                .gnb_sub{left:-1000px}
+				.con4 .w930 .fr li a:hover{position:absolute;width:230px;padding-left:48px;padding-right:20px;background-image:url('img/article-hover-ie8.png');;color:#fff}
+				header,footer, section, article, nav, aside{display:block}
+				.skip_nav{position:absolute; top:-20px; z-index:9}
+				.skip_nav li a:active{top:20px}
+				.con4 .w270 h5{color:#fff; font-size:15px;float:left;line-height:15px; }
+				.con4 .w270 .suda_nav{float:left;width:45px;height:15px;}
+				.con4 .w930 .fr li a:after{border:0 none}
+				.con4 .w930 .fr li a:hover a:after, .con4 .w930 .fr li a:focus a:after{border-right:30px solid #14b8db; opacity:1}
+				#main .con4 .w930 .fr li a.selected3{filter:alpha(opacity=100)}	
+				#main .con4 .w270 .suda_list{padding-top:15px}
+				#main .con4 .suda_nav li{
+				    margin-right:5px
+				}
+				#main .con4 .suda_nav li+li{
+				    margin-right:0
+				}
+				.con4 .suda_nav li+l
+				.con6 h4{display:inline}
+				.con6 p{display:inline}
+				.con5 .w270 p span{background-color:#000}
+
+				.line{height:33px}
+				.con1 .line span{top:0; padding-left:20px; background-image:url("img/sadarikol.png");
+							background-repeat:no-repeat; background-color:transparent;}
+				.con1 .line span:before{
+				display:none}			
+				.chart_hover{filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#70000000', endColorstr='#70000000',GradientType=0 ); /* IE6-9 */; }
+
+			
+				.con4 .news_title{filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#70000000', endColorstr='#70000000',GradientType=0 ); /* IE6-9 */ }
+			    
+				.suda_nav img{display:none}
+				.suda_left{
+				    background-image:url(img/left-button-ie8.png);
+				}
+				.suda_right{
+				    background-image:url(img/right-button-ie8.png);
+				}
+				.con4 .w930 .fr li a:hover, .con4 .w930 .fr li a:focus{filter:alpha(opacity=100);}
+				.con5 .w270>a:link .trailer, .con5 .w270>a:visited .trailer{background-color:#000; }
+				.con5 .w270>a:hover .trailer img, .con5 .w270>a:focus .trailer img{opacity:0.7;}
+
+				#main .con5 .w270 > a:link .movie_play{filter:alpha(opacity=0); color:#fff; position:absolute; left:30%; top:100px; display:block; width:100px;font-size:13px;background-color:transparent}
+				
+				#main .con5 .w270 > a:hover .movie_play, #main .con5 .w270 > a:focus .movie_play{filter:alpha(opacity=100);}			
+			</style>
+		<![endif]-->
+<!--[if lt IE 9]>
+     
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/base.js"></script>
+</head>
+    <body>
+	<ul class="skip_nav">
+		<li class="skip_nav1"><a href="#" title="홈으로 이동">홈으로 </a></li>
+		<li class="skip_nav1"><a href="#gnb" title="메인메뉴로 가기">메인메뉴로 가기</a></li>
+	</ul>
+	<div id="wrapper">
+		<header id="header">
+			<h1>
+				<a href="#" title="무비스트 홈페이지 바로가기" class="logo1"><img src="img/logo.png" alt="movist logo1" /></a>
+				<a href="#" title="무비스트 홈페이지 바로가기" class="logo2"><img src="img/logo2.png" alt="movist logo2" /></a>
+			</h1>
+			<form>
+				<fieldset>
+					<legend class="hidden">검색창</legend>
+					<label class="hidden" for="search">검색</label><input type="text" id="search" name="search"  autocomplete="off"/>
+					<input type="button" id="btn" name="button" value="검색"/>
+				</fieldset>
+			</form>
+			<nav>
+				<h2 class="hidden">메인메뉴</h2>
+				<ul id="gnb">
+					<li>	
+					    <a href="#" title="메인메뉴 상영작 바로가기">상영작 / 예매</a>
+					    <div class="gnb_sub">
+					       <strong>상영작 / 예매</strong>       
+					    </div>
+					     <div class="gnb_sub2">
+							<ul>	
+								<li><a href = "#" title="서브메뉴 '예매' 바로가기">예매</a></li>
+								<li><a href = "#" title="서브메뉴 '현재상영작' 바로가기">현재상영작</a></li>
+								<li><a href = "#" title="서브메뉴 '상영예정작' 바로가기">상영예정작</a></li>
+								<li><a href = "#" title="서브메뉴 '박스오피스' 바로가기">박스오피스</a></li>
+								<li><a href = "#" title="서브메뉴 '최고 top 100' 바로가기">최고 top 100</a></li>
+								<li><a href = "#" title="서브메뉴 '굴욕 top 100' 바로가기">굴욕 top 100</a></li>
+                             </ul>	
+							<dl>
+								<dt><img src="img/spider.jpg" alt="스파이더맨 홈커밍 포스터"/></dt>
+								<dd>
+								    <p>박스오피스 1위 </p>
+								    <p>스파이더맨 홈커밍 개봉!</p>
+								    <span>예매하러 가기!</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+								    <img src="img/real.jpg" alt="리얼 포스터"/>
+								</dt>
+								<dd>
+								    <p>김수현의 복귀작</p>
+								    <p>리얼 개봉!</p>
+								    <span>예매하러 가기!</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt>
+								    <img  src="img/park2.jpg" alt="박열 포스터"/>
+								</dt>
+								<dd>
+								    <p>독립군계의 아웃사이더 </p>
+								    <p>박열 개봉!</p>
+								    <span>예매하러 가기!</span>
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+					    <a href="#" title="메인메뉴 리뷰 바로가기">리뷰</a>
+					    <div class="gnb_sub">
+					       <strong>리뷰</strong>
+					    </div>
+					    <div class="gnb_sub2">
+							<ul >
+								<li><a href = "#" title="서브메뉴 '평론가 리뷰' 바로가기">평론가 리뷰</a></li>
+								<li><a href = "#" title="서브메뉴 '네티즌 리뷰' 바로가기">네티즌 리뷰</a></li>
+								<li><a href = "#" title="서브메뉴 '네티즌 평점' 바로가기">네티즌 평점</a></li>
+							</ul>
+							<div class="gnb_sub_review ">
+                                <dl class="gnb_sub_review_re1">
+                                    <dt>
+							           개봉작 &lt;카3&gt;의 반응!
+							        </dt>
+							        <dd>
+                                       <p><img src="img/gnb_car.jpg" alt="카3 사진"/></p>
+							           
+							        </dd>
+							    </dl>
+                            <dl class="gnb_sub_review_re2">
+                                    <dt>
+							            평론가 
+							        </dt>
+							        <dd>
+							             <p class='sub_title'>  
+                                            <span><img src="img/wifi_red.png" alt=""></span>
+							                <span><img src="img/wifi_blue.png" alt=""></span>
+							             </p>
+							              <p class='sub_content' >
+							                 카3: 새로운 도전 - 실감나는 비주얼, 건강한 스토리의 레이싱 애니 
+							              </p>
+							             <span class="more"><a href="#"  title="스파이더맨 홈커밍 평론가 리뷰 바로가기">+더보기</a></span> 
+							        </dd>
+				            </dl >
+                            <dl class="gnb_sub_review_re3">
+                                    <dt>
+							           네티즌 20자평
+							        </dt>
+							        <dd>
+                                      
+							            <p class='sub_content' >기존 카 시리즈의 새로운 면모를 섞어내었다.</p>
+							            <p class='sub_content' >레이싱이 매력적</p>
+							            <p class='sub_content' >유쾌하고 즐거웠고 볼거리도 많아서 굿</p> 
+                                        <span class="more"><a href="#"  title="카3 20자평 바로가기">+더보기</a></span>
+							        </dd>
+							 </dl>
+                        </div>						
+				    </div>
+				</li>
+				<li>
+				    <a href="#" title="메인메뉴 이벤트 바로가기">이벤트</a>
+				    <div class="gnb_sub">
+				        <strong>이벤트</strong>
+					        
+					   
+				    </div>
+				    <div class="gnb_sub2">
+					   <ul>
+                             <li><a href = "#" title="서브메뉴 '진행중 이벤트' 바로가기">진행중 이벤트</a></li>
+                            <li><a href = "#" title="서브메뉴 '당첨자 이벤트' 바로가기">당첨자 이벤트</a></li>
+                            <li><a href = "#" title="서브메뉴 '지난 이벤트' 바로가기">지난 이벤트</a></li>
+				        </ul>
+                        <dl>
+                            <dt><img src="img/gnb_event1.jpg" alt="목 짧은 기린 지피 시사회 포스터"/></dt>
+                            <dd>
+                                <p>가족뮤지컬 &lt;목 짧은 기린 지피&gt; 초대! </p>
+                                <p>2017.07.13 ~ 2017.08.02</p>
+                                <span>이벤트 참여하기!</span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="img/gnb_event2.jpg" alt="충무로뮤지컬영화제 상영작 스위트 채리티 포스터"/></dt>
+                            <dd>
+                                <p>김충무로뮤지컬영화제 상영작 &lt;스위트 채리티&gt; 초대!</p>
+                                 <p> 2017.07.13 ~ 2017.08.02!</p>
+                                 <span>이벤트 참여하기!</span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img  src="img/gnb_event3.jpg" alt="군함도 포스터"/></dt>
+                            <dd>
+                                <p>7월 개봉예정 &lt;군함&gt; 초대! </p>
+                                <p>2017.07.13 ~ 2017.08.02!</p>
+                                <span>이벤트 참여하기!</span>
+                            </dd>
+                        </dl>
+
+				    </div>
+                </li>
+					
+				<li>
+                    <a href="#" title="메인메뉴 기사 바로가기">기사</a>
+                     <div class="gnb_sub">
+                        <strong>기사</strong>
+
+                    </div>
+                    <div class="gnb_sub2">
+                        <ul>
+                            <li><a href = "#" title="서브메뉴 '한마디뉴스' 바로가기">한마디뉴스</a></li>
+                            <li><a href = "#" title="서브메뉴 '칼럼' 바로가기">칼럼</a></li>
+                            <li><a href = "#" title="서브메뉴 '스페셜' 바로가기">스페셜</a></li>
+                        </ul>
+				        <div class="gnb_sub_article ">
+                            <dl class="gnb_sub_article_re1">
+                                <dt>
+                                  &lt;스페셜&gt; 카3
+                                </dt>
+                                <dd>
+                                   <p><img src="img/gnb_car.jpg" alt="카3 사진"/></p>
+                                   <p><a href = "#" title="서브메뉴 '① 픽사 시리즈' 바로가기">① 마블의 집으로 돌아오다</a></p>
+                                   <p><a href = "#" title="서브메뉴 '② '카3' 바로가기">② 톰 홀랜드, 스파이더맨 탄생기</a></p>
+                                   <p><a href = "#" title="서브메뉴 '③카3의 말, 말, 말">③ 스파이더맨의 말, 말, 말</a></p>
+                                </dd>
+                            </dl>
+                            <dl class="gnb_sub_article_re2">
+                                    <dt>
+							            &lt;한마디뉴스&gt;
+							        </dt>
+							        <dd>
+							           <p class='sub_image'>  
+                                           <img src='img/n2.jpg' alt="분노의질주 사진">
+							             </p> 
+							            <p class='sub_content' >
+                                            국내 박스오피스 <span> 분노의 질주: 더 익스트림</span>
+							             </p>
+							        </dd>
+							        <dd>
+                                       
+							           <p class='sub_image'>  
+                                           <img src='img/dung2.jpg' alt="덩케르크 사진">
+							             </p> 
+							           
+							            <p class='sub_content' >
+							                덩케르크 <span> 라이브 컨퍼런스</span>
+							             </p>
+							        </dd>
+							    </dl >
+                            <dl class="gnb_sub_article_re3">
+                                   
+                                     <dt>
+							           &lt;칼럼&gt;
+							        </dt>
+							        <dd>
+							           <p class='sub_image'>  
+                                           <img src='img/cl.jpg' alt="클레멘타인 사진">
+							             </p> 
+							             <p class='sub_content' >
+							                박꽃의 플라워무비
+							                <span> 클레멘타인</span>
+							             </p>
+
+							        </dd>
+							        <dd>
+							           <p class='sub_image'>  
+                                           <img src='img/real_sul.jpg' alt="리얼 출연한 설리 사진">
+							             </p> 
+							             <p class='sub_content' >
+							                김수진의 단상
+							                <span> 리얼에 대한 단상</span>
+							             </p>
+							        </dd>
+							    </dl>
+                            </div>						
+						 </div>
+				    </li>
+					<li>
+					    <a href="#" title="메인메뉴 기사 바로가기">최신동영상</a>
+					     <div class="gnb_sub">
+					        <strong>최신동영상</strong>  
+					    </div>
+						<div class="gnb_sub2">
+							<ul >
+								<li><a href = "#" title="서브메뉴 '예고편' 바로가기">예고편</a></li>
+								<li><a href = "#" title="서브메뉴 '뮤직비디오' 바로가기">뮤직비디오</a></li>
+								<li><a href = "#" title="서브메뉴 '메이킹 필름' 바로가기">메이킹 필름</a></li>
+								<li><a href = "#" title="서브메뉴 '현장속으로' 바로가기">현장속으로</a></li>
+							</ul>
+								<div class="gnb_sub_video gnb_sub_video1">
+                               <dl class="gnb_sub_video_re2">
+                                    <dt>
+							            &lt;예고편&gt;
+							        </dt>
+							        <dd>     
+							           <p class='sub_image'>  
+                                           <img src='img/n2.jpg' alt="분노의질주 사진">
+							             </p> 
+							           
+							            <p class='sub_content' >
+                                            국내 박스오피스 <span> 분노의 질주: 더 익스트림</span>
+							             </p>
+							        </dd>
+							        <dd>     
+							           <p class='sub_image'>  
+                                           <img src='img/dung2.jpg' alt="덩케르크 사진">
+							             </p> 
+							           
+							            <p class='sub_content' >
+							                덩케르크 <span> 라이브 컨퍼런스</span>
+							             </p>
+							        </dd>
+							    </dl >
+                            <dl class="gnb_sub_video_re3">
+                                   
+                                     <dt>
+							           &lt;메이킹 필름&gt;
+							        </dt>
+							        <dd>
+                                      
+							           <p class='sub_image'>  
+                                           <img src='img/cl.jpg' alt="클레멘타인 사진">
+							             </p> 
+							             <p class='sub_content' >
+							                박꽃의 플라워무비
+							                <span> 클레멘타인</span>
+							             </p>
+							        </dd>
+							        <dd>
+                                      
+							           <p class='sub_image'>  
+                                           <img src='img/real_sul.jpg' alt="리얼 출연한 설리 사진">
+							             </p> 
+							             <p class='sub_content' >
+							                김수진의 단상
+							                <span> 리얼에 대한 단상</span>
+							             </p>
+							        </dd>
+							    </dl>
+                           </div>
+                           
+                           <div class="gnb_sub_video gnb_sub_video2">
+                            <dl class="gnb_sub_video_re2">
+                                    <dt>
+							            &lt;뮤직비디오&gt;
+							        </dt>
+							        <dd>
+                                       
+							           <p class='sub_image'>  
+                                           <img src='img/n2.jpg' alt="분노의질주 사진">
+							             </p> 
+							           
+							            <p class='sub_content' >
+                                            국내 박스오피스 <span> 분노의 질주: 더 익스트림</span>
+							             </p>
+							        </dd>
+							        <dd>
+                                       
+							           <p class='sub_image'>  
+                                           <img src='img/dung2.jpg' alt="덩케르크 사진">
+							             </p> 
+							           
+							            <p class='sub_content' >
+							                덩케르크 <span> 라이브 컨퍼런스</span>
+							             </p>
+							        </dd>
+							    </dl >
+                            <dl class="gnb_sub_video_re3">
+                                   
+                                     <dt>
+							           &lt;현장속으로&gt;
+							        </dt>
+							        <dd>
+                                      
+							           <p class='sub_image'>  
+                                           <img src='img/cl.jpg' alt="클레멘타인 사진">
+							             </p> 
+							          
+							            
+							             <p class='sub_content' >
+							                박꽃의 플라워무비
+							                <span> 클레멘타인</span>
+							             </p>
+							        </dd>
+							        <dd>
+                                      
+							           <p class='sub_image'>  
+                                           <img src='img/real_sul.jpg' alt="리얼 출연한 설리 사진">
+							             </p> 
+							          
+							            
+							             <p class='sub_content' >
+							                김수진의 단상
+							                <span> 리얼에 대한 단상</span>
+							             </p>
+							        </dd>
+							    </dl>
+                            </div>
+						 </div>
+				    </li>
+					<li>
+					    <a href="#" title="메인메뉴 인터뷰 바로가기">인터뷰</a>
+					     <div class="gnb_sub">
+					        
+					        <strong>인터뷰</strong>
+					    </div>
+						<div class="gnb_sub2">
+							<ul >
+							   <li><a href = "#" title="서브메뉴 '인터뷰' 바로가기">인터뷰</a></li>
+								<li><a href = "#" title="서브메뉴 'B컷열전' 바로가기">B컷열전</a></li>
+							</ul>
+							<div class="gnb_sub_interview ">
+                                <dl class="gnb_sub_interview_re1">
+                                    <dt>
+							          <p class="sub_int_img"><img src="img/i_jsm.jpg" alt="카3 사진"/></p> 
+							        </dt>
+							        <dd>
+                                       
+							           <p class="sub_int_name"> 정소민</p>
+							           <p><a href = "#" title="서브메뉴 '코미디 장르가 가장 자신 없었다 ' 바로가기">&lt;인터뷰&gt;“코미디 장르가 가장 자신 없었다” </a></p>
+							           <p><a href = "#" title="어떤 포즈도 잘 어울리는">&lt;B컷열전&gt;어떤 포즈도 잘 어울리는</a></p>
+							        </dd>
+							    </dl>
+                               <dl class="gnb_sub_interview_re1">
+                                    <dt>
+							          <p class="sub_int_img"><img src="img/sub_int_chs.jpg" alt="카3 사진"/></p>
+							        </dt>
+							        <dd>
+                                  
+							           <p class="sub_int_name">최희서</p>
+							           <p><a href = "#" title="서브메뉴 '진심이 아니면 연기할 수 없는 배우 <박열> 최희서' 바로가기">&lt;인터뷰&gt;진심이 아니면 연기할 수 없는 배우</a></p>
+							           
+							        </dd>
+							    </dl>
+                            </div>
+						 </div>
+				    </li>
+					<li>
+					    <a href="#" title="메인메뉴 커뮤니티 바로가기">커뮤니티</a>
+					     <div class="gnb_sub">
+					        <strong>커뮤니티</strong>
+					        
+					    </div>
+						<div class="gnb_sub2">
+							<ul>
+								<li><a href = "#" title="서브메뉴 '영화 수다' 바로가기">영화 수다</a></li>
+								<li><a href = "#" title="서브메뉴 '갤러리' 바로가기">갤러리</a></li>
+								<li><a href = "#" title="서브메뉴 '네티즌 논쟁' 바로가기">네티즌 논쟁</a></li>
+								<li><a href = "#" title="서브메뉴 '1:1문의' 바로가기">1:1문의</a></li>
+							</ul>
+							<dl class="com_menu">
+								<dt><img src="img/talk.png" alt="목 짧은 기린 지피 시사회 포스터"/></dt>
+								<dd>
+								    <p>영화 수다 </p>
+								    <p>영화와 관련한 이야기들을 소통하는 공간입니다.</p>
+								    
+								</dd>
+							</dl>
+							<dl class="com_menu">
+								<dt><img src="img/gallery.png" alt="충무로뮤지컬영화제 상영작 스위트 채리티 포스터"/></dt>
+								<dd>
+								<p>갤러리</p>
+								 <p>영화 속 장면이나 배우의 사진을 감상하는 공간입니다.</p>
+								
+								</dd>
+							</dl>
+							<dl class="com_menu">
+								<dt><img  src="img/battle.png" alt="군함도 포스터"/></dt>
+								<dd>
+								    <p>네티즌 논쟁 </p>
+								    <p>영화와 관련된 사안에 대해 네티즌들끼리 의견을 공방하는 공간입니다.</p>
+								 
+								</dd>
+							</dl>
+							<dl class="com_menu">
+								<dt><img src="img/qna.png" alt="목 짧은 기린 지피 시사회 포스터"/></dt>
+								<dd>
+								    <p>1:1문의</p>
+								    <p>홈페이지에 관련된 사항을 알려주는 공간입니다.</p>
+								    
+								</dd>
+							</dl>
+						</div>
+				    </li>
+			
+				</ul>
+				
+			</nav>
+			<div class="gnb_box2 ">
+				<div class="m_play ">
+				<a href="#">
+					<span class="play_arrow1"></span>
+				
+					<span class="play_arrow2"></span>
+					<span class="play_arrow3"></span>
+					<span class="play_arrow4"></span>
+					<span class="play_arrow5"></span>
+				</a>
+		</div>
+		<nav class="gnb_m_box">
+			<h2 class="hidden">주요내용 세로버전</h2>				
+			<ul class="gnb_m">
+				<li>
+					<a href="#">상영작/예매</a>
+					<ul class="gnb_m_sub">
+							
+							<li><a href="http://www.naver.com">예매</a></li>
+							<li><a href="http://www.naver.com#">현재상영작</a></li>
+							<li><a href="http://www.naver.com">상영예정작</a></li>
+							<li><a href="http://www.naver.com">박스오피스</a></li>
+							<li><a href="http://www.naver.com">최고 top100</a></li>
+							<li><a href="http://www.naver.com">굴욕 top100</a></li>
+
+						</ul>
+				</li>
+				<li>
+					<a href="#">리뷰</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">평론가 리뷰</a></li>
+							<li><a href="#">네티즌 리뷰</a></li>
+							<li><a href="#">네티즌 20자평</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="#">이벤트</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">진행중 이벤트</a></li>
+							<li><a href="#">이벤트 당첨자</a></li>
+							<li><a href="#">지난 이벤트</a></li>
+					
+							
+						</ul>
+				</li>
+				
+				
+				<li>
+					<a href="#">기사</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">한마디 뉴스</a></li>
+							<li><a href="#">칼럼</a></li>
+							<li><a href="#">스페셜</a></li>
+							
+							
+							
+						</ul>
+				</li>
+				
+				<li>
+					<a href="#">최신동영상</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">예고편</a></li>
+							<li><a href="#">뮤직비디오</a></li>
+							<li><a href="#">메이킹 필름</a></li>
+							<li><a href="#">현장속으로</a></li>
+							
+							
+						</ul>
+				</li>
+				<li>
+					<a href="#">인터뷰</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">인터뷰</a></li>
+							<li><a href="#">B컷 열전</a></li>
+							
+							
+							
+						</ul>
+				</li>
+				<li>
+					<a href="#">커뮤니티</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">영화수다</a></li>
+							<li><a href="#">갤러리</a></li>
+							<li><a href="#">네티즌 논쟁</a></li>
+							
+							
+						</ul>
+				</li>
+				
+
+
+				
+
+
+			</ul>
+		</nav>	 
+			</div>
+			<ul class="log">
+				<li><a href="./login.html" title="로그인 창 바로가기">로그인</a></li>
+				<li><a href="./form2.html" title="회원가입 창 바로가기">회원가입</a></li>
+			</ul>
+		</header>
+		<!--		header end-->
+		
+		<div id="main">
+			 <section class="con visual">
+				<h3 class="hidden">스파이더맨 홈커밍 7월 개봉</h3>
+				<ul class="sliding_ul">
+				    <li><img src="img/park.jpg" alt="박열"/></li>
+				    <li><img src="img/v.jpg" alt="스파이더맨 홈커밍"/></li>
+				    <li><img src="img/bee.jpg" alt="트랜스포머5 최후의 기사"/></li>
+				</ul>
+				    <ul class= "v_btn">
+					    <li class="left"><a href="#" title="왼쪽화살표"><img src="img/left.png" alt="왼쪽으로 가기"/></a></li>
+					    <li class="stop"><a href="#" title="멈춤"><img src="img/stop.png" alt="가운데 가기"/></a></li>
+					    
+					       <li class="right"><a href="#" title="오른쪽화살표"><img src="img/right.png" alt="오른쪽가기"/></a></li>
+				    </ul>
+				
+			</section>
+            
+		<section class="con con1">
+				<h3 class="hidden">차트</h3>
+				<ul class="chart_tab">
+					<li class="tab_li1"><a href="#" title="박스오피스 차트 보기" class="selected">박스오피스</a>
+					    <div class="chartbox">
+					         <ul class="chart chart1">
+					<li>
+						<p class="number">1</p>
+						<p class="poster"><img src="img/transform_poter2.jpg" alt="트랜스포머5 최후의 기사 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							
+								<p class="c_hover_title">트랜스포머5 최후의 기사 </p>
+<p class="c_hover_star">★★★★☆</p>
+								<p>12세 이용가</p>
+								<p>개봉 D+8</p>
+								<p>누적관객수 : 1,000,000</p>
+								<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+								
+								
+
+						</div>
+					</li>
+					<li>
+						<p class="number">2</p>
+						<p class="poster"><img src="img/dung.jpg" alt="덩케르크 차트보기"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">덩케르크</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>							
+
+						</div>
+					</li>
+					<li>
+					
+						<p class="number">3</p>
+						<p class="poster"><img src="img/taxi.jpg" alt="택시운전사 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">택시운전사</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+						
+					</li>
+					<li>
+						<p class="number">4</p>
+						<p class="poster"><img src="img/kunham.jpg" alt="군함도 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">군함도</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">5</p>
+						<p class="poster"><img src="img/real.jpg" alt="보안관 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">리얼</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				    <li>
+						<p class="number">6</p>
+						<p class="poster"><img src="img/okja.jpg" alt="옥자 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">옥자</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+                                <span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+                            </p>
+						</div>
+					</li>
+					<li>
+						<p class="number">7</p>
+						<p class="poster"><img src="img/kingsman.jpg" alt="킹스맨: 골든 서클  포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">킹스맨: 골든 서클 </p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">8</p>
+						<p class="poster"><img src="img/thor.jpg" alt="토르: 라그나로크 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">토르: 라그나로크 </p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">9</p>
+						<p class="poster"><img src="img/coco.jpg" alt="코코  포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">코코 </p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">10</p>
+						<p class="poster"><img src="img/justice.jpg" alt="저스티스 리그 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">저스티스 리그</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				
+				</ul>
+					        
+					    </div>
+					
+					</li>
+					<li><a href="#" title="평점 차트 보기">평점순</a>
+					     <div class="chartbox">
+					     
+					     <ul class="chart chart2">
+					<li>
+						<p class="number">1</p>
+						<p class="poster"><img src="img/prism.jpg" alt="킹오브 프리즘 프라이드 더 히어로 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							
+								<p class="c_hover_title">킹오브 프리즘 프라이드<br/> 더 히어로</p>
+								<p class="c_hover_star">★★★★☆</p>
+								<p>12세 이용가</p>
+								<p>개봉 D+8</p>
+								<p>누적관객수 : 1,000,000</p>
+								<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+								
+								
+
+						</div>
+					</li>
+					<li>
+						<p class="number">2</p>
+						<p class="poster"><img src="img/miss.jpg" alt="미스사이공 25주년 특별 공연 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">미스사이공 25주년 특별 공연</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>							
+
+						</div>
+					</li>
+					<li>
+					
+						<p class="number">3</p>
+						<p class="poster"><img src="img/jikji.jpg" alt="직지코드 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">직지코드</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+						
+					</li>
+					<li>
+						<p class="number">4</p>
+						<p class="poster"><img src="img/marian.jpg" alt="마리안느와 마가렛 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">마리안느와 마가렛</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">5</p>
+						<p class="poster"><img src="img/cat.jpg" alt="고양이로소이다 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">고양이로소이다</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				    <li>
+						<p class="number">6</p>
+						<p class="poster"><img src="img/wind.jpg" alt="바람의 춤꾼 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">바람의 춤꾼</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">7</p>
+						<p class="poster"><img src="img/sound.jpg" alt="사운드 오브 뮤직 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">사운드 오브 뮤직</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">8</p>
+						<p class="poster"><img src="img/seoseo.jpg" alt="서서평 천천히 평온하게 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">보안관</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">9</p>
+						<p class="poster"><img src="img/kiss.jpg" alt="첫키스만 50번째 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">첫키스만 50번째</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">10</p>
+						<p class="poster"><img src="img/old.jpg" alt="노후대책없다 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">노후대책없다</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				
+				</ul></div>
+					</li>
+					<li><a href="#" title="예매순 차트 보기">예매순</a>
+					     <div class="chartbox">
+					         
+					         <ul class="chart chart3">
+					<li>
+						<p class="number">1</p>
+						<p class="poster"><img src="img/park2.jpg" alt="박열 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							
+								<p class="c_hover_title">박열</p>
+								<p class="c_hover_star">★★★★☆</p>
+								<p>12세 이용가</p>
+								<p>개봉 D+8</p>
+								<p>누적관객수 : 1,000,000</p>
+								<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+								
+								
+
+						</div>
+					</li>
+					<li>
+						<p class="number">2</p>
+						<p class="poster"><img src="img/transform_poter2.jpg" alt="트랜스포머5 최후의 기사 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">트랜스포머5 최후의기사</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>							
+
+						</div>
+					</li>
+					<li>
+					
+						<p class="number">3</p>
+						<p class="poster"><img src="img/real.jpg" alt="리얼 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">리얼</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+						
+					</li>
+					<li>
+						<p class="number">4</p>
+						<p class="poster"><img src="img/okja.jpg" alt="보스베이비 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">옥자</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">5</p>
+						<p class="poster"><img src="img/mira.jpg" alt="미이라 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">미이라</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				    <li>
+						<p class="number">6</p>
+						<p class="poster"><img src="img/haru.jpg" alt="하루 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">하루</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">7</p>
+						<p class="poster"><img src="img/evil.jpg" alt="악녀 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">악녀</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">8</p>
+						<p class="poster"><img src="img/17.jpg" alt="지랄발광 17세 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">지랄발광 17세</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">9</p>
+						<p class="poster"><img src="img/v3.jpg" alt="스파이더맨 홈커밍 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">스파이더맨 홈커밍</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">10</p>
+						<p class="poster"><img src="img/headeweek.jpg" alt="헤드윅 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">헤드윅</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				
+				</ul>
+					     </div>
+					</li>
+					<li><a href="#" title="현재 상영작 차트 보기">현재상영작</a>
+					     <div class="chartbox"> <ul class="chart chart4">
+					<li>
+						<p class="number">1</p>
+						<p class="poster"><img src="img/transform_poter2.jpg" alt="트랜스포머5 최후의 기사 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							
+								<p class="c_hover_title">트랜스포머5 최후의 기사</p>
+								<p class="c_hover_star">★★★★☆</p>
+								<p>12세 이용가</p>
+								<p>개봉 D+8</p>
+								<p>누적관객수 : 1,000,000</p>
+								<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+								
+								
+
+						</div>
+					</li>
+					<li>
+						<p class="number">2</p>
+						<p class="poster"><img src="img/park2.jpg" alt="박열 포스터 보기"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">박열</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>							
+
+						</div>
+					</li>
+					<li>
+					
+						<p class="number">3</p>
+						<p class="poster"><img src="img/okja.jpg" alt="옥자 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">옥자</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+						
+					</li>
+					<li>
+						<p class="number">4</p>
+						<p class="poster"><img src="img/real.jpg" alt="옥자 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">리얼</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">5</p>
+						<p class="poster"><img src="img/17.jpg" alt="지랄발광 17세 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">지랄발광 17세</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				    <li>
+						<p class="number">6</p>
+						<p class="poster"><img src="img/cat.jpg" alt="고양이로소이다 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">고양이로소이다.</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">7</p>
+						<p class="poster"><img src="img/mira.jpg" alt="미이라 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">미이라</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">8</p>
+						<p class="poster"><img src="img/wonder.jpg" alt="원더우먼 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">원더우먼</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">9</p>
+						<p class="poster"><img src="img/haru.jpg" alt="하루 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">하루</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">10</p>
+						<p class="poster"><img src="img/no.jpg" alt="노무현입니다 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">노무현입니다</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				
+				</ul></div>
+					</li>
+					<li><a href="#" title="개봉예정작 차트 보기">개봉예정작</a>
+					     <div class="chartbox">
+					         <ul class="chart chart5">
+					<li>
+						<p class="number">1</p>
+						<p class="poster"><img src="img/jae.jpg" alt="재꽃 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							
+								<p class="c_hover_title">재꽃</p>
+								<p class="c_hover_star">★★★★☆</p>
+								<p>12세 이용가</p>
+								<p>개봉 D+8</p>
+								<p>누적관객수 : 1,000,000</p>
+								<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+								
+								
+
+						</div>
+					</li>
+					<li>
+						<p class="number">2</p>
+						<p class="poster"><img src="img/who.jpg" alt="그 후 포스터 보기"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">그 후</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>							
+
+						</div>
+					</li>
+					<li>
+					
+						<p class="number">3</p>
+						<p class="poster"><img src="img/berlin.jpg" alt="베를린 신드롬 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">베를린 신드롬</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+								<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+						
+					</li>
+					<li>
+						<p class="number">4</p>
+						<p class="poster"><img src="img/the.jpg" alt=">더 킬러 소녀살인 포스터"/></p>
+						<p class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">더 킬러 소녀살인</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span>
+									<span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">5</p>
+						<p class="poster"><img src="img/musical.jpg" alt="뮤지컬 쉬 러브즈 미 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">뮤지컬 쉬 러브즈 미</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				    <li>
+						<p class="number">6</p>
+						<p class="poster"><img src="img/love.jpg" alt="사랑과 욕망의 짐노페디  포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">사랑과 욕망의 짐노페디 </p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">7</p>
+						<p class="poster"><img src="img/mylove.jpg" alt="내 사랑 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">내 사랑</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">8</p>
+						<p class="poster"><img src="img/dark.jpg" alt="다크 나이트  포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">다크 나이트</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">9</p>
+						<p class="poster"><img src="img/car.jpg" alt="카3: 새로운 도전  포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">카3: 새로운 도전 </p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+					<li>
+						<p class="number">10</p>
+						<p class="poster"><img src="img/american.jpg" alt="아메리칸 허니: 방황하는 별의 노래 포스터"/></p>
+						<p  class="line">예매율<span >90%</span></p>
+						<div class="chart_hover">
+							<p class="c_hover_title">아메리칸 허니: 방황하는 별의 노래</p>
+							<p class="c_hover_star">★★★★☆</p>
+							<p>12세 이용가</p>
+							<p>개봉 D+8</p>
+							<p>누적관객수 : 1,000,000</p>
+							<p>상영시간:!40분</p>
+							<p class="c_hover_btn">
+									<span><a href="#" title="예매 페이지로 이동">예매하기</a></span><span><a href="#" title="예매 페이지로 이동">상세정보</a></span>
+								</p>
+						</div>
+					</li>
+				
+				</ul>
+					         
+					         
+					     </div>
+					</li>
+				</ul>
+		
+               
+				<ul class="chart_arrow">
+					<li><a href="#" class="selected4"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+				<ul class="chart-side-button">
+					<li><a href="#" class="c-left"><img src="img/c_left.png" alt="차트 왼쪽버튼"></a></li>
+					<li><a href="#" class="c-right"><img src="img/c_right.png" alt="차트 오른쪽버튼"></a></li>
+				</ul>	
+			</section> 
+			<section class="con con2">
+				<h3 class="hidden">콘텐츠2</h3>
+				<article class="w w930">
+					<h4>리뷰</h4>
+					<ul class="review_tab">
+						<li class="review_tab_li1">
+							<a href="#" title="전문가 리뷰 보기" class="selected2">전문가 리뷰</a>
+							<ul class="review review1">
+						        <li>
+							        <a href="#" title="가디언즈 오브 갤럭시2 리뷰보기">
+							            <p class="review_title">가디언즈 오브 갤럭시 vol2</p>
+								        <p class="review_bg"><img src="img/34s.jpg" alt="가디언즈 오브 갤럭시2 사진"/></p>
+								        <div class="review_info">
+									        <p class="review_point"><span>오락성:8.0</span><span>작품성:8.0</span></p>
+									        <p class="review_col">감성적인 음악과 개성있는 캐릭터로 중무장하다.</p>
+								        </div>
+								
+							        </a>
+						        </li>
+						        <li>
+							        <a href="#" title="보스베이비 리뷰보기">
+							            <p class="review_title">보스 베이비</p>
+								        <p class="review_bg"><img src="img/boss.jpg" alt="보스베이비 사진"/></p>
+								        <div class="review_info other_color">
+								
+									        <p class="review_point"><span>오락성:7.0</span><span>작품성:7.0</span></p>
+									        <p class="review_col">어른의 심리 적중한 기발한 애니메이션.</p>
+								        </div>
+							        </a>
+						        </li>
+						        <li class="off">
+							        <a href="#" title="특별시민 리뷰보기">
+							            <p class="review_title">특별시민</p>
+								        <p class="review_bg"><img src="img/c3.jpg" alt="특별시민 사진"/></p>
+								        <div class="review_info">
+									        <p class="review_point"><span>오락성:7.0</span><span>작품성:6.0</span></p>
+									<p class="review_col"> 최민식의 무게감은 여전하지만, 깊은 여운을 남기지는 못한다 </p>
+								</div>
+							</a>
+						</li>
+					</ul>
+						
+						
+						
+						
+						</li>
+						<li>
+
+							<a href="#" title="네티즌 리뷰 보기">네티즌 리뷰</a>
+							<ul class="review review2">
+						<li>
+							<a href="#" title="가디언즈 오브 갤럭시2 리뷰보기"><p class="review_title">몰입도 최고였던 시사 후기 입니다.</p>
+								<p class="review_bg"><img src="img/34s.jpg" alt="가디언즈 오브 갤럭시2 사진"/></p>
+								<div class="review_info">
+									
+									<p class="review_col">예고편을 보고 관심을 갖게 된 영화 &lt;크리미널&gt;
+
+영화는 CIA 요원의 기억이 범죄자에게 이식되어 테러를 막는다는 신선한 설정으로 흥미를 자극했다.
+
+
+
+그렇게 영화를 기대하던 중, 시사회에 당첨되어 개봉보다 먼저 영화를 보고 왔다
+
+운 좋게 GV 시사까지 예정되어있어서 뇌과학 정재승 박사님의 신기하고 흥미로운 영화 해석까지 들을 수 있는 유쾌한 시간이었다.
+
+
+
+&lt;크리미널&gt;은 3가지 흥미요소를 지니고 있었다. 
+
+
+
+먼저, 영화가 뇌를 이식한다는 현실적인 스토리라는 점이다.
+
+영화가 끝난 후 사람에게 기억을 이식한다는게 가능한건가? 얼핏 이식이</p>
+									<p class="review_point"><span>2017-06-29</span><span>dlxorb1223</span></p>
+								</div>
+								
+							</a>
+						</li>
+						<li >
+							<a href="#" title="보스베이비 리뷰보기"><p class="review_title">뻔한 내용. 그러나 감동은 여전히 밀려온다.</p>
+								<p class="review_bg"><img src="img/boss.jpg" alt="보스베이비 사진"/></p>
+								<div class="review_info other_color">
+								
+									
+									<p class="review_col"> 시사회 이벤트에 당첨되서 보고 왔습니다.배우분들의 무대인사가 있어서 더욱 좋았는데요.제가 좋아하는 김슬기씨를 봐서 좋았구요.특히, 수애씨는 여신인 줄 알았네요.국가대표2 이지만 전편과의 연관성은 없습니다.다만 비인기 스포츠의 국가대표로 이야기를 진행한다는 점이 같죠.뻔하지만 그 뻔한 감동을 느끼고자 보는 영화일 것 같습니다.</p>
+									<p class="review_point"><span>2017-06-29</span><span>dlxorb1223</span></p>
+								</div>
+							</a>
+						</li>
+						<li class="off">
+							<a href="#" title="특별시민 리뷰보기"><p class="review_title">순간순간의 감정을 잘 표현하며 감동을 줬다.</p>
+								<p class="review_bg"><img src="img/c3.jpg" alt="특별시민 사진"/></p>
+								<div class="review_info">
+									
+									<p class="review_col"> 지루할지 모를 소재를 가지고 지루하지 않게 잘 만들었다. 시간의 흐름 속에서 주인공과 그 주변 관계의 감정 표현이 잘 표현됐으며, 흐름이 끝어지지 않게 흡입력도 좋았다. 결말도 좋게 끝나서 좋았는데 특별히 완전한 해피 엔딩이 아닌 약간의 여윤이 남는 결말이어서 더 좋았다. 마지막으로 주제에 맞게 이 영화의 목적을 잘 전달했고, 영화를 보는 관객으로 하여금 이 주제가 중요한 주제임을 인지하게 했음에 좋은 영화였다는 평을 내게 됐다. 가장 기분을 좋게 만든 것은 이것이 실화라는 것이다. 실제로 대부분의 아이들은 이렇게 부모를 찾지 못하는 경우가 태반임에도 불구하고 긴 시간을 지난 후에, 단 한명의 아이라도 진짜 부모를 찾았다는게 참 기분을 좋게 만들어 줬다. </p>
+									<p class="review_point"><span>2017-06-29</span><span>dlxorb1223</span></p>
+								</div>
+							</a>
+						</li>
+					</ul>		
+
+						</li>
+					</ul>
+					
+<!--					review1 end           -->
+                
+                
+                
+					
+				</article>
+				
+				
+				
+				
+				
+              <!--    	con2-1 end        -->
+				
+				
+				
+				
+				
+				
+				
+				<article class="w w270">
+				
+					<h4>네티즌 20자평</h4>
+					<dl>
+                        <dt><strong>킹아서</strong><span class="netizen_star">★☆☆☆☆</span><span class="arc_icon"><img src="img/arc_icon.png" alt="접기/펴기버튼"></span></dt>			
+					    <dd>
+					    <p class="netizen_bg">
+						    <img src="img/king2.png" alt="킹아서 사진" />
+						    <a href="#" title="네티즌 20자평 페이지로 넘어가기">
+				    			    
+							    <span class="netizen_col">나와선 안될 영화</span><span class="netizen_id">dlx***</span>
+						</a>
+					    </p>
+					    </dd>
+                        <dt><strong>특별시민</strong><span class="netizen_star">★★★☆☆</span><span class="arc_icon"><img src="img/arc_icon.png" alt="접기/펴기버튼"></span></dt>
+					    <dd>
+                        <p>
+					        <img src="img/citizen.jpg" alt="특별시민 사진" />
+						    <a href="#" title="네티즌 20자평 페이지로 넘어가기"><span class="netizen_col">최민식이 연기를 잘한다</span><span class="netizen_id">dlx***</span></a>
+					    </p>
+					    					    
+                        </dd>
+					<dt><strong>스파이더맨 홈커밍</strong><span class="netizen_star">★★★☆☆</span><span class="arc_icon"><img src="img/arc_icon.png" alt="접기/펴기버튼"></span></dt>
+					<dd>
+					    <p>
+					        <img src="img/spi.jpg" alt="스파이더맨 사진" />
+						    <a href="#" title="네티즌 20자평 페이지로 넘어가기"><span class="netizen_col">고딩거미가 매력적</span><span class="netizen_id">dlx***</span></a>
+					    </p>
+                   </dd>
+                  
+                    </dl>											
+														
+				</article>
+			</section>
+        	<section class="con con3">
+				<h3 class="hidden">이벤트</h3>
+				<a href="#" title="에일리언 커버넌트 시사회 이벤트 페이지 이동">
+					<img src="img/event.jpg" alt="에일리언 커버넌트시사회 이벤트"/>
+				</a>
+			</section>
+				
+			<section class="con con4">
+				<h3 class="hidden">컨텐츠</h3>
+				<article class="w w930">
+					<h4>뉴스</h4>
+					<div class="fl"	>
+						<p class="news_img"><img src="img/n1.jpg" alt="석조저택 살인사건 사진"/></p>
+						
+						<p class="news_title"><a href="#" title="보자마자 한마디! 고수 김주혁 살인사건 뉴스 바로가기">보자마자 한마디! 고수 김주혁 &lt;석조저택 살인사건&gt;</a></p>
+					
+					</div>
+					
+					<ul class="fr">
+						<li>보자마자 한마디! 고수 김주혁 &lt;석조저택 살인사건&gt;<a href="1#" class="selected3">보자마자 한마디! 고수 김주혁 &lt;석조저택 살인사건&gt;</a></li>
+						
+						<li>국내 박스오피스 &lt;분노의 질주: 더 익스트림&gt; 독보적 1위!
+							<a href="#">국내 박스오피스 &lt;분노의 질주: 더 익스트림&gt; 독보적 1위!</a>
+						</li>
+						
+						<li>유지태, 라스 폰 트리에 감독 영화 출연! 리뷰! &lt;특별시민>&lt;더 플랜&gt; &lt;임금님의 사건 수첩&gt;
+						<a href="2#">유지태, 라스 폰 트리에 감독 영화 출연!리뷰! &lt;특별시민>&lt;더 플랜&gt; &lt;임금님의 
+							사건 수첩&gt;</a>
+						</li>
+						<li>서울환경영화제, &lt;변호인&gt;과 ‘시네마달’ 대표에 ‘블랙리스트...류준열, 유지태, 조
+							우진 출연 &lt;돈&gt; 5눨 12일 크랭크인!<a href="3#">서울환경영화제, &lt;변호인&gt;과 ‘시네마달’ 대표에 ‘블랙리스트...류준열, 유지태, 조우진 출연 &lt;돈&gt; 5눨 12일 크랭크인!</a></li>
+							
+						<li class="off">리뷰! &lt;특별시민&gt; &lt;더 플랜&gt; &lt;임금님의 사건 수첩&gt;
+							<a href="#">리뷰! &lt;특별시민&gt; &lt;더 플랜&gt; &lt;임금님의 사건 수첩&gt;</a>
+						</li>
+					</ul>
+				</article>
+				
+				
+				
+				<article class="w w270">
+					<h4>커뮤니티</h4>
+					
+					<div>
+						<h5>영화수다</h5>
+					    <ul class="suda_nav">
+							<li class="suda_left"><a href="#"><img src="img/left.jpg" alt="왼쪽"></a></li>
+							<li class="suda_right"><a href="#"><img src="img/right.jpg" alt="오른쪽"></a></li>
+						</ul>	
+						<ul class='suda_list'>
+							<li>
+								<a href="#">
+										<span class="no1">1</span>5월 베스트 워스트 꼽고싶었는데	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>2</span> 개봉을 앞둔 작품 속 의외의 캐스팅 18인 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>3</span> 압박감 많이 느껴졌던 대립군VIP 시사회 레드카펫,무대인사 영상 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>4</span> 	에일리언 커버넌트시사회 이벤트
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>5</span> [미이라] 아마네트 공주(소피아 부텔라) 최신 스틸	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>6</span>	트레인스포팅2 vod 왜 안뜨나요?? 
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>7</span> 지금 채널4번cj홈쇼핑 오글오글ㅋㅋㅋㅋㅋ 
+								</a>
+							</li>	
+							<li>
+								<a href="#">
+										<span>8</span> 임금님의 사건 수첩
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>9</span> 	트레인스포팅2 vod 왜 안뜨나요?? 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>10</span> 청년 문화허브 '상상마당' 서면에 선다	
+								</a>
+							</li>
+					</ul>
+					</div>
+					<div>
+						<h5>네티즌 논쟁</h5>
+						<ul class="suda_nav">
+							<li class="suda_left"><a href="#"><img src="img/left.jpg" alt="왼쪽"></a></li>
+							<li class="suda_right"><a href="#"><img src="img/right.jpg" alt="오른쪽"></a></li>
+						</ul>
+						<ul class='suda_list'>
+						    
+							<li>
+								<a href="#">
+										<span class="no1">1</span> [왕좌의 게임] 스타크 가문 EW 커버 5종
+								</a>
+								
+							</li>
+							<li>
+								<a href="#">
+										<span>2</span> 개봉을 앞둔 작품 속 의외의 캐스팅 18인 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>3</span> 압박감 많이 느껴졌던 대립군VIP 시사회 레드카펫,무대인사 영상 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>4</span> 	4dx카드 할인예매랑 중복되느냐가 문제 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>5</span> [미이라] 아마네트 공주(소피아 부텔라) 최신 스틸	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>6</span>[왕좌의 게임] 스타크 가문 EW 커버 5종	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>7</span> 지금 채널4번cj홈쇼핑 오글오글ㅋㅋㅋㅋㅋ 
+								</a>
+							</li>	
+							<li>
+								<a href="#">
+										<span>8</span> 택시운전사 최신스틸
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>9</span> 	트레인스포팅2 vod 왜 안뜨나요?? 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>10</span> 5월 베스트 워스트 꼽고싶었는데	
+								</a>
+							</li>
+					</ul>
+					</div>
+					<div>
+						<h5>갤러리</h5>
+						<ul class="suda_nav">
+							<li class="suda_left"><a href="#"><img src="img/left.jpg" alt="왼쪽"></a></li>
+							<li class="suda_right"><a href="#"><img src="img/right.jpg" alt="오른쪽"></a></li>
+						</ul>
+						<ul class='suda_list'>
+							<li>
+								<a href="#">
+										<span class="no1">1</span> 개봉을 앞둔 작품 속 의외의 캐스팅 18인
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>2</span>청년 문화허브 '상상마당' 서면에 선다	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>3</span>4dx카드 할인예매랑 중복되느냐가 문제
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>4</span>압박감 많이 느껴졌던 대립군VIP 시사회 레드카펫,무대인사 영상 	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>5</span>[왕좌의 게임] 스타크 가문 EW 커버 5종
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>6</span>[미이라] 아마네트 공주(소피아 부텔라) 최신 스틸	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>7</span> 달콤한 보너스 포인트.. 
+								</a>
+							</li>	
+							<li>
+								<a href="#">
+										<span>8</span>지금 채널4번cj홈쇼핑 오글오글ㅋㅋㅋㅋㅋ 
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>9</span> 5월 베스트 워스트 꼽고싶었는데		
+								</a>
+							</li>
+							<li>
+								<a href="#">
+										<span>10</span> 택시운전사 최신스틸
+								</a>
+							</li>
+					</ul>
+					</div>
+				</article>
+			</section>
+		<section class="con con5">
+				<h3 class="hidden">컨텐츠</h3>
+				<article class="w w930">
+					<div class=" int_cover">
+						<h4>인터뷰</h4>	
+						<div class="int int1">
+							<a href="#" title="이성민 인터뷰 페이지 바로가기">
+								<p class="int_img">
+									<img src="img/i1.jpg" alt="이성민 사진"/>
+								</p>
+								<p class=" int_con int_con1"><strong>&lt;보안관&gt;이성민</strong>메인 재료로서의 가능성을
+								시험하다.<span>2017-05-17</span></p>
+							</a>
+						</div>
+						<div class="int int3">
+							<a href="#" title="최민식 인터뷰 페이지 바로가기">
+								<p class="int_img">
+									<img src="img/i3.jpg" alt="최민식 사진"/>
+								</p>
+								<p class="int_con int_con3"><strong>&lt;특별시민&gt;최민식</strong>여전히 배고프다.<span>2017-05-17</span></p>
+							</a>
+						</div>
+						<div class="int int2">
+							<a href="#" title="정소민 인터뷰 페이지 바로가기">
+								<p class="int_img"><img src="img/i2.jpg" alt="정소민 사진"/></p>
+								<p class="int_con int_con2"><strong>&lt;아빠는 딸&gt;정소민</strong>코미디 장르가 가장 자신 없었다.<span>2017-05-17</span></p>
+							</a>
+							
+						</div>
+					</div>	
+					
+				</article>
+				<article class="w w270">
+					<h4><a href="#" title="보안관 예고편 바로가기">최신동영상</a></h4>
+					<a href="#" title="보안관 예고편 바로가기">
+						<p class="trailer">
+							<img src="img/play_bg.jpg" alt="보안관 사진"/>
+							<span class="movie_title">보안관 예고편</span>
+							<span class="movie_play">
+								<img src="img/movie_play.png" alt="play버튼">
+								예고편 보러가기
+							</span>
+						</p>
+					</a>	
+				</article>
+			</section>
+			<section class="con con6">
+				<h3 class="hidden">공지사항</h3>
+				<article class="notice">
+					<h4>공지사항</h4>
+					<p class="notice_title"><a href="#" title="[중요] 모든 게시물에 대한 저작권 관련 안내 바로가기">[중요] 모든 게시물에 대한 저작권 관련 안내<span>2017-05-21</span></a></p>
+					<p class="notice_more"><a href="#" title="공지사항 페이지 바로가기">더보기&gt;</a></p>
+				</article>
+			</section>
+		</div>
+		<footer id="footer">
+			<ul class="foot">
+				<li><a href="#" title="푸터 바로가기">사이트 소개</a></li>
+				<li><a href="#" title="푸터 바로가기">이용약관</a></li>
+				<li><a href="#" title="푸터 바로가기">개인정보취급방침</a></li>
+				<li><a href="#" title="푸터 바로가기">광고안내</a></li>
+				<li><a href="#" title="푸터 바로가기">제휴안내</a></li>
+			</ul>
+			<p class="copy">COPYRIGHT &copy; 2012</p>
+			<p>(주)무비나무 우157-200</p>
+			<address>서울시 강서 한화 비즈메트로 1차 1301호</address>
+			<p>대표번호 070-4616-6487</p>
+		</footer>
+	</div>
+  </body>
+</html>
