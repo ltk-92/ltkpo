@@ -1,0 +1,11 @@
+﻿*{padding:0; margin:0;list-style:none}
+
+#tabMenu{width:398px;height:300px ; border: 1px solid #skyblue;position:relative;background:yellow}
+#tabMenu>ul{margin-top:20px;width:398px; height:38px; border:1px solid skyblue}
+#tabMenu>ul>li{width:98px;height:38px;border-right: 1px solid skyblue;float:left}
+#tabMenu>ul>li:last-child{border-right:none; }
+#tabMenu>ul>li>a{text-decoration:none; text-align:center;width:100%;height:100%;display:inline-block}
+
+#tabMenu div{background: #fff;width:398px;border:160px; position:absolute; top:40px; left:0 ;border:1px solid skyblue; border-top:none; display:none}
+
+.on{background: skyblue; color:#eee}

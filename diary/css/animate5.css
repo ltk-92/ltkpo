@@ -1,0 +1,9 @@
+﻿.quick_toggle{position: fixed; top: 0; right: 70px; width: 70px; height: 70px; background: url(../image/quick_close.png) no-repeat; cursor: pointer;}
+.quick_open{position: fixed; top: 0; right: 70px; width: 70px; height: 70px; background: url(../image/quick_open.png) no-repeat; display: block; cursor: pointer;}
+.quickmenu{position: fixed; top: 0; right: 0; width: 70px; height: 100%; background: #585858; }
+.quickmenu .quick_icon{padding-top: 10px;}
+.quickmenu .quick_icon li{text-align: center;}
+.quickmenu .quick_bt{position: absolute; bottom: 0; right: 0;}
+.quickmenu .quick_bt li{padding: 1px 0;}
+
+

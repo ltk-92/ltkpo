@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url(common.css);
+
+.box_in .box{
+	width:1400px;
+	height:300px;
+}
+.box1, .box2, .box3, .box4{
+	float:left;
+	padding-right:5px;	
+}
+.box_in .box>div{    /* 보여지는 가로와 세로크기 */
+	width:239px;
+	height:294px;
+	overflow:hidden;
+}
+
+/*box1*/
+.box_in .box .box1>a>img{  /* over이미지 아래로 위치 */
+	position:absolute;
+	top:294px;
+	left:0;
+}
+.box_in .box .box1>a{  /* 이미지_off  */
+	display:block;
+	position:relative;
+	width:238px;
+	height:294px;
+	background:url(../image/hakbu_off_01.png) no-repeat;
+}
+
+/*box2*/
+.box_in .box .box2>a>img{  /* over이미지 아래로 위치 */
+	position:absolute;
+	top:294px;
+	left:0;
+}
+.box_in .box .box2>a{  /* 이미지_off  */
+	display:block;
+	position:relative;
+	width:238px;
+	height:294px;
+	background:url(../image/hakbu_off_02.png) no-repeat;
+}
+
+/*box3*/
+.box_in .box .box3>a>img{  /* over이미지 아래로 위치 */
+	position:absolute;
+	top:294px;
+	left:0;
+}
+.box_in .box .box3>a{  /* 이미지_off  */
+	display:block;
+	position:relative;
+	width:238px;
+	height:294px;
+	background:url(../image/hakbu_off_03.png) no-repeat;
+}
+
+/*box4*/
+.box_in .box .box4>a>img{  /* over이미지 아래로 위치 */
+	position:absolute;
+	top:294px;
+	left:0;
+}
+.box_in .box .box4>a{  /* 이미지_off  */
+	display:block;
+	position:relative;
+	width:238px;
+	height:294px;
+	background:url(../image/hakbu_off_04.png) no-repeat;
+}
+
+
+
+
+

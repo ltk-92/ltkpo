@@ -1,0 +1,12 @@
+﻿.banner{width:324px; height:400px; background: url(../image/mv_left.jpg) no-repeat; position: relative;}
+.banner .gogo{position: absolute; left:236px; top:90px}
+
+.banner .gogo .gogo1{overflow:hidden; width: 75px; height:75px}
+
+.banner .gogo .gogo1>a {display:block; position:relative; width:75px; height:75px; background:url(..umage/img_off_01.jpg) no-repeat;}
+.banner .gogo .gogo1>a img{position:absolute; left:-75px}
+
+.banner .gogo .gogo2{overflow:hidden; width: 75px; height:75px; margin-top:128px}
+
+.banner .gogo .gogo2>a {display:block; position:relative; width:75px; height:75px; background:url(..umage/img_off_02.jpg) no-repeat;}
+.banner .gogo .gogo2>a img{position:absolute; left:-75px}

@@ -1,0 +1,14 @@
+﻿.sub_list{width: 1000px; height: 850px; margin: 0 auto;}
+.sub_list div{float: left; margin: 20px 20px; border: 1px solid #0a0c31; width: 194px; height: 233px; overflow: hidden;}
+
+.sub_list .box1 a{width: 194px; height: 233px; display: block; position: relative; background: url(../image/sub3_01.jpg) no-repeat;}
+.sub_list .box1 a img{position: absolute; top: 200px; left: 0;}
+
+.sub_list .box2 a{width: 194px; height: 233px; display: block; position: relative; background: url(../image/sub3_02.jpg) no-repeat;}
+.sub_list .box2 a img{position: absolute; top: 200px; left: 0;}
+.sub_list .box3 a{width: 194px; height: 233px; display: block; position: relative; background: url(../image/sub3_03.jpg) no-repeat;}
+.sub_list .box3 a img{position: absolute; top: 200px; left: 0;}
+.sub_list .box4 a{width: 194px; height: 233px; display: block; position: relative; background: url(../image/sub3_04.jpg) no-repeat;}
+.sub_list .box4 a img{position: absolute; top: 200px; left: 0;}
+
+

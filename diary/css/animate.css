@@ -1,0 +1,6 @@
+﻿
+.box_in .box{width:176px; height:176px;}
+.box_in .box>div{width:176px; height:176px; overflow:hidden}
+.box_in .box .box1>a>img{position: absolute; top:176px; left:0;}
+
+.box_in .box .box1>a{display:block; position:relative; width:176px; height:176px; background:url(../image/point.png) no-repeat;}
