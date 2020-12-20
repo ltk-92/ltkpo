@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>연습</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bxslider.min.js"></script>
+    <script>
+      $(function(){
+        $('.map-button').click(function(){
+          $('.bg-black').show();
+        });
+        $('.close-btn').click(function(){
+          $('.bg-black').hide();
+        })
+      });
+      //한줄 주석
+      /*여러줄 주석*/
+    </script>
+</head>
+<body>
+    
+    <div class="box-wrap">
+        <!-- 팝업 -->
+        <div id="box-wrap" class="bg-black">
+          <div class="box-style">
+            <button class="close-btn">x</button>
+          </div>
+        </div>
+        <!-- //팝업 -->
+        <div class="nav-wrap">
+            <div class="nav-box">
+                <div class="nav-menu">
+                    <p class="nav-item nav-item-design">상담전화<span class="yellow-color">02-555-4054</span></p>
+                    <p class="nav-item"><a href="#" class="map-button nav-item-design">오시는 길</a></p>
+                </div>
+            </div>
+        </div>
+        <header class="header-wrap">
+            <div class="header-box">
+              <h1 class="logo"><a href="#" title="샘플사이트" ><img src="images/logo2.png" alt="샘플사이트 로고입니다"></a></h1>
+              <nav>
+                <ul class="main-menu">
+                    <li><a href="#" class="sub-menu">회사소개</a></li>
+                    <li><a href="#" class="sub-menu">사업분야</a></li>
+                    <li><a href="#" class="sub-menu">포트폴리오</a></li>
+                    <li><a href="#" class="sub-menu">온라인문의</a></li>
+                    <li><a href="#" class="sub-menu">고객센터</a></li>
+                </ul>
+              </nav>
+            </div>
+        </header>
+        <main class="main-wrap">
+            <section class="main-box">
+                <article class="main-image">
+                   <div class="image-text-box">
+                        <p class="image-text image-title">
+                          강력한 수능풀이가 왔다
+                        </p>
+                        <p class="image-text">
+                          국내 최초로 수능 출제문제 초집중 분석의
+                        </p>
+                        <p class="image-text">
+                          문제풀이를 다뤄드리는<span class="highlight">강력한 수능풀이</span>수업을 준비했습니다.
+                        </p>
+                    </div>
+                    <div class="image-button-box">
+                      <a href="#" class="img-btn btn-left"> &lt;</a>
+                      <a href="#" class="img-btn btn-right">&gt;</a>
+                    </div>    
+                </article>
+                <article class="main-banner">
+                   <div class="banner-box">
+                       <img src="images/main-icon01.png" alt="시계 그림" title="시계 그림">
+                      <div class="banner-content">
+                           <p class="banner-title">수능출제문제</p>
+                           <p>국내최초로 수능출제문제 초집중 분석</p>
+                       </div>
+                   </div>
+                   <div class="banner-box bg-color-purple">
+                       <img src="images/main-icon02.png" alt="디스크 그림" title="디스크 그림">
+                       <div class="banner-content">
+                           <p class="banner-title">수능출제문제</p>
+                           <p>국내최초로 수능출제문제 초집중 분석 국내최초로 수능출제문제 초집중 분석</p>
+                       </div>
+                   </div>
+                   <div class="banner-box">
+                       <img src="images/main-icon03.png" alt="버튼 그림" title="버튼 그림">
+                       <div class="banner-content">
+                           <p class="banner-title">수능출제문제</p>
+                           <p>국내최초로 수능출제문제 초집중 분석 국내최초로 수능출제문제 초집중 분석 국내최초로 수능출제문제 초집중 분석</p>
+                       </div>
+                   </div>
+                    
+                </article>
+                <article class="main-contents">
+                    <div class="contents-box">
+                        <div class="contents-title">
+                          <h3>소개합니다.</h3>
+                          <p class="button-box">
+                            <button class="title-btn purple-btn">강사</button>
+                            <button class="title-btn">시험</button>
+                            <button class="title-btn">인터뷰</button>
+                          </p>
+                        </div>
+                        <div class="contents-icon">
+                            <div class="contents-table">
+                              <div class="contents-row">
+                                  <img class="contents-img" src="images/main-img01.png" alt="사장이미지" title="사장이미지">
+                                  <p class="contents-text">	국내최초로 수능출제문제 초집중 분석의 문제풀이를 다뤄드리는 수업을 준비했습니다. 수능출제문제 초집중 분석의 문제풀이를 수업을 준비했습니다.</p>
+                              </div>
+                            </div>  
+                        </div>
+                      </div>
+                     <div class="contents-box">
+                        <div class="contents-title">
+                            <h3>뉴스&amp;공지</h3>
+                            <p class=" button-box">
+                              <button class="title-btn purple-btn">&#43;</button>
+                            </p>
+                        </div>
+                        <div class="contens-icon">
+                          <ul class="news-list">
+                             <li class="news-box"> 
+                                <p class="news-title">
+                                  <a href="#">
+                                    뉴스내용뉴스내용뉴스내용뉴스용뉴스내용뉴스내용뉴스내용
+                                 </a>
+                                </p>
+                                <span class="news-date">2018-01-01</span>
+                            </li>
+                            <li class="news-box"> 
+                               <p class="news-title">
+                                  <a href="#">
+                                    뉴스내용뉴스내용뉴스내용뉴스용뉴스내용뉴스내용뉴스내용
+                                 </a>
+                                </p>
+                                <span class="news-date">2018-01-01</span>
+                            </li>
+                            <li class="news-box"> 
+                                <p class="news-title">
+                                  <a href="#">
+                                    뉴스내용뉴스내용뉴스내용뉴스용뉴스내용뉴스내용뉴스내용
+                                 </a>
+                                </p>
+                                <span class="news-date">2018-01-01</span>
+                            </li>
+                          </ul>
+                        </div> 
+                     </div>
+                     <div class="contents-box">
+                        <div class="contents-title border-0">
+                            <h3>고객센터</h3>
+                        </div>
+                        <div class="contents-icon">
+                              <div class="custom-content custom-text-box">
+                                <p class="custom-tel">1588.1111</p>
+                                <p class="custom-text">평일 오전 9:00 ~ 오후 6:00</p>
+                                <p class="custom-text">토/일 공휴일 휴무 입니다.</p>
+                                <div class="custom-button-box">
+                                 <button class="title-btn purple-btn">
+                                    찾아오시는길
+                                  </button>
+                                  <button class="title-btn">
+                                    고객게시판
+                                  </button>
+                                </div>
+                              </div>    
+                              <div class="custom-content custom-img">
+                                  <img src="images/main-contact-icon.png" alt="컨택트 아이콘 이미지">
+                              </div>    
+                        </div>                 
+                      </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer-wrap">
+            <div class="footer-box">
+              <div class="logo-box footer-part">
+                  <img src="images/footer-logo.png" alt="샘플사이트" title="샘플사이트">
+              </div> 
+              <address class="footer-info footer-part">
+                <p class="footer-info-item">연락처 : 서울시 서초구 서초동</p>
+                <div class="footer-info-item footer-num">
+                  <span class="footer-contact">전화번호 : 02-1234-1234</span>
+                  <span class="footer-contact">fax : 02-1234-1234</span>
+                  <span class="footer-contact">이메일 : abc123@email.com</span>
+                </div>
+                <p class="footer-info-item">사업자등록번호 : 123-11-123456</p>
+              </address>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+    </html>
