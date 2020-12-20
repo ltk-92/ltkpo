@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Math.속성 또는 메소드</title>
+<meta content="charset=utf-8">
+<style>
+@charset "utf-8";
+
+body {margin: 0; color: #000000; font: 14px/1.8 "Malgun Gothic", "맑은 고딕", DotumChe, "돋움체", Verdana, Arial, sans-serif;}
+a:link {color: #007dff; text-decoration: none; font-weight: bold;}
+a:hover {color: #ff0000; text-decoration: none; font-weight: bold;}
+a:visited {color: #00bebe; text-decoration: none; font-weight: bold;}
+a:active {color: #ff7d00; text-decoration: none; font-weight: bold;}
+
+#wrap {width: 900px; margin: auto;}
+.article {width: 900px; color: #333333; line-height: 180%;}
+.article h2 {background: #d0d7df; border-bottom: 1px solid #c8cace; border-top: 1px solid #c8cace; font: 18px/1.6; font-weight: bold; margin: 25px 0px 25px 0px; padding: 10px 49px 10px 50px;}
+h3 {color: #000099;}
+pre {margin: 10px 0px; padding: 0px; border: 1px solid #c8cace;  width: 898px; overflow-x: auto; overflow-y: hidden; font-family: "Courier New", Courier; font-size: 14px; line-height: 180%; font-weight: normal;}
+.box {margin: 10px 0px; padding: 10px; border: 1px solid #c8cace; background-color: #f7f7f7;}
+
+.underline {text-decoration: line-through;}
+.blue {color: #000099; font-weight: bold;}
+.green {color: #008800;}
+.red {color: #cc0000; font-weight: bold;}
+.gray {color: #888888;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="article">
+        <h2>JavaScript Math.속성 또는 메소드</h2>
+	</div>
+    <h3>Math.속성 또는 메소드</h3>
+  <p>자바스크립트는 내부적으로 숫자를 2진수로 계산한다.</p>  
+    
+<pre>
+&lt;body&gt;
+&lt;script&gt;
+    console.log(0.2*6);
+    console.log(((10*0.2)*6)/10);
+    <span class="green">// 실행결과 : 1.2000000000000002  (소숫점 이하 16자리)</span>
+&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+    
+    <p>수학에서 사용하는 특수함수나 특수값을 사용할 수 있게 해준다.<br>
+  특수함수란 지수함수, 삼각함수, 로그함수등을 말한다.</p>
+    <p>E	오일러 상수		약 2.718<br>
+      LN10	10의 자연 로그 값	약 2.302<br>
+      LN2	2의 자연 로그 값	약 0.693<br>
+      LOG10E	밑이 10인 E 로그	약 0.434<br>
+      LOG2E	밑이 2인 로그		약 1.442<br>
+      PI	원주율			약 3.14159<br>
+      SQRT1_2	1/2의 제곱근		SQRT{} 약 0.707<br>
+      SQRT2	2의 제곱근		SQRT{} 약 1.414    
+    </p>
+    <p>사용예) 반지름이 5인 원의 체적</p>  
+    
+<pre>
+&lt;body&gt;
+&lt;script&gt;
+<span class="green"></span>    r=5
+    radia=r*r*Math.PI
+    document.write(radia)
+<span class="green"></span>&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>복잡한 계산을 풀어주는 Math 메소드</h3>
+    abs(x)		절대 값 함수 |x| <br>
+    acos(x)		cosine의 역함수(arc cosine)<br>
+    asin(x)		sin의 역함수(arc sin)<br>
+    atan(x)		tangent의 역함수(arc tan)<br>
+    atan2(x,y)	tangent의 역함수(arc tan)<br>
+    ceil(x)		x보다 같거나 큰 수 중에서 가장 큰 정수(올림)<br>
+    cos(x)		x의 cosine 값을 구해준다<br>
+    exp(x)		x의 지수 함수를 구해준다<br>
+    floor(x)	x 보다 같거나 작은 수 중에서 가장 적은 정수(버림)<br>
+    log(x)		x의 로그 함수를 구한다<br>
+    max(x,y)	x와 y의 수 중에서 가장 큰 수<br>
+    min(x,y)	x와 y의 수 중에서 가장 작은 수<br>
+    pow(x,y)	지수 함수 f(x,y)=xy<br>
+    random()	난수를 발생한다<br>
+    round(x)	x를 반올림한다<br>
+    sin(x)		x의 sine 값을 구한다<br>
+    sqrt(x)		x의 제곱근을 구한다<br>
+    tan(x)		x의 tangent를 구한다<br>
+    <p>사용예)</p>
+  
+<pre>
+&lt;body&gt;
+    &lt;script&gt;
+        r=5.15
+        document.write(&quot;x의절대값은&quot;,Math.abs(r),&quot;입니다.&quot;,&quot;&lt;br&gt;&quot;)
+        document.write(&quot;x는&quot;,Math.floor(r),&quot;이거나 크고&quot;,
+            Math.ceil(r),&quot;이거나 작은 수입니다.&quot;,&quot;&lt;br&gt;&quot;)
+        document.write(&quot;x와 3 중에&quot;,Math.max(r,3),&quot;이 큽니다.&quot;,&quot;&lt;br&gt;&quot;)
+        document.write(&quot;x의 제곱근은&quot;,Math.sqrt(r),&quot;입니다.&quot;,&quot;&lt;br&gt;&quot;)
+    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>화면 정보를 가져오는 Screen 객체 사용하기</h3>
+    <p>availHeight	인터페이스를 제외한 실제 화면의 높이를 픽셀 크기로 표시해준다<br>
+    availWidth	인터페이스를 제외한 실제 화면의 너비를 픽셀 크기로 표시해준다<br>
+    colorDepth	컴퓨터에서 사용하는 컬러 수를 표시해준다<br>
+    hight		컴퓨터에서 사용하는 화면의 높이를 픽셀 크기로 표시해준다<br>
+    width		컴퓨터에서 사용하고 있는 화면의 너비를 픽셀 크기로 표시한다<br>
+    pixelDepth	하나의 픽셀당 비트 수를 표시한다</p>
+    <p>사용예) 자신의 컴퓨터 화면해상도 알아내기</p>
+    
+<pre>
+&lt;script&gt;
+<span class="green"></span>    document.write(&quot;화면의 실제 높이&quot;,screen.availHeight,&quot;&lt;br /&gt;&quot;)
+    document.write(&quot;화면의 실제 너비&quot;,screen.availWidth,&quot;&lt;br /&gt;&quot;)
+    document.write(&quot;화면의 너비&quot;,screen.width,&quot;&lt;br /&gt;&quot;)
+    document.write(&quot;화면의 높이&quot;,screen.height,&quot;&lt;br /&gt;&quot;)
+    document.write(&quot;화면 색상수&quot;,screen.colorDepth,&quot;&lt;br /&gt;&quot;)
+    document.write(&quot;픽셀당 비트수&quot;,screen.pixelDepth)
+<span class="green"></span>&lt;/script&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예) 방문자 화면 해상도 표시하기 만들기</p>
+  
+<pre>
+&lt;body  style=&quot;background-color: #ff9326&quot;&gt;
+    &lt;img src=&quot;girl.png&quot; style=&quot;display: block; margin: 0 auto; border:0;&quot; /&gt;
+
+    &lt;script&gt;
+<span class="green"></span>        document.write(&quot;&lt;p style='text-align: center; color: white; font-size: 12px; line-height: 0;'&gt;&quot;) 
+        document.write(&quot;당신의 해상도는&quot;,screen.width,&quot;*&quot;,screen.height,&quot;입니다.&quot;)
+        document.write(&quot;&lt;/p&gt;&quot;)
+<span class="green"></span>    &lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <p>사용예) 해상도를 비교해서 출력하게 만들기</p>
+  
+<pre>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;해상도 비교&lt;/title&gt;
+    &lt;script&gt;
+<span class="green"></span>        a=screen.width
+        if (a &lt; 1600) {
+            alert(&quot;당신의 컴퓨터 해상도는&quot; +screen.width+ &quot;*&quot; +screen.height+
+                  &quot;입니다. \n이 홈페이지는 1600*900 해상도에서 잘보입니다.&quot;)
+        }
+        else { 
+            alert(&quot;당신의 컴퓨터 해상도는&quot; +screen.width+ &quot;*&quot; +screen.height+ &quot;입니다.&quot;)
+        }
+<span class="green"></span>    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body style=&quot;background-color: #ff9326;&quot;&gt;
+    &lt;img src=&quot;girl.png&quot; width=&quot;1400&quot; style=&quot;display: block; margin: 0 auto; border:0;&quot; &gt;
+&lt;/body&gt;
+</pre>
+
+
+
+    <p>&nbsp;</p>
+    <h3>문제) 해상도에 맞추어 문서를 열게 만들기  <span class="red">(익스10 O / 파폭 X 다르게 반응)</span></h3>
+    <p> 1) Screen 객체를 사용 방문자의 해상도 값을 얻어낸다<br>
+    2) 화면 해상도에 따라 IF문으로 나눈다 <br>
+    3) IF문 안에 다음 명령어를 사용하여 윈도우 크기를 조절 (window.resizeTo(640,480))</p>
+    <p>&nbsp;</p>
+</div>
+</body>
+</html>
