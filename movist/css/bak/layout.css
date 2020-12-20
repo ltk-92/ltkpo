@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body{
+    font-family: "나눔고딕"; 
+    background-color:#ccc; 
+    background-image:url(images/song.png); 
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    background-position:bottom 20px right; 
+    overflow-x: hidden
+}        
+	#header{
+        width:230px; 
+        height:100%; 
+        background-color:#14b8db; 
+        position:fixed;
+        left:0;
+}	
+    #main{
+        margin-left:230px;
+        margin-bottom: 30px; 
+        width:1200px; 
+        background-color:#fff
+}
+
+	.con{
+        width:1200px;
+}
+	.visual{
+        height:550px; 
+        background-color:#1ff88e
+}
+	.con1{
+        height:440px; 
+        background-color:#eeeeee
+}
+	.con2{
+        height:435px; 
+}
+	.con3{
+        height:173px;
+}
+	.con4{
+        height:413px;
+}
+	.con5{
+        height:344px;
+}
+	.con6{
+        height:50px;
+        background-color:#fff;
+}	 
+	.w{
+        height:100%; 
+        float:left
+}
+	.w930{
+        width:930px;
+}
+	.w270{
+        width:270px;
+        background-color:#fff
+}
+	#footer{
+        width:230px;
+        height:623px;
+        position:fixed;
+        top:623px; 
+}
+
+		
