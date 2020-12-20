@@ -1,0 +1,312 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>diary</title>
+	<style type="text/css">
+	
+	
+	#wrap{width:100%;}
+	#wrap>div{float:left}
+	
+	#tabmenu{width:20%; height:100%;}
+	#contents{width:80%; height:1000px;}
+	
+	
+	#tabmenu ol li a {text-decoration:none; font-size:12px}
+	#tabmenu> div{position:relative;width:100%}
+	
+	#htmlCss{width:100%;height:}	
+	#htmlCss ol{width:85%;height:400px;overflow-y:scroll}
+	#jquery ol{width:85%;height:300px;overflow-y:scroll}
+	
+	h3{background-color:#000000; color:#ffffff;cursor:pointer;line-height:30px;border-bottom:1px solid #eee}
+	h4{width:80%;background-color:#555555; color:#ffffff;cursor:pointer;}
+	span{color:#fff;position:absolute;top:5px; right:2px}
+	span.up{color:#fff}
+	
+	iframe{margin-left:100px; border:1px solid #333}
+
+	</style>
+
+		
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+        var tabmenu = $("#tabmenu>div");
+			
+				tabmenu.find("div").slideUp();
+				
+				tabmenu.find("div").first().slideDown();
+				$("span").text("닫힘");
+				$(".up").text("펼침");
+				
+				
+				var button = tabmenu.find("h3")
+				var here = $(this);
+				
+				
+			button.click(function(){
+				tabmenu.children("div").slideUp();
+				$(this).next().slideDown();
+				tabmenu.find("span").removeClass("up");
+				$("span").text("닫힘");
+				$(this).siblings("span").addClass("up");
+				$(".up").text("펼침");
+				
+				
+				
+			})	
+			
+			var subtab = $("h4").next("ol");
+			subtab.slideUp();
+			subtab.first().slideDown();
+			$("h4").click(function(){
+					subtab.slideUp();
+					$(this).next().slideDown()
+					
+				});
+			
+			/*var bulb = true;
+			$("h4").click(function(){
+					
+					if(bulb == true){$(this).next("ol").slideDown();  bulb = false;}
+					else if(bulb == false){$(this).next("ol").slideUp(); bulb = true;};
+				});
+				*/
+				
+			
+			
+	
+		
+		$("iframe").attr("src","edu/0403/basic_pattern.html");
+		$("a").first().css("color","red");
+		$("a").click(function(){
+			event.preventDefault();
+			$("a").css("color","blue");
+			$(this).css("color","red");
+			var warp = $(this).attr("href");
+			$("iframe").attr("src",warp);
+			
+		})	
+			
+  })
+
+    </script>
+	
+	
+	
+</head>
+<body>
+	<div id="wrap">
+		<div id="tabmenu">
+	
+		<div id= "htmlCss">
+			<h3>html,css</h3>
+			<div>
+				<ol>
+					<li><a href="edu/0403/basic_pattern.html">웹 표준성에 맞게, 제목과 컨텐츠 내용을 작성할 수 있다.</a></li>
+					<li><a href="edu/0403/basic_con.html">웹 표준성에 맞게, 제목과 컨텐츠 내용을 작성할 수 있다.</a></li>
+					<li><a href="edu/0403/basic_image.html">웹표준, 웹접근성을 고려하여 이미지 태그를 사용할 수 있다.</a></li>
+					<li><a href="edu/0403/basic_image3.html">웹표준, 웹접근성을 고려하여 제목, 이미지 컨텐츠, 텍스트 컨텐츠를 작성할 수 있다.</a></li>
+					<li><a href="edu/0403/basic_template.html">웹 템플릿</a></li>
+					<li><a href="edu/0404/0404.html">웹 패턴에 맞게 구조를 만들어, 서브 페이지를 구축할 수 있다.</a></li>
+					<li><a href="edu/0404/0404_2.html">단위를 바꿔서, 폰트 사이즈를 바꿀 수 있다.</a></li>
+					<li><a href="edu/0404/0404_3.html">플롯을 이용해 레이아웃을 배치할 수 있다.</a></li>
+					<li><a href="edu/0404/0404_4.html">플롯을 이용해 레이아웃을 배치할 수 있다.</a></li>
+					<li><a href="edu/0404/basic_block.html">블록과 인라인을 이해하고 레이아웃을 배치할 수 있다.</a></li>
+					<li><a href="edu/0403/basic_font.html">폰트에 속성을 부여할 수 있다.</a></li>
+					<li><a href="edu/0405/0405_2.html">플롯을 이용해 박스를 배열하고,  마진 값을 계산에 여백을 줄 수 있다.</a></li>
+					<li><a href="edu/0405/0405_3.html">플롯을 이용해 박스를 배열하고, 고정할  수 있다</a></li>
+					<li><a href="edu/0405/0405_5.html">플롯을 이용해 박스를 배열하고, 고정하고 clearfix로 float을 끊을 수 있다.</a></li>
+					<li><a href="edu/0406/0406_2.html">앵커 태그를 이용해 마우스를 올리거나 탭 키를 글자색을 바꿀 수 있다.</a></li>
+					<li><a href="edu/0406/0406_4.html">앵커 태그를 이용해 마우스를 올리거나 탭 키를 눌러 배경색을 바꿀 수 있다.</a></li>
+					<li><a href="edu/0406/0406_5.html">디자인 시안을 보고 레이아웃을 구성할 수 있다.</a></li>
+					<li><a href="edu/0407/0407.html">Display block으로 앵커 태그 크기를 조절하여 마우스 오버, 탭키 클릭시 색상을 변경 시킬 수 있다..</a></li>
+					<li><a href="edu/0407/0407_2.html">Display inline으로 블록 요소들을 정렬시키고, 주석을 줌으로써 반각을 없앨 수 있다.</a></li>
+					<li><a href="edu/0410/0410_1.html">Display 속성을 사용할 수 있다</a></li>
+					<li><a href="edu/0410/0410_2.html">Display 속성과 a 속성으로 컨텐츠 메뉴를 만들 수 있다.</a></li>
+					<li><a href="edu/0410/0410_5.html">스플릿 이미지로, background-position을 조절해 호버 시킬 수 있다. </a></li>
+					<li><a href="edu/0411/0411.html">Position 속성을 이용해 박스를 이동시킬 수 있다.</a></li>
+					<li><a href="edu/0411/0411_2.html">Position 속성과 a속성을 이용해 컨텐츠 메뉴를 만들 수 있다.</a></li>
+					<li><a href="edu/0411/0411_3.html">Opacity, a 속성, position 속성을 이용해 서브 페이지를 만들 수있다. </a></li>
+					<li><a href="edu/0411/0411_4.html">Position fixed를 이용해 고정된 레이아웃을 만들 수 있다.</a></li>
+					<li><a href="edu/0411/0411_5.html">Position absolute와 relative의 속성 중 float 속성과 같이 사용될 수 있는게 무엇인지 알 수 있다. </a></li>
+					<li><a href="edu/0412/0412.html">Position 과 a속성을 이용해 a:hover 속성의 위치를 자유자재로 움직일 수 있다. </a></li>
+					<li><a href="edu/0412/0412_2.html">Position 과 a속성을 이용해 계산기 ui를 만들 수 있다. </a></li>
+					<li><a href="edu/0417/0417.html">input 태그로 검색창을 만들 수 있다. </a></li>
+					<li><a href="edu/0417/0417_2.html">input 태그로 로그인 페이지를 만들 수 있다. </a></li>
+					<li><a href="edu/0417/0417_3.html">textarea 태그로 이용약관 페이지를 만들 수 있다. </a></li>
+					<li><a href="edu/0419/0419.html">form 태그로 회원가입 페이지를 만들 수 있다.  </a></li>
+					<li><a href="edu/0417/0417_4.html">크로스 브라우징 </a></li>
+					<li><a href="edu/0420/0420.html">border 기능들을 사용할 수 있다. </a></li>
+					<li><a href="edu/0421/0421.html">html5 마크업을 사용할 수 있다 </a></li>
+					<li><a href="edu/0421/after_before.html">:after, :before을 사용할 수 있다  </a></li>
+					<li><a href="edu/0424/0424.html">테스트 섀도우와 박스섀도우로, 그림자 효과를 줄 수 있다.  </a></li>
+					<li><a href="edu/0424/0424_2.html">트랜지션 효과와 백그라운드 사이즈 효과로 호버 효과를 줄 수 있다.</a></li>
+					<li><a href="edu/0425/0425_2.html">트랜지션 효과와 백그라운드 사이즈 효과로 호버 효과를 줄 수 있다. 보더 라디우스로 둥글게 만들 수 있다.</a></li>
+					<li><a href="edu/0426/0426.html">Transform:scale로 크기들을 조절할 수 있다</a></li>
+					<li><a href="edu/0427/0427.html">Transform:rotate로 회전 시킬 수 있다</a></li>
+					<li><a href="edu/0427/0427_2.html">Transform:rotate를 이용하여 x,y,z 혼합방향으로 회전 시킬 수 있다.</a></li>
+					<li><a href="edu/0427/0427_3.html">Transform skew로  박스를 기울이고, 웹접근성에 준수하여동영상 옆에 자막 박스를 구성할 수 있다.</a></li>
+					<li><a href="edu/0428/0428.html">오디오 태그를 이용해 음악 파일을 올릴 수 있다.</a></li>
+					<li><a href="edu/0501/0501.html">백그라운드 속성으로 그래디언트를 줄 수 있다.</a></li>
+					<li><a href="edu/0501/0501_2.html">백그라운드 속성을 동시에 줄 수 있다.</a></li>
+					<li><a href="edu/0502/0502.html">애니메이션 태그로 반복적인 움직임을 만들 수 있다.</a></li>
+					<li><a href="edu/0502/0502_2.html">애니메이션 태그로 애니메이션을 만들 수 있다.</a></li>
+					<li><a href="edu/0502/0502_3.html">외부에서 제공하는 폰트를 사용할 수 있다.</a></li>		
+					<li><a href="edu/0512/0512.html">Colspan과 rowspan을 이용해 행과 열을 합칠 수 있다.</a></li>
+					<li><a href="edu/0512/0512_2.html">html5에서 summary 빼고, thead, tbody, tfoot,순으로 정렬할 수 있다.</a></li>
+					<li><a href="edu/0512/0512_4.html">Summary와 caption, colgroup, thead, tbody, tfoot,th,scope를 이용해 표를 구성할 수 있다</a></li>
+					<li><a href="edu/0512/0512_5.html">IE7버전에서도 투명 효과를 줄 수 있다.</a></li>
+					<li><a href="edu/0515/0515_1.html">COLSTYLE을 이용해 테이블 비율을 조절할 수 있다.</a></li>
+					<li><a href="edu/0515/0515_2.html">html5 INPUT 태그와 속성을 다룰 수 있다.</a></li>
+					<li><a href="edu/0516/0516.html">파비콘을 만들 수 있다..</a></li>
+					<li><a href="edu/0517/0517.html">반응형 페이지를 만들 수 있다.</a></li>
+					<li><a href="edu/0518/0518.html">이미지 맵을 만들어 이미지에 링크를 줄 수 있다.</a></li>
+					<li><a href="edu/0518/0518_2.html">Border-radius를 이용해 사각형의 각을 둥글게 할 수 있다.</a></li>
+					<li><a href="edu/diary2/htmllist.html">diary2</a></li>
+					
+
+				</ol>
+				
+			</div>
+			<span class="up"></span>
+		</div>
+		<div id="javascript">
+			<h3>자바스크립트</h3>
+			<div>
+				<ol>
+					<li><a href="javascript/javascript01/javascript01.html">javascript01</a></li>
+					<li><a href="javascript/javascript02/javascript02.html">javascript02</a></li>
+					<li><a href="javascript/javascript03/javascript03.html">javascript03</a></li>
+					<li><a href="javascript/javascript04/javascript04.html">javascript04</a></li>
+					<li><a href="javascript/javascript05/javascript05.html">javascript05</a></li>
+					<li><a href="javascript/javascript06/javascript06.html">javascript06</a></li>
+					<li><a href="javascript/javascript07/javascript07.html">javascript07</a></li>
+					<li><a href="javascript/javascript08/javascript08.html">javascript08</a></li>
+					<li><a href="javascript/javascript09/javascript09.html">javascript09</a></li>
+					<li><a href="javascript/javascript10/javascript10.html">javascript10</a></li>
+				</ol>
+					
+				
+			</div>
+			<span></span>
+		</div>
+		<div id="jquery">
+			<h3> 제이쿼리</h3>
+			<div>
+				<h4>basic</h4>
+				<ol>
+					<li><a href= 'jq1.html'>아이디로_엘리먼트찾기</a></li>
+					<li><a href= 'jq2.html'>클래스로_엘리먼트찾기</a></li>
+					<li><a href= 'jq3.html'>자식_엘리먼트찾기</a></li>
+					<li><a href= 'jq4.html'>형제_엘리먼트찾기</a></li>
+					<li><a href= 'jq5.html'>속성으로_엘리먼트찾기</a></li>
+					<li><a href= 'jq6.html'>first_필터셀렉터</a></li>
+					<li><a href= 'jq7.html'>last_필터셀렉터</a></li>
+					<li><a href= 'jq8.html'>even_필터셀렉터</a></li>
+					<li><a href= 'jq9.html'>odd_필터셀렉터</a></li>
+					<li><a href= 'jq10.html'>eq_필터셀렉터</a></li>
+					<li><a href= 'jq11.html'>gt_필터셀렉터</a></li>
+					<li><a href= 'jq12.html'>lt_필터셀렉터</a></li>
+					<li><a href= 'jq13.html'>has_필터셀렉터</a></li>
+					<li><a href= 'jq14.html'>not_필터셀렉터</a></li>
+					<li><a href= 'jq15.html'>children_필터셀렉터</a></li>
+					<li><a href= 'jq16.html'>size_메소드</a></li>
+					<li><a href= 'jq17.html'>eq_메소드</a></li>
+					<li><a href= 'jq18.html'>first_and_last_메소드</a></li>
+					<li><a href= 'jq19.html'>index_메소드</a></li>
+					<li><a href= 'jq20.html'>not_메소드</a></li>
+					<li><a href= 'jq21.html'>filter_메소드</a></li>
+					<li><a href= 'jq22.html'>slice_메소드</a></li>
+					<li><a href= 'jq23.html'>has_메소드</a></li>
+					<li><a href= 'rollover.html'>each_메소드</a></li>
+					<li><a href= 'jq25.html'>next_메소드</a></li>
+					<li><a href= 'jq26.html'>nextAll_메소드</a></li>
+					<li><a href= 'jq27.html'>nextUntil_메소드</a></li>
+					<li><a href= 'jq28.html'>parent_메소드</a></li>
+					<li><a href= 'jq29.html'>parents_메소드</a></li>
+					<li><a href= 'jq30.html'>parentsuntil_메소드</a></li>
+					<li><a href= 'jq31.html'>find_메소드</a></li>
+					<li><a href= 'jq32.html'>is_메소드</a></li>
+					
+				</ol>
+				<h4>jquery 메소드</h4>
+				<ol>
+					<li><a href="method1.html">hide(),show()</a></li>
+					<li><a href="method2.html">width(),height()</a></li>
+					<li><a href="method3.html">fadeIn(),fadeOut()</a></li>
+					<li><a href="method4.html">slideUp(),slideDown()</a></li>
+					<li><a href="method5.html">animate()</a></li>
+					<li><a href="method6.html">text(),html()</a></li>
+					<li><a href="method7.html">empty()</a></li>
+					<li><a href="method8.html">attr()</a></li>
+					<li><a href="method9.html">val()</a></li>
+					<li><a href="method10.html">removeClass()</a></li>
+					<li><a href="method11.html">append()</a></li>
+					<li><a href="method12.html">appendTo()</a></li>
+					<li><a href="method13.html">prependTo()</a></li>
+					<li><a href="method14.html">prepend()</a></li>
+					<li><a href="method15.html">appendTo() 이미지삽입</a></li>
+					<li><a href="method16.html">click()</a></li>
+					<li><a href="method17.html">mouseenter,mouseleave</a></li>
+					<li><a href="method18.html">hover()</a></li>
+					<li><a href="method19.html">focus()</a></li>
+					<li><a href="method20.html">전체클릭</a></li>
+					<li><a href="method21.html">this</a></li>
+					<li><a href="method22.html">remove()</a></li>
+				</ol>				
+				<h4>jquery 응용</h4>
+				<ol>
+					<li><a href="rollover.html">rollover</a></li>
+					<li><a href="tab.html">탭메뉴</a></li>
+					<li><a href="tab2.html">슬라이드 탭메뉴</a></li>
+					<li><a href="imgslider.html">이미지 슬라이더</a></li>
+					<li><a href="imgslider2.html">갖다대면 멈추는 슬라이더</a></li>
+					<li><a href="accordian.html">아코디언</a></li>
+					<li><a href="accordian2.html">아코디언2</a></li>
+					<li><a href="guidetext.html">가이드텍스트</a></li>
+					<li><a href="guidetext2.html">가이드텍스트2</a></li>
+					<li><a href="animate1.html">애니메이트</a></li>
+					<li><a href="animate2.html">애니메이트2</a></li>
+					<li><a href="animate3.html">애니메이트3</a></li>
+					<li><a href="animate4.html">애니메이트4</a></li>
+					<li><a href="animate5.html">애니메이트5</a></li>
+					<li><a href="stop.html">스톱</a></li>
+					<li><a href="easing.html">가속도</a></li>
+					<li><a href="tooltip.html">툴팁</a></li>
+					<li><a href="tooltip2.html">툴팁2</a></li>
+					<li><a href="dog.html">링크 들어가면 개 튀어나옴</a></li>
+					<li><a href="http://dlxorb1223.dothome.co.kr/test/1/index.html">JSON</a></li>
+					<li><a href="http://dlxorb1223.dothome.co.kr/test/2/index.html">AJAX</a></li>
+					<li><a href="div_index.html">플러그인</a></li>
+					
+					
+					
+				</ol>
+				
+				<h4>jquery 응용2</h4>
+				<ol>
+					<li><a href="middle_tab.html">이미지 탭메뉴</a></li>
+					<li><a href="middle_tab2.html">이미지 탭메뉴2</a></li>
+					<li><a href="middle_tab3.html">이미지 탭메뉴3</a></li>
+					<li><a href="01_1depth_menu.html">호버하면 이미지 나옴</a></li>
+					<li><a href="01_1depth_menu2.html">호버하면 가로로 이미지 나옴</a></li>
+					<li><a href="02_slide_banner.html">세로 슬라이드 메뉴</a></li>
+					<li><a href="02_slide_banner2.html">마우스 갖다대면 멈추는 슬라이드 메뉴</a></li>
+					
+					
+					
+				</ol>
+				
+			</div>
+			<span></span>	
+		</div>	
+	</div>
+		<div id="contents">
+		 <iframe src="" frameborder="0" width="90%" height="100%"></iframe>
+		</div>
+	</div>
+</body>
+</html>
