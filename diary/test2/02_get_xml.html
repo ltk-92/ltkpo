@@ -12,7 +12,7 @@
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 		<script>
 			$.get('data/data.xml',function(data){
-			 //console.log(data);
+			console.log(data);
 			 var fruits = $(data).find('>data>fruits');
 			 var table = $('#fruits_data')
 			 fruits.each(function(i){
