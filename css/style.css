@@ -137,17 +137,17 @@ section{
     height:100px;
     padding-top:400px;   
 }
-.greeting-list>li, #visual-wrap{
+.greeting-list>p, #visual-wrap{
     transition:all 1s;
 }
-.greeting-list>li{
+.greeting-list>p{
     width:100%;
     color:#fff;
     font-size:100px;
     display:none;
     text-align:center;
 }
-.greeting-list>li:first-child{
+.greeting-list>p:first-child{
     display:block;
 }
  .profile-img{
