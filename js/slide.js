@@ -5,12 +5,12 @@ $(function(){
 	$('.greeting-list').each(function(){
 		var container = $(this); // 클래스
 		function switchImg(){ 
-			var greetings = container.find('li');
+			var greetings = container.find('p');
 			var first = greetings.eq(0).animate({fontSize : "150px"});
 			var second = greetings.eq(1);
 			first.hide().animate({fontSize : "100px"}).appendTo(container);
 			second.show();
-              if($('.greeting-list>li').eq(0).text()== 'Welcome To My Alternate Reality'){ 
+              if($('.greeting-list>p').eq(0).text()== 'Welcome To My Alternate Reality'){ 
             clearInterval(motion);   
             };	
 		
