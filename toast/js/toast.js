@@ -58,7 +58,7 @@ $(function(){
         $(".visual-indicater>li").first().addClass("on");
         i= 0;
         $(".visual-box").css({"marginLeft":-(visual_width)});
-         if($(window).width()>900){
+         if($(window).width()>1200){
             $(".visual-box").css({"marginLeft":'-1920px'});
         };
     });
