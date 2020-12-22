@@ -3,7 +3,7 @@
 	.main-menu a{
         letter-spacing: 1px;
     }    
-    .greeting-list>li{
+    .greeting-list>p{
          font-size:70px;   
     }
     section{
@@ -67,7 +67,7 @@
         background-size:contain;
         height:500px;
     }
-    .greeting-list>li{
+    .greeting-list>p{
          font-size:35px;   
     }
     section{
