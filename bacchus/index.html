@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>ljh</title>
+	<style type="text/css">
+		*{margin:0;padding:0}
+		ol,ul{list-style:none}
+		body{overflow-x:hidden}
+		a{text-decoration:none}
+		.hidden{text-indent:-9999px; width:0px; height:0px; position:absolute; left:-999px;font-size:1px;  }
+		@font-face {
+    				font-family:'미생체';
+    				src:url('font/SDMiSaeng.ttf');}
+#header{width:1004px; 
+    height:99px;  
+    margin:0 auto; 
+    position:relative
+}
+		
+		
+		#basic{width:1900px; background-color:#f00; height:1200px}
+		header{width:100%; background-color:#000; height:10%}
+		h1{margin-left:20px;padding-top:1%;width:20%; height:80px;float:left}
+		img{width:100%}
+		h1 img{width:100%; }
+		nav{float:left; height:80px; width:70%;padding-top:2%; margin-left:100px}
+		#gnb>li{float:left}
+		#gnb>li>a:link, #gnb li>a:visited{color:#eee; margin-left:100px; display:inline-block;font-size:18px; letter-spacing: 1px;}
+		#gnb>li>a:hover,#gnb>li>a:focus{transition:all 0.5s; color:aqua}
+		section{height:85%; background-color:#000;}
+		artcile{float:left}
+		article:first-child{width:25%; background-color:#333;height:100%;float:left;}
+		
+		article:nth-child(2){width:50%;  height:40%; float:left;position:relative }
+		article:nth-child(3){width:25%;  height:20%; float:left; background-color:#444; position:relative}
+		article:nth-child(4){width:25%;  height:20%; float:left; background-color:#000;}
+		article:nth-child(5){width:25%;  height:20%; float:left; background-color:#666;}
+		article:nth-child(6){width:25%;  height:20%;  float:left;background-color:#777;}
+		article:nth-child(7){width:25%;  height:40%; float:right; background-color:#888;}
+		article:nth-child(8){width:25%;  height:20%; float:left; background-color:#999; position:relative;overflow:hidden}
+		article:nth-child(9){width:25%;  height:20%; float:right; background-color:#444;}
+		article:nth-child(10){width:25%;  height:20%;float:left ; background-color:#fff;}
+		article:nth-child(11){width:25%;  height:20%;float:left ; background-color:#aaa;overflow:hidden}
+		article:nth-child(12){width:25%;  height:20%;float:right ; background-color:#fff;}
+		footer{width:100%; height:6%; background-color:#333}
+		
+		article:first-child img{width:100%}
+		article:nth-child(4) p {font-size:30px; color:#fff; font-weight:bold;text-align:center; margin-top:80px}
+		article:nth-child(5) p {font-size:30px; color:#fff; font-weight:bold;text-align:center; margin-top:80px}
+		article:nth-child(9) p {font-size:30px; color:#fff; font-weight:bold;text-align:center; margin-top:80px}
+		article:nth-child(10) p {font-size:30px; color:#000; font-weight:bold;text-align:center; margin-top:80px}
+		article:nth-child(12) p {font-size:30px; color:#000; font-weight:bold;text-align:center; margin-top:80px}
+		
+		.slide_window{width:100%; height:100%;overflow:hidden}
+		.slide_window>ul{width:300%; height:100%;overflow:hidden}
+		.slide_window>ul>li{width:33.3%; height:100%;overflow:hidden; float:left}
+		.slide_nav{position:absolute; left:0;top:50%;width:100%}		
+		.slide_nav li{float:left}		
+		.slide_nav li:nth-child(2){position:absolute; left:480px; top:160px}
+		.slide_nav li:last-child{float:right}
+		
+		.movie_play{position:absolute;left:35%; top:10%;}
+		.movie_play img{opacity:0.6; 
+						animation-name: playbling; 
+						animation-duration: 2s;
+   						animation-iteration-count: infinite;
+    					
+    					animation-timing-function: ease-out;
+    				
+						
+						
+		}
+		@keyframes playbling{
+			
+			0%{opacity:0.6; transform:scale(1,1)}
+			50%{opacity:0.8;transform:scale(1.5,1.5)}
+			100%{opacity:0.6; transform:scale(1,1)}
+			
+		}
+		
+		.rock_modal{width:100%;height:1200px; background:rgba(0,0,0,0.8); position:absolute;left:0;top:0;display:none}
+		.rock_modal img{width:100px; height:100px}
+		.rock_modal iframe{position:absolute;left:35%;top:15%;transform:scale(1.5,1.5)}
+		.rain_talk{position:absolute; bottom:40%; text-align:center;width:100%; color:#fff;font-size:35px;letter-spacing:1px;
+		font-family:"미생체";opacity:0.7}
+		.rock_modal p{width:100px;height:100px;position:absolute; right:0;top:0}
+		.rock_modal p a:link,.rock_modal p a:visited{display:block;width:100px;height:100px;position:absolute; right:0;top:0}
+		
+		
+		
+		
+		.ini_modal{width:100%;height:1200px; background:rgba(0,0,0,0.8); position:absolute;left:0;top:0;display:block}
+		.ini_modal img{width:100px; height:100px}
+		
+		.rain_talk{position:absolute; bottom:40%; text-align:center;width:100%; color:#fff;font-size:35px;letter-spacing:1px;
+		font-family:"미생체";opacity:0.7}
+		.ini_modal p{width:100px;height:100px;position:absolute; right:0;top:30px; color:#fff}
+		.ini_modal p a:link,.ini_modal p a:visited{display:block;width:100px;height:100px;position:absolute; right:0;top:0;color:#fff}
+		.ini_modal strong{position:absolute; left:35%; top:20%; color:#fff;font-size:40px}
+		
+		
+		
+		
+		.foot_bar{width:50%; float:right; height:100%}
+		.foot_bar>li{width:10%;height:100%;float:left; }
+		.foot_bar>li:first-child{margin-left:540px;width:20%;line-height:70px;height:70%;float:left; color:#eee;font-size:12px; opacity:0.5}
+		
+		
+		
+		.foot_bar>li img{width:50%; vertical-align:middle; opacity:0.4}
+		.foot_bar>li:last-child img{width:60%}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="basic">
+		<header>
+			<h1><a href="#"><img src="img/hairskull2.png" alt="해골 로고"></a></h1>
+			<nav>
+				<h2>메인메뉴</h2>
+				<ul id="gnb">
+					<li><a href="#">Humanizm</a></li>
+					<li><a href="#">Sentimental</a></li>
+					<li><a href="#">Bacchus</a></li>
+					<li><a href="#">Rockstar</a></li>
+					<li><a href="#">Inocent Love</a></li>
+					
+				</ul>
+			</nav>	
+		</header>
+		<section>
+			<article><img src="img/jh2.jpg" alt="main photo"></article>
+			<article><div class="slide_window"><ul class="slide_list">
+								<li><img src="img/jh5.jpg" alt="slide photo"></li>
+								<li><img src="img/jh6.jpg" alt="slide photo"></li>
+								<li><img src="img/jh3.jpg" alt="slide photo"></li>
+						</ul></div>
+						<ul class="slide_nav"><li class="left"><a href="#"><img src="img/left.png" alt="left"></a></li><li class="center"><a href="#"><img src="img/stop.png" alt=""></a></li><li class="right"><a href="#"><img src="img/right.png" alt="left"></a></li></ul>			
+			</article>
+
+		
+
+			<article><img src="img/rock2.jpg" alt="rock"><p class="movie_play"><a href="#"><img src="img/movie_play.png" alt="동영상 플레이 버튼"></a></p>
+					
+			</article>
+			<article><p>Rock Star</p></article>
+			<article><p>Humanizm</p></article>
+			<article><img src="img/angel.jpg" alt="angel"></article>
+			<article><img src="img/girl3.jpg" alt="girl"></article>
+			<article><img src="img/rain.gif" alt="soju"><p class="rain_talk"> "비가 오는 지금 여기...ㅋ"</p></article>
+			<article><p>Sentimental</p></article>
+			<article><p>Bacchus</p></article>
+			<article><img src="img/soju.jpg" alt="rain"></article>
+			<article><p>Inocent Love</p></article>
+		
+			
+		</section>
+		<footer>
+			<ul class="foot_bar">
+				<li> Creatived by Lee Tae Kyu</li>			
+				<li><img src="img/hairskull.png" alt="해골로고"></li>
+				<li><img src="img/bi.png" alt="내로고"></li>
+			</ul>
+		</footer>
+		
+	</div>
+		<script>
+				$(function(){
+					$(".slide_list").css("marginLeft","-100%")
+					$(".right").click(function(){
+						$(".slide_list").animate({"marginLeft":"-=100%"},function(){$(".slide_list").append($(".slide_list>li:first"));
+						$(".slide_list").css({"marginLeft":"-100%"});
+						return false;		});
+						
+						return false	
+					});
+					
+					$(".left").click(function(){
+						$(".slide_list").animate({"marginLeft":"+=100%"},function(){
+							$(".slide_list").prepend($(".slide_list>li:last"));
+							$(".slide_list").css("marginLeft","-100%")
+						});
+						
+						return false
+						
+					});
+				});
+			$(function(){
+				var auto = setInterval(function(){$(".right").click()},1000);
+				var play = true;
+				
+				$(".center").click(function(){
+					if(play == true){ clearInterval(auto);  $(".center img").attr("src","img/play.png");play = false;}
+					else if(play == false){ auto = setInterval(function(){$(".right").click()},1000);  $(".center img").attr("src","img/stop.png");play = true};
+					
+					return false;
+				});
+				return false;
+				
+			});
+		</script>
+		<script>
+			$(function(){
+				$(".movie_play").click(function(){
+					$(".rock_modal").fadeIn(1500);
+					return false;
+				});
+				$(".close_btn").click(function(){$(".rock_modal").fadeOut(1500); return false});
+				$(".close_btn2").click(function(){$(".ini_modal").fadeOut(1500); return false});
+			})
+		</script>
+		<div class="rock_modal"><iframe  src="https://www.youtube.com/embed/BtEYSbbxUeE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class="close_btn"><a href="#"><img src="img/close.png" alt="close"></a></p></div>
+		
+		<div class="ini_modal"><p class="close_btn2"><a href="#"><img src="img/close.png" alt="close"></a></p><strong>pc버전에 최적화 되어있습니다.</strong></div>
+</body>
+</html>
