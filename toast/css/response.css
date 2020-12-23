@@ -700,11 +700,11 @@ html,body{
         padding-top:40%; 
     }
     .brand-link span{
-        font-size:1.5rem;
+        font-size:1.5em;
         line-height:100%;
     }
     .brand-link span:last-child{
-        font-size:1rem;
+        font-size:1em;
     }
     .media-wrap{
         height:auto;
