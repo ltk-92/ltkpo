@@ -64,7 +64,6 @@ input[type=text],input[type=password], input[type=tel],select{
 .green-btn{
     background-color:#419400;
     color:#fff;
-    vertical-align:middle;
     width:100px;
     height:40px;
     box-sizing:border-box;
@@ -129,8 +128,5 @@ form .userphone{
     }
     .btn-wrap{
         width:60%;
-    }
-    input[type=reset]{
-        vertical-align: middle;
     }
 }
