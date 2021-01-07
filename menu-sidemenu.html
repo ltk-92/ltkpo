@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>식품메뉴</title>
+    <link href="css/toast.css" type="text/css" rel="stylesheet">
+    <link href="css/sub.css" type="text/css" rel="stylesheet">
+    <link href="css/response.css" type="text/css" rel="stylesheet">
+    <link href="css/sub_response.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/sub.js"></script>
+     <!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<style type="text/css">
+			    #gnb>ul li{
+                   height:115px;
+          
+               }
+                #all_list{
+                   background-image:url('img/all_list-bg-ie8.png');
+                }
+                #all_list_center{
+                    height:100%;
+                }
+                #all_listCenter ul+ul+ul+ul+ul+ul{
+                    margin-right:0;
+                }
+                 .lnb{
+			        margin-left:-25%;
+			    }
+			    
+                #footer dl+dl+dl+dl+dl+dl{
+                    margin-right:0;
+                }s
+			</style>
+		<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+      <div id="wrap">
+       <header id="header-wrap">
+           <h1><a href="index.html">석봉토스트</a></h1>
+           
+           <div id="top">
+               <ul>
+                   <li><a href="./login.html">로그인</a></li>
+                   <li><a href="./signup.html">회원가입</a></li>
+                   <li><a href="#">점주의방</a></li>
+               </ul>
+           </div>
+            <nav id="gnb" class="clearfix">
+               <ul>
+                   <li>
+                       <a href="./brand-story.html">석봉토스트</a>
+                     </li>
+                   <li>
+                       <a href="./menu-cook.html">석봉메뉴</a> 
+                  </li>
+                   <li>
+                       <a href="./map.html">매장안내</a> 
+                  </li> 
+                   <li>
+                       <a href="./consult.html">창업안내</a>
+                  </li>
+                   <li><a href="./event.html">이벤트</a>   
+                   </li>
+                   <li><a href="#">석봉아카데미</a>       
+                   </li>
+               </ul>
+               <div id="all_list">
+                      <div id="all_listCenter" class="clearfix">
+                          <div class="all_list_set">
+                              <ul>
+                                   <li><a href="./brand-story.html">석봉토스트 소개</a></li>
+                                   <li><a href="#">석봉토스트 비전</a></li>
+                                   <li><a href="#">석봉토스트 연혁</a></li>
+                                   <li><a href="./article.html">언론에서 본 석봉토스트</a></li>
+                                   <li><a href="./road.html">오시는 길</a></li>
+                               </ul>
+
+
+                             <ul>
+                               <li><a href="./menu-cook.html">식품</a></li>
+                               <li><a href="./menu-drink.html">음료</a></li>
+                               <li><a href="./menu-sidemenu.html">사이드메뉴</a></li>
+                               <li><a href="./menu-ice.html">빙수</a></li>
+                           </ul>  
+
+                            <ul>
+                                <li><a href="#">신규오픈매장</a></li>
+                                <li><a href="./map.html">우리동네 매장찾기</a></li>
+                                <li><a href="#">Best Store</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#">창업조건</a></li>
+                                <li><a href="#">인테리어 안내</a></li>
+                                <li><a href="#">매장사진</a></li>
+                                <li><a href="./consult.html">온라인 상담신청</a></li>
+                                <li><a href="#">e카탈로그</a></li>
+                            </ul>
+
+                            <ul>
+                               <li><a href="./event.html">진행중인 이벤트</a></li>
+                           </ul>
+
+                            <ul>
+                               <li><a href="#">석봉 아카데미</a></li>
+                           </ul>
+                         </div>
+                      </div> 
+                   </div>
+           </nav>
+		<nav class="gnb_m_box">
+            <div class="m_play ">
+                <a href="#">
+				    <span class="play_arrow1"></span>
+				    <span class="play_arrow2"></span>
+				    <span class="play_arrow3"></span>
+				    <span class="play_arrow4"></span>
+				    <span class="play_arrow5"></span>
+			    </a>
+		    </div>
+			<ul class="gnb_m">
+				<li>
+					<a href="./brand-story.html">석봉토스트</a>
+					<ul class="gnb_m_sub">
+							<li><a href="./brand-story.html">석봉토스트 소개</a></li>
+							<li><a href="http://www.naver.com">석봉토스트 비전</a></li>
+							<li><a href="http://www.naver.com">석봉토스트 연혁</a></li>
+							<li><a href="./article.html">언론에서 본 석봉토스트</a></li>
+							<li><a href="./road.html">>오시는 길</a></li>
+
+						</ul>
+				</li>
+				<li>
+					<a href="./menu-cook.html">석봉메뉴</a>
+					<ul class="gnb_m_sub">
+							<li><a href="./menu-cook.html">식품</a></li>
+							<li><a href="./menu-drink.html">음료</a></li>
+							<li><a href="./menu-sidemenu.html">사이드메뉴</a></li>
+							<li><a href="./menu-ice.html">빙수</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="./map.html">매장안내</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">신규오픈매장</a></li>
+							<li><a href="./map.html">우리동네 매장찾기</a></li>
+							<li><a href="#">Best store</a></li>
+					
+				   </ul>
+				</li>
+				
+				
+				<li>
+					<a href="./consult.html">창업안내</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">창업조건</a></li>
+							<li><a href="#">인테리어 안내</a></li>
+							<li><a href="#">매장사진</a></li>
+							<li><a href="#">사업설명회</a></li>
+							<li><a href="./consult.html">온라인 상담신청</a></li>
+							<li><a href="#">e카탈로그</a></li>
+							
+							
+							
+						</ul>
+				</li>
+				
+				<li>
+					<a href="./event.html">이벤트</a>
+					<ul class="gnb_m_sub">
+							<li><a href="./event.html">이벤트</a></li>
+						</ul>
+				</li>
+				<li>
+					<a href="#">석봉아카데미</a>
+					<ul class="gnb_m_sub">
+							<li><a href="#">석봉아카데미</a></li>
+				    </ul>
+				</li>
+			</ul>
+		</nav>	 
+       </header>
+
+       <main id="main">
+          <section id="sub-header">
+               <ul class="lnb">
+                   <li><a href="./menu-cook.html">식품</a></li>
+				    <li><a href="./menu-drink.html">음료</a></li>
+				    <li><a href="./menu-sidemenu.html" class="green-checked">사이드메뉴</a></li>
+				    <li><a href="./menu-ice.html">빙수</a></li>
+               </ul>
+            </section>
+           <section id="sub-visual" class="sidemenu-visual">
+                <article class="sub-visual-con">
+                    <h2 class="sub-title">사이드메뉴</h2>
+                </article>
+           </section>
+           <section class="sub-content">
+               <article class='sub-content-con'>
+                   <ul class="tab-bar quarter-bar">
+                       <li><a href="#" class="selected">사이드메뉴</a></li>
+                   </ul>
+                   <ul class="sub-tab">
+                       <li>
+                           <a href="#">
+                               <img src="img/brownie.png" alt="미니 브라우니">
+                               <span class="cook-name">미니 브라우니</span>
+                               <span class="cook-eng">Mini brownie</span>
+                           </a>
+                       </li>
+                      <li>
+                           <a href="#">
+                               <img src="img/cheeze-ball.png" alt="치즈볼">
+                               <span class="cook-name">치즈볼</span>
+                               <span class="cook-eng">Cheeze ball</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <img src="img/cheeze-stick.png" alt="치즈스틱">
+                               <span class="cook-name">치즈스틱</span>
+                               <span class="cook-eng">Cheeze stick</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <img src="img/potato.png" alt="감자튀김">
+                               <span class="cook-name">감자튀김</span>
+                               <span class="cook-eng">French fries</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <img src="img/cornsoup.png" alt="콘스프">
+                               <span class="cook-name">콘스프</span>
+                               <span class="cook-eng">Corn soup</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <img src="img/mushroomsoup.png" alt="양송이스프">
+                               <span class="cook-name">양송이스프</span>
+                               <span class="cook-eng">Mushroom cream Soup</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <img src="img/chicken-tender.png" alt="치킨텐더">
+                               <span class="cook-name">치킨텐더</span>
+                               <span class="cook-eng">Chicken tender</span>
+                           </a>
+                       </li>
+                   </ul>
+               </article>
+           </section>
+        </main>
+        <footer id="footer">
+            <div id="foot1">
+               <div id="foot_menu">
+                <dl>
+                    <dt>석봉토스트</dt>
+                    <dd><a href="./brand-story.html">석봉토스트 소개</a></dd>
+                    <dd><a href="#">석봉토스트 비전</a></dd>
+                    <dd><a href="#">석봉토스트 연혁</a></dd>
+                    <dd><a href="./article.html">언론에서 본  석봉토스트</a></dd>
+                    <dd><a href="./road.html">오시는 길</a></dd>
+                </dl>
+                <dl>
+                    <dt>석봉메뉴</dt>
+                    <dd><a href="./menu-cook.html">식품</a></dd>
+                    <dd><a href="./menu-drink.html">음료</a></dd>
+                    <dd><a href="./menu-sidemenu.html">사이드메뉴</a></dd>
+                    <dd><a href="./menu-ice.html">빙수</a></dd>
+                </dl>
+                <dl>
+                    <dt>매장안내</dt>
+                    <dd><a href="#">신규오픈매장</a></dd>
+                    <dd><a href="./map.html">우리동네 매장찾기</a></dd>
+                    <dd><a href="#">Best store</a></dd>
+                </dl>
+                <dl>
+                    <dt>창업안내</dt>
+                    <dd><a href="#">석봉토스트 가치</a></dd>
+                    <dd><a href="#">창업조건</a></dd>
+                    <dd><a href="#">인테리어 안내</a></dd>
+                    <dd><a href="#">매장사진</a></dd>
+                    <dd><a href="#">사업설명회</a></dd>
+                    <dd><a href="./consult.html">온라인 상담신청</a></dd>
+                    <dd><a href="#">e카탈로그</a></dd>
+                </dl>
+                <dl>
+                    <dt>이벤트</dt>
+                    <dd><a href="./event.html">이벤트</a></dd>
+                </dl>
+                <dl>
+                    <dt>석봉아카데미</dt>
+                    <dd><a href="#">석봉 아카데미</a></dd>
+                </dl>
+                </div>
+            </div>
+            <div id="foot2">
+                <div id="foot2_wrap">
+                    <ul id="foot2-logo">
+                        <li>
+                            <img src="img/footer-logo.png" alt="푸터 석봉토스트 로고">
+                        </li>
+                        <li>    
+                            <img src="img/bi20202.svg" alt="푸터 본인 로고">
+                        </li>                                
+                    </ul>
+                    <div id="foot2_list">
+                        <ul class="footer-policy">
+                            <li><a href="#">회원약관 </a></li>
+                            <li><a href="#">개인정보정책 </a></li>
+                            <li><a href="#">사업제휴문의 </a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                        <ul class="producer-info">
+                            <li><address>경기도 고양시 일산동구 하늘마을로 158번지 C동 301호(중산동. 대방트리플리온비즈니스타워)</address></li>
+                            <li>개인정보관리 책임자 : 김현철</li>
+                        </ul>
+                        <ul class="tel">
+                            <li>TEL. 031-973-1240 / 02-832-1240~1</li>
+                            <li>FAX 031-973-1247</li>
+                            <li>사업자등록번호 108-81-76671</li>
+                        </ul>
+                        <p>copyright 2006 ⓒALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div> 
+</body>
+</html>
