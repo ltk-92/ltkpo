@@ -103,6 +103,16 @@ select{
     color:#fff;
 }
 @media all and (min-width: 0px) and (max-width: 900px){
+    #sub-header .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:13px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
     td:first-child, td:last-child{
         font-size:11px;
     }
