@@ -332,8 +332,7 @@ function displayPlaces(places) {
 
             };
             $(".default-button").click(function(){
-                $("#keyword").val("석봉토스트");
-                $("#keyword").submit();
+                window.history.back();
             });
         })(marker, places[i].place_name);
 
