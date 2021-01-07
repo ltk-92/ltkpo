@@ -203,7 +203,7 @@
                     키워드 : <input type="text" value="석봉토스트" id="keyword" > 
                     <button type="submit">검색하기</button>
                     <button type="button" class="default-button">
-                   돌아가기
+                   처음으로
                </button> 
                 </form>
                  
@@ -332,7 +332,8 @@ function displayPlaces(places) {
 
             };
             $(".default-button").click(function(){
-                window.history.back();
+                $("#keyword").text("석봉토스트");
+                $("#keyword").submit();
             });
         })(marker, places[i].place_name);
 
