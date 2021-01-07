@@ -202,7 +202,7 @@
                 <form onsubmit="searchPlaces(); return false;">
                     키워드 : <input type="text" value="석봉토스트" id="keyword" > 
                     <button type="submit">검색하기</button>
-                    <button type="button" class="default-button">처음</button> 
+                    <button type="button" class="default-button">처음으로</button> 
                 </form>
                  
             </div>
@@ -330,8 +330,9 @@ function displayPlaces(places) {
 
             };
             $(".default-button").click(function(){
-                $("#keyword").defaultValue;
-                $("#keyword").submit();
+                var keyword = $("#keyword");
+                keyword.defaultValue;
+                keword.submit();
             });
         })(marker, places[i].place_name);
 
