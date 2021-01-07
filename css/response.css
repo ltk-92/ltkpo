@@ -3,7 +3,7 @@
 	.main-menu a{
         letter-spacing: 1px;
     }    
-    .greeting-list>p{
+    .greeting-list>li{
          font-size:70px;   
     }
     section{
@@ -67,7 +67,7 @@
         background-size:contain;
         height:500px;
     }
-    .greeting-list>p{
+    .greeting-list>li{
          font-size:35px;   
     }
     section{
@@ -107,7 +107,7 @@
     #web-wrap{
          position:relative;
     }
-   #web-wrap .web-list li{
+    #web-wrap .web-list li{
         width:95%;
         height:100%;
         margin-right:8%;
@@ -115,6 +115,20 @@
     }
      .web-list li, .web-img {
         height:250px;
+    }
+    .web-list .web-info table{
+        width:100%;
+        border-collapse: separate;
+    }
+    .web-list .web-info td{
+        width:22%;
+        margin-right:4%;
+    }
+    .info-con a.main-btn{
+        width:100%;
+    }
+    .web-list .web-info td a{
+        width:100%;
     }
     #web-wrap .web-list li.web-on{
         display:block;  
