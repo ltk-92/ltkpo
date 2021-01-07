@@ -1,0 +1,120 @@
+@charset utf-8;
+#sub-visual{
+    background-image:url(../img/article-bg.jpeg);
+     background-position:center center;
+    background-repeat:no-repeat;
+}
+.sub-content{
+    background-color:#fff;
+}
+.lnb{
+    width:1000px;
+}
+table{
+    border-top:3px solid #000;
+    width:100%;
+    background-color:#fff;
+}
+tr{
+    border-bottom:1px solid #eee;
+}
+th,td{
+    height:80px;
+    text-align:center;
+}
+td>a:hover{
+    color:#419400;
+}
+tr>td:nth-child(2){
+    text-align:left
+}
+form{
+    width:50%;
+    float:right;
+    margin-bottom:20px;
+}
+input[type=text],select{
+    border:0 none;
+}
+#article-search{
+    background-image:url(../img/franchize-button.png);
+    width:10%;
+    height:40px;
+    background-color:#419400;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:20px 20px;
+    border:0 none;
+    border-radius:10px;
+    vertical-align: middle;
+    cursor:pointer;
+}
+#article-search:hover{
+    background-color:#01682f
+}
+input[type=text]{
+    width:68%;
+    margin:0 1%;
+    height:30px;
+    border-bottom:2px solid #eee;
+}
+select{
+    width:20%;;
+    color:#ccc;
+    font-size:18px;
+    height:35px;
+    color:#333;
+    
+}
+.article-page-number{
+    width:170px;
+    margin:20px auto;
+    font-weight:bold;
+}
+.article-page-number span{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:0;
+    
+}
+.article-page-number span a{
+    border-radius:20px;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    line-height:30px;
+    font-size:20px;
+    text-align:center;
+}
+.article-page-number span:last-child{
+    margin-right:0;
+}
+.article-page-number .recent-page{
+    background-color:#419400;
+    color:#fff;
+   
+}
+.article-page-number span a:hover{
+  color:#419400;
+}
+.article-page-number .recent-page:hover{
+    background-color:#01682f;
+    color:#fff;
+}
+@media all and (min-width: 0px) and (max-width: 900px){
+    td:first-child, td:last-child{
+        font-size:11px;
+    }
+    td>a{
+        font-size:13px;
+    }
+    form{
+        float:none;
+        width:80%;
+        margin:0 auto 20px;
+    }
+    select{
+        font-size:11px;
+    }
+}
