@@ -84,7 +84,7 @@ input[type="submit"]{
 .sub-content-con{
     height:auto;
 }
-@media all and (min-width: 0px) and (max-width: 900px){
+@media all and (min-width: 501px) and (max-width: 1200px){
     #sub-header .lnb li{
         width:20%;
     }
@@ -99,7 +99,8 @@ input[type="submit"]{
         padding:0;
     }
     fieldset{
-        width:360px;
+        width:80%;
+        margin:auto;
     }
     form p{
         width:80%;
@@ -139,4 +140,64 @@ input[type="submit"]{
     input[type="submit"], input[type="reset"]{
         width:45%;
     }
+}
+@media all and (min-width: 0px) and (max-width: 500px){
+    #sub-header .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:11px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+    form{
+        padding:0;
+    }
+    fieldset{
+        width:80%;
+        margin:auto;
+    }
+    form p{
+        width:80%;
+        margin:auto;
+    }
+    label, .address-title, .area-title{
+        display:block;
+        padding-top:10px;
+        clear:Both;
+    }
+    form p span{
+        display:inline-block;
+        width:7%;
+        text-align:center;
+    }
+    input[type=text], textarea{
+        width:100%;
+    }
+    #consult_email, #consult_email2{
+        width:45%;
+    }
+    #emailDomain{
+        margin-top:10px;
+    }
+    #emailDomain, .resion1, #consult_email2{
+        float:right;
+    }
+    select{
+        width:45%;
+        margin-right:0;
+    }
+    .btn-wrap{
+        width:50%;
+        margin:30px auto;
+        padding-bottom:30px;
+    }
+    input[type="submit"], input[type="reset"]{
+        width:45%;
+    }
+    input[type="submit"]{
+        margin-right:0;
+}
 }

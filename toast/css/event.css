@@ -8,7 +8,7 @@
     overflow:hidden;
     padding:0;
 }
-.tab-bar li{
+.sub-content .tab-bar>li{
     width:50%;     
 }
 .tab-bar li>a{
@@ -40,7 +40,7 @@
     padding:0;
     overflow:hidden;
 }
-@media all and (min-width: 0px) and (max-width: 900px){
+@media all and (min-width: 901px) and (max-width: 1200px){
     #sub-visual{
         background-position:center center;
     }
@@ -70,3 +70,67 @@
     #main .sub-tab>li>a{
         padding-bottom:20px;
     }
+}
+@media all and (min-width: 501px) and (max-width: 900px){
+    #sub-visual{
+        background-position:center center;
+    }
+    #sub-header .lnb li{
+        width:100%;
+    }
+    .sub-content .tab-bar{
+        width:96%;
+        margin:auto;
+    }
+    .sub-content .tab-bar>li{
+        width:50%;
+        margin-right:0
+    }
+    #main .sub-tab>li>a{
+        padding:0;
+    }
+    .sub-tab .cook-name{
+        padding:0 18px;
+        box-sizing:border-box;
+        font-size:18px;
+    }
+    #main .sub-tab>li{
+        overflow:visible;
+        height:auto;  
+    }
+    #main .sub-tab>li>a{
+        padding-bottom:20px;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 500px){
+    #sub-visual{
+        background-position:center center;
+    }
+    #sub-header .lnb li{
+        width:100%;
+    }
+    .sub-content .tab-bar{
+        width:96%;
+        margin:auto;
+    }
+    .sub-content .tab-bar>li{
+        width:50%;
+        height:100%;
+        margin-right:0;
+    }
+    #main .sub-tab>li>a{
+        padding:0;
+    }
+    .sub-tab .cook-name{
+        padding:0 18px;
+        box-sizing:border-box;
+        font-size:18px;
+    }
+    #main .sub-tab>li{
+        overflow:visible;
+        height:auto;  
+    }
+    #main .sub-tab>li>a{
+        padding-bottom:20px;
+    }
+}

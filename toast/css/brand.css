@@ -146,12 +146,67 @@ article .font-yj{
 .number-box>p:last-child{
     font-size:60px
 }
-@media all and (min-width: 0px) and (max-width: 900px){
+@media all and (min-width: 901px) and (max-width: 1200px){
+    article .font-yj, .brand-story-con3 p:last-child{
+        font-size:60px;
+    }
+    article p{
+        font-size:30px;
+    }
+    .brand-story-con>article{
+        width:100%;
+        height:100%;
+        padding:0;
+        box-sizing:border-box;
+        position:relative;
+}
+
     #sub-header .lnb li{
         width:20%;
     }
     #sub-header .lnb li>a{
         font-size:13px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+    #main .brand-text-box{
+        width:75%;
+        z-index:2;
+    }
+    .brand-story-con2 p:first-child{
+        line-height:45px;
+    }
+    .brand-story-con2>article{
+        background-image:url('../img/con3-shop.jpg'), url('../img/con3-shop2.jpg');
+        background-color:rgba(255,255,255,0.5);
+    }
+    .brand-story-con2>article::after{
+        display:block;
+        width:100%;
+        height:100%;
+        content:"";
+        background:rgba(255,255,255,0.8);
+        left:0;
+        top:0;
+    }
+    .brand-story-con3>article{
+        background-size:20%;
+    }
+    .brand-story-con3>article.ani{
+        background-position: 5% 90%, 90% 10%, 90% 90%, 5% 5%;
+    }
+    .brand-story-con3 p{
+        margin-bottom:18px;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 900px){
+    #sub-header .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:11px;
         text-align:center;
         padding: 0 10px;
         line-height:20px;
@@ -207,3 +262,4 @@ article .font-yj{
     .brand-story-con3 p{
         margin-bottom:18px;
     }
+}

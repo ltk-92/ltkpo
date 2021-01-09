@@ -102,12 +102,12 @@ select{
     background-color:#01682f;
     color:#fff;
 }
-@media all and (min-width: 0px) and (max-width: 900px){
+@media all and (min-width: 501px) and (max-width: 1200px){
     #sub-header .lnb li{
         width:20%;
     }
     #sub-header .lnb li>a{
-        font-size:13px;
+        font-size:11px;
         text-align:center;
         padding: 0 10px;
         line-height:20px;
@@ -118,6 +118,45 @@ select{
     }
     td>a{
         font-size:13px;
+    }
+    form{
+        float:none;
+        width:80%;
+        margin:0 auto 20px;
+    }
+    select{
+        font-size:11px;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 500px){
+    #sub-header .lnb li>a{
+        font-size:11px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+     #sub-header .lnb li{
+        width:20%;
+    }
+    #sub-header .lnb li>a{
+        font-size:11px;
+        text-align:center;
+        padding: 0 10px;
+        line-height:20px;
+        box-sizing:border-box;
+    }
+    td:first-child, td:last-child{
+        font-size:11px;
+    }
+    td>a{
+        display:inline-block;
+        width:80%;
+        font-size:13px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
     }
     form{
         float:none;
