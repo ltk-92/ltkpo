@@ -1,6 +1,6 @@
 @charset "utf-8";
 @media all and (min-width: 901px) and (max-width: 1430px){
-	.main-menu a{
+    .main-menu a{
         letter-spacing: 1px;
     }    
     .greeting-list>li{
