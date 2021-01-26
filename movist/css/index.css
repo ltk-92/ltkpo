@@ -1,7 +1,9 @@
 @charset "utf-8";
 /*		visual*/
+.con1{
+    overflow:hidden;
 .visual{
-    position:relative
+    position:relative;
 }
 .v_btn{
     overflow:hidden;
