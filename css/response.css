@@ -67,7 +67,7 @@
         background-size:contain;
         height:500px;
     }
-    .greeting-list>li{
+    .greeting-list p{
          font-size:35px;   
     }
     section{
