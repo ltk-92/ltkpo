@@ -31,7 +31,7 @@
         return false;
     });//end modal
     //화살표 버튼
-     $("#web-wrap").on("click",function(){
+     $("#web-wrap").on("swipe",function(){
         $(this).css("background","red");
         $(".web-list>li.web-on").next().removeClass("web-on");
     });
