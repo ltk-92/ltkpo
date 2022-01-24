@@ -1,4 +1,4 @@
-$(function(){
+  $(function(){
 	var interval = 200; // 초설정
 
     
