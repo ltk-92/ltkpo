@@ -31,8 +31,8 @@ $(function(){
         return false;
     });//end modal
     //화살표 버튼
-     $(".web-list-button>li:first").click(function(){
-        $(".web-list>li.web-on").prev().addClass("web-on");
+     $("#web-wrap").on("swipe",function(){
+        $(this).css("background","red");
         $(".web-list>li.web-on").next().removeClass("web-on");
     });
     $(".web-list-button>li:last").click(function(){
