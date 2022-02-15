@@ -1,0 +1,205 @@
+@charset "utf-8";
+@media all and (min-width: 901px) and (max-width: 1430px){
+	.main-menu a{
+        letter-spacing: 1px;
+    }    
+    .greeting-list>li{
+         font-size:70px;   
+    }
+    section{
+        width:100%;
+    }
+    .profile-info{
+        width:50%;
+    }
+    .icon-list, .web-list, #icon-wrap>article{
+        width:80%;
+    }
+    .icon-list li{
+        width:20%;
+        padding:5%;
+        margin-right:5%;
+    }
+    .icon-list li:last-child{
+        margin-right:0;
+    }
+   #web-wrap .web-list li{
+        width:45%;
+        margin-right:8%;
+       
+    }
+    #web-wrap .web-list li:nth-child(2n){
+        margin-right:0;
+    }
+    .web-info .monitor-bg{
+        width:500px;
+        height:400px;
+    }
+    .web-info-img{
+        width:464px;
+        height:260px;
+        top:19px;
+        left:18px;
+    }
+    .web-info .info-con{
+        width:100%;
+    }
+     .contact-list{
+        width:60%;
+    }
+}
+/*mobile start*/
+@media all and (min-width: 0px) and (max-width: 900px){
+    .wheel-box{
+        bottom:5%;
+    }
+    .greeting-list{
+       padding-top:260px;
+    }
+    nav{
+        width:100%;
+    }
+    .main-menu a{
+        letter-spacing: 1px;
+        font-size: 12px;
+    }    
+    #visual-wrap{
+        background-size:contain;
+        height:500px;
+    }
+    .greeting-list>li{
+         font-size:35px;   
+    }
+    section{
+        width:100%;
+    }
+    .profile-info{
+        width:80%;
+    }
+    .icon-list, .web-list, #icon-wrap>article, .contact-list{
+        width:80%;
+        overflow:hidden;
+    }
+    .icon-list li{
+        width:90%;
+        height:auto;
+        clear:both;
+        margin-right:0;
+        margin-bottom:5%;
+    }
+    
+    .icon-list li img{
+        float:left;
+        width:30%;
+    }
+    .icon-list li p{
+        margin-left:35%;
+        
+    }
+    .icon-list .icon-title {
+        text-align:left;
+        font-size:15px;
+        padding:0;
+    }
+    .icon-list li:last-child{
+        margin-right:0;
+    }
+    #web-wrap{
+         position:relative;
+    }
+    #web-wrap .web-list li{
+        width:95%;
+        height:100%;
+        margin-right:8%;
+        display:none;
+    }
+     .web-list li, .web-img {
+        height:250px;
+    }
+    .web-list .web-info table{
+        width:100%;
+        border-collapse: separate;
+    }
+    .web-list .web-info td{
+        width:22%;
+        margin-right:4%;
+    }
+    .info-con a.main-btn{
+        width:100%;
+    }
+    .web-list .web-info td a{
+        width:100%;
+    }
+    #web-wrap .web-list li.web-on{
+        display:block;  
+        box-shadow: 3px 3px 3px 3px grey;
+        
+    }
+    .web-list-button{
+        display:block;
+        width:96%;
+        overflow:hidden;
+        position:absolute;
+        top:45%;
+        left:2%;
+    }
+    .web-list-button li{
+        width:30px;
+        height:30px;
+        cursor:pointer;
+        float:left;
+    }
+    .web-list-button li:last-child{
+        float:right;
+    }
+    .web-list-button li img{
+        width:100%;        
+    }
+    .web-info .monitor-bg{
+        width:360px;
+        height:320px;
+        border-radius:20px;
+        box-sizing:border-box;
+        background:url(../img/monitor.png) no-repeat;
+        background-size:contain;
+        margin:auto;
+    }
+    .web-info-img{
+        width:334px;
+        height:188px;
+        position:relative;
+        top:13px;
+        left:13px;
+        overflow:hidden;
+    }
+    .web-info .info-con{
+        width:100%;
+        font-size:13px;
+        text-align:justify;
+    }
+    .web-info .info-title{
+        text-align:center;
+        font-size:20px;
+    }
+    .contact-list{
+        height: 180px;
+    }
+    .contact-list li{
+        width:100%;
+        margin-bottom:15px;
+        clear:both;
+    }
+    .contact-list li p{
+        width:20%;
+        height:100%;
+        float:left;
+        text-align:left;
+    }
+    .contact-list li p:last-child{
+        width:75%;
+        line-height:75px;
+        margin-left:5%;
+        font-size:18px;
+        line-height:57px;
+    }
+}
