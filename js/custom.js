@@ -69,7 +69,7 @@
 				 var j = i-100;
 				 c1 = colorname2;
 				 c2 = colorname1;
-				 color1(j,classname,colorname1,colorname2);
+				 color1(j,classname,c1,c2);
 				 i++;
 		    }else{
 				clearInterval(func1);
@@ -80,7 +80,7 @@
 		 },10);
 		
 	 }
-	 function color1(i, classname,colorname1,colorname2){
+	 function color1(i, classname,c1,c2){
 		$(classname).css({
 			 "background":"conic-gradient("+c1+" 0% "+i+"%, "+ c2+" "+i+"% 100%)"
 		});
