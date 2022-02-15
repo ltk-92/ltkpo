@@ -49,7 +49,43 @@
 		  
 		};
     //end
-	 console.log("test");		
+	 console.log("test");
+	 
+	 $(window).ready(function(){
+		draw(200, '.icon-bg', '#ccc', '#f00');
+	 });
+	 
+	 function draw(max, classname, colorname1,colorname2){
+		var i=1;
+		 var func1 = setInterval(function(){
+		    if(i<=100){
+				c1= colorname1;
+				c2= colorname2;
+			   color1(i,classname,c1,c2);
+			   i++;
+		    }else if(i>=100 && i<=max){
+				//clearInterval(func1);
+			 	//var i=101;
+				 var j = i-100;
+				 c1 = colorname2;
+				 c2 = colorname1;
+				 color1(j,classname,colorname1,colorname2);
+				 i++;
+		    }else{
+				clearInterval(func1);
+				draw(200, '.icon-bg', '#ccc', '#f00');
+				
+			}
+			console.log("i="+i);
+		 },10);
+		
+	 }
+	 function color1(i, classname,colorname1,colorname2){
+		$(classname).css({
+			 "background":"conic-gradient("+c1+" 0% "+i+"%, "+ c2+" "+i+"% 100%)"
+		});
+		
+	 }
 });
 
 

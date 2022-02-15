@@ -208,12 +208,18 @@ section{
 .icon-bg{
     width:204px;
     height:204px;
-    background-color:#fff;
-    border:10px solid #000;
-    border-radius:50%;
+    border-radius: 50%;
+    /*background-color:#fff;
+    border: 10px solid transparent;
+    background-image: linear-gradient(#fff, #fff), 
+    linear-gradient(to right, #000 0% 10%,  #eee 10% 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;*/
     overflow:hidden;
     position:relative;
-}
+    }
+
+
 .icon-list img{
     position:absolute;
     left:50%;
