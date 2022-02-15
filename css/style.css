@@ -27,7 +27,7 @@ a{
     width:100%;
     position:fixed;
     z-index:10;
-    background-color:#fff;
+    background:rgba(0,0,0,0.3);
 }
 h1{
     width:100px;
@@ -70,6 +70,7 @@ nav{
     width:100%;
     height:100%;
     transition:all 0.5s;
+    color:#fff;
     font-size:18px;
     display:inline-block;
     text-align:center;
@@ -77,8 +78,8 @@ nav{
     letter-spacing: 5px;
 }
 .main-menu li>a.highlight{
-    background-color:#333;
-    color:#fff;
+    background-color:#ffff;
+    color:#000;
     text-align:center;
 }
 .main-menu li>a.highlight:hover{
@@ -191,23 +192,39 @@ section{
     display:block;
     content:"";
 }
+.icon-list{
+    display:flex;
+    justify-content: center;
+}
 .icon-list li{
-    width:250px;
+    width:16%;
     height:410px;
-    float:left;
-    margin-right:50px;
-    background:#fff;
-    padding:25px;
+    padding:200px 0 0 0;
+    margin-right:5%;
 }    
 .icon-list li:last-child{
     margin-right:0;
 }
+.icon-bg{
+    width:204px;
+    height:204px;
+    background-color:#fff;
+    border:10px solid #000;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+}
 .icon-list img{
-    width:100%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:70%;
+    transform:translate(-50%, -50%);
 }
 .icon-list p{
     font-size:14px;
     line-height:1.5;
+    background-color:#fff;
 }
 .icon-list .icon-title{
     text-align:center;
