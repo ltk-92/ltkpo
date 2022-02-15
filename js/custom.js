@@ -26,13 +26,17 @@
         var size = $('section').size();//갯수
 		$('section').on('mousewheel',function(event,delta){
 		
-            if(delta<0 && $(this).index()==0){
+			if(delta<0 && $(this).index()==0){
 				var test =  $(this).index();
+				var header = $("header").height();
 				var next = Number($(this).next().offset().top);
+				var wheelDown = next- header;
 			     console.log(test);
-				$('html,body').stop().animate({'scrollTop':next},2000,'easeOutExpo');
+				$('html,body').stop().animate({'scrollTop':wheelDown},1500,'easeOutExpo');
                 console.log(test);
 			}
+			
+		});
 			
 		});
     //end
