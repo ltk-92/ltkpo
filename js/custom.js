@@ -37,17 +37,6 @@
 			}
 			
 		});
-		if(
-			parseInt($(window).scrollTop())>1200&&
-			parseInt($(window).scrollTop())<2100
-		  ){
-			
-			 $(".icon-wrap").addClass("ani");
-			 $(".brand-story-con3").find("p:first").fadeIn(800);
-			 $(".brand-story-con3").find("p").eq(1).delay(500).fadeIn(800);
-			$(".brand-story-con3").find("p:last").delay(1000).fadeIn(500);
-		  
-		};
     //end
 	 console.log("test");
 	 
@@ -56,36 +45,61 @@
 	 });
 	 
 	 function draw(max, classname, colorname1,colorname2){
-		var i=1;
-		 var func1 = setInterval(function(){
-		    if(i<=100){
+		var cnt=1;
+		 func1 = setInterval(donut,10);
+		 function donut(){
+			cnt++; 
+		    if(cnt<=100){
 				c1= colorname1;
 				c2= colorname2;
-			   color1(i,classname,c1,c2);
-			   i++;
-		    }else if(i>=100 && i<=max){
+			   color1(cnt,classname,c1,c2);
+			   
+		    }else if(cnt>=100 && cnt<=max){
 				//clearInterval(func1);
 			 	//var i=101;
-				 var j = i-100;
+				 var cnt2 = cnt-100;
 				 c1 = colorname2;
 				 c2 = colorname1;
-				 color1(j,classname,c1,c2);
-				 i++;
-		    }else{
-				clearInterval(func1);
-				draw(200, '.icon-bg', '#000', 'darkblue');
+				 color1(cnt2,classname,c1,c2);
+				
+		    }else if(cnt>max){
+				cnt= 1;
+				
+				//c1= colorname1;
+				//c2= colorname2;
+				//color1(cnt,classname,c1,c2);
 				
 			}
-			console.log("i="+i);
-		 },10);
-		
-	 }
+			console.log("cnt="+cnt);
+		 };
+		 $(".donut-stop").click(function(){
+			//alert("!");
+			if($(this).attr("class") == "donut-stop"){
+				$(this).attr({
+					"src":"img/play.png"
+					,"alt":"도넛그래프 재생버튼"
+					,"class":"donut-play"
+				});
+				clearInterval(func1);
+			}
+			else if($(this).attr("class") == "donut-play"){
+				$(this).attr({
+					"src":"img/stop.png"
+					,"alt":"도넛그래프 정지버튼"
+					,"class":"donut-stop"
+				});
+				func1 = setInterval(donut,10);
+			};
+		});	 
+		}
 	 function color1(i, classname,c1,c2){
 		$(classname).css({
 			 "background":"conic-gradient("+c1+" 0% "+i+"%, "+ c2+" "+i+"% 100%)"
 		});
 		
-	 }
+	 }//도넛그래프 끝
+	 
+		
 });
 
 
