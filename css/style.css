@@ -205,6 +205,7 @@ section{
 .icon-list li:last-child{
     margin-right:0;
 }
+
 .icon-bg{
     width:204px;
     height:204px;
@@ -215,11 +216,18 @@ section{
     linear-gradient(to right, #000 0% 10%,  #eee 10% 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;*/
-    overflow:hidden;
-    position:relative;
+}
+    .icon-space{
+        width:80%;
+        height:80%;
+        background-color:#fff;
+        border-radius:50%;
+        overflow:hidden;
+        position:relative;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%)
     }
-
-
 .icon-list img{
     position:absolute;
     left:50%;

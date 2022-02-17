@@ -52,7 +52,7 @@
 	 console.log("test");
 	 
 	 $(window).ready(function(){
-		draw(200, '.icon-bg', '#ccc', '#f00');
+		draw(200, '.icon-bg', '#000', 'darkblue');
 	 });
 	 
 	 function draw(max, classname, colorname1,colorname2){
@@ -73,7 +73,7 @@
 				 i++;
 		    }else{
 				clearInterval(func1);
-				draw(200, '.icon-bg', '#ccc', '#f00');
+				draw(200, '.icon-bg', '#000', 'darkblue');
 				
 			}
 			console.log("i="+i);
