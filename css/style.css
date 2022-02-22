@@ -28,6 +28,7 @@ a{
     position:fixed;
     z-index:10;
     background:rgba(0,0,0,0.3);
+    transition: all 1s;
 }
 h1{
     width:100px;
@@ -201,7 +202,8 @@ section{
     height:410px;
     padding:200px 0 0 0;
     margin-right:5%;
-}    
+}
+  
 .icon-list li:last-child{
     margin-right:0;
 }
@@ -210,24 +212,24 @@ section{
     width:204px;
     height:204px;
     border-radius: 50%;
-    /*background-color:#fff;
-    border: 10px solid transparent;
-    background-image: linear-gradient(#fff, #fff), 
-    linear-gradient(to right, #000 0% 10%,  #eee 10% 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;*/
+    animation:iconani 3s infinite;
 }
-    .icon-space{
-        width:80%;
-        height:80%;
-        background-color:#fff;
-        border-radius:50%;
-        overflow:hidden;
-        position:relative;
-        left:50%;
-        top:50%;
-        transform:translate(-50%,-50%)
-    }
+@keyframes iconani{
+    0% {transform:scale(100%, 100%)}
+    50%{transform:scale(110%, 110%)}
+    100%{transform:scale(100%, 100%)}
+}  
+.icon-space{
+    width:80%;
+    height:80%;
+    background-color:#fff;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
 .donut-control-list>li{
     width:40px;
     height:40px;
@@ -248,7 +250,10 @@ section{
 .icon-list p{
     font-size:14px;
     line-height:1.5;
-    background-color:#fff;
+    background-color:transparent;
+    border:1px solid #fff;
+    box-sizing:border-box;
+    color:#fff;
 }
 .icon-list .icon-title{
     text-align:center;
@@ -456,6 +461,7 @@ table{
     width:300px;
 }
 #footer-wrap{
+    height:1000px;
     padding:50px 0;
 }
 .contact-list{

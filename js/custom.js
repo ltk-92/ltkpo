@@ -10,43 +10,59 @@
 	//})
 	
 	$(".main-menu li").on('click',function(e){//메뉴 클릭시 스크롤 이동
-		
+		logodel();
 		//e.preventDefault();
 		var i = $(this).index();
         var sum = 0;
         for(i=i;i>=0;i--){
-            sum += $('section').eq(i).height();
+            sum += $('.realm').eq(i).height();
         };
         var header = $("header").height();
 		var nowTop = sum - header;
+		
 		$('html, body').stop().animate({'scrollTop':nowTop},1000);
 	});
     
     //마우스 휠 동작시 아래로 스크롤 이동
+	$(window).scroll(function(){
+		logodel();
         var size = $('section').size();//갯수
 		$('section').on('mousewheel',function(event,delta){
-		
-            if(delta<0 && $(this).index()==0){
-				var test =  $(this).index();
-				var header = $("header").height();
-				var next = Number($(this).next().offset().top);
-				var wheelDown = next- header;
-			     console.log(test);
-				$('html,body').stop().animate({'scrollTop':wheelDown},1500,'easeOutExpo');
-                console.log(test);
+			if(delta>0 && $(this).index()>=1){
+				var prev = $(this).prev().offset().top;
+				$('html,body').stop().animate({'scrollTop':prev},2000,'easeOutExpo');
+				
+				
+			}else if(delta<0 && $(this).index()<3){
+				var next = $(this).next().offset().top; 
+				$('html,body').stop().animate({'scrollTop':next},2000,'easeOutExpo');
+			}else if(delta<0 && $(this).index()==3){
+				var footer = $("#footer-wrap").offset().top;
+				$('html,body').stop().animate({'scrollTop':footer},2000,'easeOutExpo');
 			}
 			
 		});
+		$('#footer-wrap').on('mousewheel',function(event,delta){
+            if(delta>0){
+				var section_tail = $("section").eq(3).offset().top;
+				$('html,body').stop().animate({'scrollTop':section_tail},2000,'easeOutExpo');
+				
+				
+			}
+        });
+	});		
     //end
 	 console.log("test");
 	 
 	 $(window).ready(function(){
 		draw(200, '.icon-bg', '#000', 'darkblue');
+		logodel();
+
 	 });
 	 
 	 function draw(max, classname, colorname1,colorname2){
 		var cnt=1;
-		 func1 = setInterval(donut,10);
+		 func1 = setInterval(donut,13);
 		 function donut(){
 			cnt++; 
 		    if(cnt<=100){
@@ -88,7 +104,7 @@
 					,"alt":"도넛그래프 정지버튼"
 					,"class":"donut-stop"
 				});
-				func1 = setInterval(donut,10);
+				func1 = setInterval(donut,13);
 			};
 		});	 
 		}
@@ -98,7 +114,16 @@
 		});
 		
 	 }//도넛그래프 끝
-	 
+		function logodel(){ 
+			if($(window).scrollTop()>0){
+				$("h1").find("img").fadeOut();
+				$(".header-wrap").css("background","rgba(0,0,0,1)");
+			}else{
+				$("h1").find("img").fadeIn();
+				$(".header-wrap").css("background","rgba(0,0,0,0.3)");
+			}
+		
+	};
 		
 });
 
