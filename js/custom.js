@@ -86,7 +86,7 @@
 				//color1(cnt,classname,c1,c2);
 				
 			}
-			console.log("cnt="+cnt);
+			//console.log("cnt="+cnt);
 		 };
 		 $(".donut-stop").click(function(){
 			//alert("!");
