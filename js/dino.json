@@ -1,0 +1,35 @@
+[
+    {
+        "img":  "dino-monitor.jpg",
+        "title": "쥬라기 월드",
+        "text": " 포트폴리오 목적을 위해 제작한 사이트입니다. 선생님이 주신 레이아웃을 보고 공룡들 이미지를 넣으면 재미있을 것 같아 이참에 영화 쥬라기월드 소개페이지로 만들어 보았습니다.<br> 메인페이지를 만든 후엔, 영화정보 페이지와, 예고편 모음, 이미지 모음 등의 서브페이지도 완성했습니다."
+    },
+    {   
+        "img": "dino-info.png",
+        "text": "영화정보 페이지에는 탭기능으로 공룡 각 정보를 정렬했습니다."
+    },
+    {
+        
+        "img": "dino-visual-tab.png",
+        "text": " 동영상 페이지와 이미지 페이지는 슬라이드 기능을 만들어 양쪽 화살을 누르거나 아랫쪽 이미지 탭을 누르면 이미지와 동영상이 중앙에 뜨도록 했습니다.<br>동영상 페이지는 자바스크립트 배열로 유튜브와 네이버 플레이어의 동영상 주소를 나열하여, 화살표나이미지 탭 클릭시 기존 주소를 지우고 선택된 주소의 동영상이 중앙에 선택되도록 했습니다."
+       
+    },
+    {
+        "listColor":"black-list"
+    },
+    {
+        "linkName1":"메인페이지 바로가기",
+        "link1":"https://ltk-92.github.io/ltkpo/dino/index.html",
+        "class":"main-btn"
+    },
+    {
+        "linkName1":"소개 페이지",
+        "linkName2":"이미지 페이지",
+        "linkName3":"동영상 페이지",
+        "linkName4":"예매 페이지",
+        "link1":"https://ltk-92.github.io/ltkpo/dino/sub-about.html",
+        "link2":"https://ltk-92.github.io/ltkpo/dino/sub-photo.html",
+        "link3":"https://ltk-92.github.io/ltkpo/dino/sub-video.html",
+        "link4":"https://ltk-92.github.io/ltkpo/dino/sub-ticket.html"
+    }       
+]
