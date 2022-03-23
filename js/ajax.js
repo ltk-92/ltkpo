@@ -24,6 +24,7 @@ $(function(){
             // webinfo.text(info);
                  $.each(info, function (index, item){
                     var info_img = item.img;
+                    var info_alt = item.alt;
                     var info_title = item.title;
                     var info_text = item.text;
                     var info_text2 = item.text2;
@@ -33,6 +34,7 @@ $(function(){
                     var btnClass= item.class;
                     var img = $("<img/>");
                     img.attr("src","img/"+info_img);
+                    img.attr("alt",info_alt);
                     var title = $('<p />').text(info_title);
                     title.attr("class","info-title");
                     var text = $('<p />').html(info_text);
