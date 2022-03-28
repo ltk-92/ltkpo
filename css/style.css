@@ -166,7 +166,7 @@ section{
      background-attachment: fixed;
      background: linear-gradient(to bottom, #27aae1,#9e7eb9);
 }
-.profile-info p{
+.profile-info p, .profile-info h3{
     line-height:2;
     color:#fff;
 }
@@ -386,7 +386,7 @@ section{
     background-color:skyblue;
     color:#fff
 }
-.web-list span{
+.web-list span, .web-list h3{
     display:inline-block;
     width:100%;
     height:50px;
@@ -401,7 +401,7 @@ section{
 .web-list .web-source{
     height:35px;
     line-height:35px;
-    font-size: 0.9375rem;
+    font-size: 0.8rem;
     color:#555;  
 }
 .web-list .web-source mark{
