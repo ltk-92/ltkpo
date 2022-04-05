@@ -15,12 +15,16 @@
         width:90%;
         margin:auto;
     }
-    h2{
+    .realm h2{
         width:50%;
         margin:auto;
         position:static;
         writing-mode:horizontal-tb;
         transform: translateY(0%); 
+    }
+    #visual-wrap h2 {
+        opacity: 0;
+        font-size:0;
     }
     .main-menu a{
         letter-spacing: 1px;
@@ -128,9 +132,11 @@
     }
    
     #main-wrap article,#footer-wrap article{
-        padding-top:70px;
+        display:block;
+        width:100%;
         height:auto;
         margin:auto;
+        
     }
     #main-wrap .center-wrap, #footer-wrap .center-wrap{
         width:90%;
@@ -139,12 +145,18 @@
     .profile-info li, .icon-list li{
         display:inline-block;
     }
-    h2{
+    .realm h2{
         width:100%;
-        
+        display:block;
+        padding-top:70px;
         position:static;
         writing-mode:horizontal-tb;
-        transform: translateY(0%); 
+        transform: translateY(0%);
+    }
+    #visual-wrap h2 {
+        opacity: 0;
+        font-size:0;
+
     }
     .wheel-box{
         bottom:5%;

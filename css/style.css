@@ -75,11 +75,10 @@ h1 img{
     top:50%;
     transform:translateY(-50%);
     font-weight:normal;
-    opacity:0.5;
 }
 #visual-wrap h2{
     opacity:0;
-    text-indent: 999px;
+    font-size:0;
 }
 nav{
     width:60%;
@@ -186,6 +185,9 @@ section{
 .pageshow{
     opacity:1;
     transition:all 2s;
+}
+h2.pageshow{
+    opacity:0.5;
 }
 .greeting-list{
     width:100%;
