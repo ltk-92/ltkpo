@@ -11,7 +11,7 @@
     //End Each
     
     //화살표 버튼
-     $(".web-list-button>li:first").click(function(){
+     $(".left-btn").click(function(){
         var webList = $(".web-list");
         $(".web-list>li").fadeOut();
         $(".web-list>li:last").prependTo(webList);
@@ -19,7 +19,7 @@
         $(".web-list>li:last").addClass("web-on");
         $(".web-on").fadeIn();
     });
-    $(".web-list-button>li:last").click(function(){
+    $(".right-btn").click(function(){
         var webList = $(".web-list");
         $(".web-list>li").fadeOut();
         $(".web-list>li:first").appendTo(webList);

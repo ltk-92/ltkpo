@@ -3,6 +3,8 @@
 		$(window).scroll(function(){
 			clearInterval(textset);
 			loadview();
+			console.log("스크롤값"+$(window).scrollTop());
+			console.log("웹랩값"+$("#web-wrap").offset().top);
 		});
 
 	draw(200, '.icon-bg', ' #b0dfd8', '#4eb8b9');
@@ -16,7 +18,7 @@
         for(i=m;i>=0;i--){
             sum += $('.realm').eq(i).height();
         };
-		var nowTop = sum+30;
+		var nowTop = sum+1;
 		$('html, body').stop().animate({'scrollTop':nowTop},1000);
 		var ji = m+1;
 		$(".realm").children().addClass("pagehide");
@@ -29,8 +31,8 @@
     //마우스 휠 동작시 아래로 스크롤 이동
 	$(window).scroll(function(){
 		logodel();
-		var sectionTop = parseInt($("#profile-wrap").offset().top);
-		console.log("sectionTop"+sectionTop);
+		//var sectionTop = parseInt($("#profile-wrap").offset().top);
+		//console.log("sectionTop"+sectionTop);
 		//if($(window).scrollTop()==sectionTop){
 		//	$("#profile-wrap").children().fadeOut();
 	
@@ -41,7 +43,7 @@
 			if(delta>0 && $(this).index()>=1){
 				var present = $(this).prev();
 				pageshow(present);
-				var presentTop = present.offset().top;
+				var presentTop = Math.ceil(present.offset().top);
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
 				 //if(delta>0 && $(this).index()==1){
 					//clearInterval(textset);
@@ -50,7 +52,7 @@
 			}else if(delta<0 && $(this).index()<3){
 				var present = $(this).next();
 				pageshow(present);
-				var presentTop = present.offset().top; 
+				var presentTop = Math.ceil(present.offset().top);
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
 				//if(delta<0 && $(this).index()==0){
 					//clearInterval(textset);
@@ -58,7 +60,7 @@
 			}else if(delta<0 && $(this).index()==3){
 				var present = $("#footer-wrap");
 				pageshow(present);
-				var presentTop = present.offset().top;
+				var presentTop = Math.ceil(present.offset().top);
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo')
 			};
 			
@@ -70,8 +72,6 @@
 				pageshow(present);
 				var presentTop = present.offset().top;
 				$('html,body').stop().animate({'scrollTop':presentTop},2000,'easeOutExpo');
-				
-				
 			};
 		
         });
