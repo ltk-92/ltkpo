@@ -75,9 +75,10 @@ $(function(){
 					
 					$(".gnb_m_sub").slideUp();
 					
-					$(".gnb_m>li>a").on("click focusin" ,function(){
+					$(".gnb_m>li>div").on("click focusin" ,function(e){
+                        e.preventDefault();
                         $(this).siblings().slideDown();
-                        $(".gnb_m>li>a").not(this).siblings().stop().slideUp();
+                        $(".gnb_m>li>div").not(this).siblings().stop().slideUp();
 						
 						return false;
 					}) //마우스오버: 자기 밖으로 나간 자식 인정안함
@@ -88,10 +89,10 @@ $(function(){
 				 //$(".gnb_m").animate({"marginLeft" : "0px"});
 				$(".m_play").click(function(){
                        
-						if($(".gnb_m").css("right") == "-200px")
-						{
+						if(parseInt($(".mobile-wrap").css("right"))<0){
+						
 							$(".m_play").css({"transform":"rotate(180deg)"});
-							$(".gnb_m").animate({"right" : "0px"});
+							$(".mobile-wrap").animate({"right" : "0px"});
 						$(".play>a>img").attr("src","images/arrow_stop.png");
 						 
 						  $(".play_arrow1").css({"transition":"all 0.3s","width":"0px"});
@@ -101,9 +102,9 @@ $(function(){
 							 $(".gnb_m_sub").slideUp();
 						}
 
-						else if($(".gnb_m").css("right") == "0px")
+						else if(parseInt($(".mobile-wrap").css("right"))==0)
 						{ 	$(".m_play").css({"transform":"rotate(0deg)"});
-							$(".gnb_m").animate({"right" : "-200px"})
+							$(".mobile-wrap").animate({"right" : "-385px"})
 							$(".m_play>a>img").attr("src","images/arrow_play.png");
 						 $(".play_arrow1").css({"transition":"all 0.3s","width":"40px"});
 						  $(".play_arrow3").css({"transition":"all 0.3s","width":"40px"});
