@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 	<title>ljh</title>
-	<style type="text/css">
+	<style>
 		*{margin:0;padding:0}
 		ol,ul{list-style:none}
 		body{overflow-x:hidden}
@@ -13,13 +13,11 @@
 		@font-face {
     				font-family:'미생체';
     				src:url('font/SDMiSaeng.ttf');}
-#header{width:1004px; 
-    height:99px;  
-    margin:0 auto; 
-    position:relative
-}
-		
-		
+		#header{width:1004px; 
+			height:99px;  
+			margin:0 auto; 
+			position:relative
+		}
 		#basic{width:1900px; background-color:#f00; height:1200px}
 		header{width:100%; background-color:#000; height:10%}
 		h1{margin-left:20px;padding-top:1%;width:20%; height:80px;float:left}
@@ -32,7 +30,6 @@
 		section{height:85%; background-color:#000;}
 		artcile{float:left}
 		article:first-child{width:25%; background-color:#333;height:100%;float:left;}
-		
 		article:nth-child(2){width:50%;  height:40%; float:left;position:relative }
 		article:nth-child(3){width:25%;  height:20%; float:left; background-color:#444; position:relative}
 		article:nth-child(4){width:25%;  height:20%; float:left; background-color:#000;}
@@ -45,14 +42,12 @@
 		article:nth-child(11){width:25%;  height:20%;float:left ; background-color:#aaa;overflow:hidden}
 		article:nth-child(12){width:25%;  height:20%;float:right ; background-color:#fff;}
 		footer{width:100%; height:6%; background-color:#333}
-		
 		article:first-child img{width:100%}
 		article:nth-child(4) p {font-size:30px; color:#fff; font-weight:bold;text-align:center; margin-top:80px}
 		article:nth-child(5) p {font-size:30px; color:#fff; font-weight:bold;text-align:center; margin-top:80px}
 		article:nth-child(9) p {font-size:30px; color:#fff; font-weight:bold;text-align:center; margin-top:80px}
 		article:nth-child(10) p {font-size:30px; color:#000; font-weight:bold;text-align:center; margin-top:80px}
-		article:nth-child(12) p {font-size:30px; color:#000; font-weight:bold;text-align:center; margin-top:80px}
-		
+		article:nth-child(12) p {font-size:30px; color:#000; font-weight:bold;text-align:center; margin-top:80px}	
 		.slide_window{width:100%; height:100%;overflow:hidden}
 		.slide_window>ul{width:300%; height:100%;overflow:hidden}
 		.slide_window>ul>li{width:33.3%; height:100%;overflow:hidden; float:left}
@@ -60,26 +55,19 @@
 		.slide_nav li{float:left}		
 		.slide_nav li:nth-child(2){position:absolute; left:480px; top:160px}
 		.slide_nav li:last-child{float:right}
-		
 		.movie_play{position:absolute;left:35%; top:10%;}
 		.movie_play img{opacity:0.6; 
 						animation-name: playbling; 
 						animation-duration: 2s;
    						animation-iteration-count: infinite;
-    					
-    					animation-timing-function: ease-out;
-    				
-						
-						
+    					animation-timing-function: ease-out;			
 		}
 		@keyframes playbling{
-			
 			0%{opacity:0.6; transform:scale(1,1)}
 			50%{opacity:0.8;transform:scale(1.5,1.5)}
 			100%{opacity:0.6; transform:scale(1,1)}
 			
 		}
-		
 		.rock_modal{width:100%;height:1200px; background:rgba(0,0,0,0.8); position:absolute;left:0;top:0;display:none}
 		.rock_modal img{width:100px; height:100px}
 		.rock_modal iframe{position:absolute;left:35%;top:15%;transform:scale(1.5,1.5)}
@@ -87,28 +75,16 @@
 		font-family:"미생체";opacity:0.7}
 		.rock_modal p{width:100px;height:100px;position:absolute; right:0;top:0}
 		.rock_modal p a:link,.rock_modal p a:visited{display:block;width:100px;height:100px;position:absolute; right:0;top:0}
-		
-		
-		
-		
 		.ini_modal{width:100%;height:1200px; background:rgba(0,0,0,0.8); position:absolute;left:0;top:0;display:block}
 		.ini_modal img{width:100px; height:100px}
-		
 		.rain_talk{position:absolute; bottom:40%; text-align:center;width:100%; color:#fff;font-size:35px;letter-spacing:1px;
 		font-family:"미생체";opacity:0.7}
 		.ini_modal p{width:100px;height:100px;position:absolute; right:0;top:30px; color:#fff}
 		.ini_modal p a:link,.ini_modal p a:visited{display:block;width:100px;height:100px;position:absolute; right:0;top:0;color:#fff}
 		.ini_modal strong{position:absolute; left:35%; top:20%; color:#fff;font-size:40px}
-		
-		
-		
-		
 		.foot_bar{width:50%; float:right; height:100%}
 		.foot_bar>li{width:10%;height:100%;float:left; }
 		.foot_bar>li:first-child{margin-left:540px;width:20%;line-height:70px;height:70%;float:left; color:#eee;font-size:12px; opacity:0.5}
-		
-		
-		
 		.foot_bar>li img{width:50%; vertical-align:middle; opacity:0.4}
 		.foot_bar>li:last-child img{width:60%}
 	</style>
@@ -131,40 +107,108 @@
 			</nav>	
 		</header>
 		<section>
-			<article><img src="img/jh2.jpg" alt="main photo"></article>
-			<article><div class="slide_window"><ul class="slide_list">
+			<h3>본문</h3>
+			<article>
+				<h4>당사자 사진</h4>
+				<img src="img/jh2.jpg" alt="main photo">
+			</article>
+			<article>
+				<h4>메인비주얼</h4>
+				<div class="slide_window">
+					<ul class="slide_list">
 								<li><img src="img/jh5.jpg" alt="slide photo"></li>
 								<li><img src="img/jh6.jpg" alt="slide photo"></li>
 								<li><img src="img/jh3.jpg" alt="slide photo"></li>
 						</ul></div>
-						<ul class="slide_nav"><li class="left"><a href="#"><img src="img/left.png" alt="left"></a></li><li class="center"><a href="#"><img src="img/stop.png" alt=""></a></li><li class="right"><a href="#"><img src="img/right.png" alt="left"></a></li></ul>			
+						<ul class="slide_nav">
+							<li class="left"><a href="#">
+								<img src="img/left.png" alt="left">
+							</a>
+						</li>
+						<li class="center">
+							<a href="#">
+								<img src="img/stop.png" alt="">
+							</a>
+						</li>
+						<li class="right">
+							<a href="#">
+								<img src="img/right.png" alt="left">
+							</a>
+						</li>
+					</ul>			
 			</article>
-
-		
-
-			<article><img src="img/rock2.jpg" alt="rock"><p class="movie_play"><a href="#"><img src="img/movie_play.png" alt="동영상 플레이 버튼"></a></p>
-					
+			<article>
+				<h4>동영상 메뉴 이미지</h4>
+				<img src="img/rock2.jpg" alt="rock">
+				<p class="movie_play">
+					<a href="#">
+						<img src="img/movie_play.png" alt="동영상 플레이 버튼">
+					</a>
+				</p>				
 			</article>
-			<article><p>Rock Star</p></article>
-			<article><p>Humanizm</p></article>
-			<article><img src="img/angel.jpg" alt="angel"></article>
-			<article><img src="img/girl3.jpg" alt="girl"></article>
-			<article><img src="img/rain.gif" alt="soju"><p class="rain_talk"> "비가 오는 지금 여기...ㅋ"</p></article>
-			<article><p>Sentimental</p></article>
-			<article><p>Bacchus</p></article>
-			<article><img src="img/soju.jpg" alt="rain"></article>
-			<article><p>Inocent Love</p></article>
-		
-			
+			<article>
+				<h4>동영상 메뉴 텍스트</h4>
+				<p>
+					Rock Star
+				</p>
+			</article>
+			<article>
+				<h4>성격메뉴 텍스트</h4>
+				<p>
+					Humanizm
+				</p>
+			</article>
+			<article>
+				<h4>성격메뉴 이미지</h4>
+				<img src="img/angel.jpg" alt="angel">
+			</article>
+			<article>
+				<h4>성격메뉴4 이미지</h4>
+				<img src="img/girl3.jpg" alt="girl">
+			</article>
+			<article>
+				<h4>성격메뉴2 이미지</h4>
+				<img src="img/rain.gif" alt="soju">
+					<p class="rain_talk">
+					 	"비가 오는 지금 여기...ㅋ"
+					</p>
+			</article>
+			<article>
+				<h4>성격메뉴2 텍스트</h4>
+				<p>
+					Sentimental
+				</p>
+			</article>
+			<article>
+				<h4>성격메뉴3 텍스트</h4>
+				<p>
+					Bacchus
+				</p>
+			</article>
+			<article>
+				<h4>성격메뉴3 이미지</h4>
+				<img src="img/soju.jpg" alt="rain">
+			</article>
+			<article>
+				<h4>성격메뉴4 텍스트</h4>
+				<p>
+					Inocent Love
+				</p>
+			</article>
 		</section>
 		<footer>
 			<ul class="foot_bar">
-				<li> Creatived by Lee Tae Kyu</li>			
-				<li><img src="img/hairskull.png" alt="해골로고"></li>
-				<li><img src="img/bi.png" alt="내로고"></li>
+				<li>
+					 Creatived by Lee Tae Kyu
+				</li>			
+				<li>
+					<img src="img/hairskull.png" alt="해골로고">
+				</li>
+				<li>
+					<img src="img/bi.png" alt="내로고">
+				</li>
 			</ul>
 		</footer>
-		
 	</div>
 		<script>
 				$(function(){

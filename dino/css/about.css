@@ -12,14 +12,16 @@
     margin:0 20px 20px 0;
     float:left;
 }
-.about-series h1{
-    font-family: 'SuperMario256'
-}
-.about-series h1,.about-series h2{
+
+.sub-wrap .about-series h4{
+    
     font-size:40px;
     text-align:center;
     margin-bottom:20px;
     font-weight:bold;
+}
+.sub-wrap .about-intro h4{
+    font-family: 'SuperMario256';
 }
 .about-series-text{
     width:970px;
@@ -82,7 +84,7 @@
     padding:0 15px;
     float:left
 }
-.dino-info h3{
+.dino-info h5{
     box-sizing:border-box;
     padding-top:10px;
     font-size:25px;
@@ -93,7 +95,7 @@
 .f-left{
     float:left;
 }
-h3{
+h5{
    font-size:30px;
     margin:30px 0;
     font-weight:bold;

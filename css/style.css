@@ -510,7 +510,7 @@ h2.pageshow{
     color:#fff; 
     text-align:center;
 }
-.web-list-button{
+.left-btn, .right-btn{
     display:none;
 }
 .web-info li.main-btn{
