@@ -76,7 +76,7 @@ h1 img{
     transform:translateY(-50%);
     font-weight:normal;
 }
-#visual-wrap h2{
+#visual-wrap h2, footer h3{
     opacity:0;
     font-size:0;
 }
