@@ -310,6 +310,7 @@
     }
     
     .left-btn, .right-btn{
+        display:block;
         width:5%;
         position:absolute; 
         top:50%;
