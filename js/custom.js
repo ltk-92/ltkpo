@@ -1,12 +1,11 @@
 ﻿$(document).ready(function(){	
 	var textset;
-		$(window).scroll(function(){
-			clearInterval(textset);
-			loadview();
-			console.log("스크롤값"+$(window).scrollTop());
-			console.log("웹랩값"+$("#web-wrap").offset().top);
-		});
-
+	$(window).scroll(function(){
+		clearInterval(textset);
+		loadview();
+		console.log("스크롤값"+$(window).scrollTop());
+		console.log("웹랩값"+$("#web-wrap").offset().top);
+	});
 	draw(200, '.icon-bg', ' #b0dfd8', '#4eb8b9');
 	logodel();
 	loadview();
@@ -132,14 +131,16 @@
 		});
 		
 	 }//도넛그래프 끝
-		function logodel(){ 
-			if($(window).scrollTop()>0){
-				$("h1").find("img").fadeOut();
-				$(".header-wrap").css("background","gba(255,255,255,0.3)");
-			}else if($(window).scrollTop()==0){
-				$("h1").find("img").fadeIn();
-				$(".header-wrap").css("background","rgba(255,255,255,0.1)");				
-			};	
+		function logodel(){
+			if($(window).width()>1430){
+				if($(window).scrollTop()>0){
+					$("h1").find("img").fadeOut();
+					$(".header-wrap").css("background","gba(255,255,255,0.3)");
+				}else if($(window).scrollTop()==0){
+					$("h1").find("img").fadeIn();
+					$(".header-wrap").css("background","rgba(255,255,255,0.1)");				
+				};	
+			};
 		};
 	function pageshow(present) {
 		$(".realm").children().addClass("pagehide");
@@ -171,10 +172,10 @@
 		var sum = 0;
 		for(l=0;l<5;l++){		
 			var win = $(window).scrollTop();
-			var realmL = $(".realm").eq(l).offset().top;
+			var realmL = parseInt($(".realm").eq(l).offset().top)-500;
 			sum += $(".realm").eq(l).height();
 			var header = $("#header-wrap").height();
-			var pent = sum- header;		 
+			var pent = (sum- header)-500;		 
 			if(win >= realmL && win < pent){
 				$(".realm").children().addClass("pagehide");
 				$(".realm").children().removeClass("pageshow");

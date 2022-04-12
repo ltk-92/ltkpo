@@ -52,7 +52,7 @@ a{
     position:fixed;
     left:0;
     top:0;
-    z-index:8;
+    z-index:5;
     background:rgba(255,255,255,0.2);
     transition: all 1s;
 }
@@ -85,6 +85,9 @@ nav{
     height:19px;
     margin:auto;
 }
+.nav-btn{
+    display:none;
+}
 .main-menu:after{
     content:"";
     display:block;
@@ -110,7 +113,7 @@ nav{
 .main-menu li{
     float:left;
     width:15%;
-    margin-right:5%;
+    margin:0 2.5%;
 }
 .main-menu li>last-child{
     margin:0;
@@ -137,9 +140,6 @@ nav{
 .main-menu a:hover{
     color:skyblue;
 
-}
-.main-menu li:last-child{
-    margin-right:0;
 }
 #main-wrap{
     width:100%;
