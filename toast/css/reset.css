@@ -32,3 +32,28 @@ table{border-collapse:collapse}
 .fr{float:right}
 .clearfix:after{content:"";display:block;clear:both }
 address{font-style:normal;}
+
+.skip_nav{
+     width:100%
+}
+ .skip_nav li{
+     width:100%;
+     z-index:1 
+}	
+ .skip_nav li a:link,.skip_nav li a:visited{
+     color:#fff;
+     display:block; 
+     width:100%;;
+     text-align: center;
+     font-size:30px;
+     background-color:#000;
+     position:absolute;
+     z-index:1;
+     top:-40px;
+}
+ .skip_nav li a:hover,.skip_nav li a:focus{
+     top:0
+}
+.skip_nav li a:active{
+ top:0
+}
