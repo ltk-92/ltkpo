@@ -63,12 +63,12 @@ $(function(){
         };
     });
     
-    $("#consult-input").focus(function(){
-        $(this).attr("value","");
-    });
-    $("#consult-input").blur(function(){
-        $(this).attr("value","이름을 입력해주세요")
-    });
+   // $("#consult-input").click(function(){
+      //  $(this).attr("value","ssss");
+    //});
+    //$("#consult-input").blur(function(){
+   //     $(this).attr("value","이름을 입력해주세요")
+   // });
     
     name_data = $("#consultinput").val();
 				$(function(){

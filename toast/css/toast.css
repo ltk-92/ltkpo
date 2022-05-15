@@ -554,6 +554,16 @@ video{
     color:#fff;
     font-size:30px;
 }
+input[type=text]::-ms-clear { 
+    display:none; 
+}
+input::placeholder {
+   color:#fff;
+}
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+ }
 #consult-button{
     background-image:url('../img/franchize-button.png');
     background-color:transparent;
