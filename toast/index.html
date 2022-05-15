@@ -6,11 +6,11 @@
     <title>석봉토스트</title>
     <link href="css/toast.css" type="text/css" rel="stylesheet">
     <link href="css/response.css" type="text/css" rel="stylesheet">
-    <link href="https://vjs.zencdn.net/4.9/video-js.css" rel="stylesheet">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/placeholders.min.js"></script>
     <script src="js/toast.js"></script>
-    <script src="https://vjs.zencdn.net/4.9/video.js"></script>
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
        <!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<style type="text/css">
@@ -387,7 +387,8 @@
            </section>
             <section class="brand-wrap">
                 <h2 class="brand-text-title">브랜드 스토리 페이지 바로가기</h2>
-                <video autoplay muted loop class="video-js vjs-default-skin" data-setup="{}">
+                <video autoplay muted loop id="vid1" class="video-js vjs-big-play-button vjs-big-play-centered"
+                data-setup='{"controls": true, "fluid": true, "autoplay": false, "muted": true, "playbackRates": [0.5, 1, 1.5, 2]}'>
                       <source src="video/md.mp4" type="video/mp4">
                       <source src="video/md.webm" type="video/webm">
                       <source src="video/md.ogg" type="video/ogg">
