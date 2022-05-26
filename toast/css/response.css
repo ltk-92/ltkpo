@@ -110,14 +110,16 @@
         border:4px solid #419000;
         padding-top:6px;
         transition:all 0.5s ease-in 0.2s;
-}
+        transform:rotate(0deg);
+    }
     .m_play>a>span{
         display:block; 
         width:40px; 
         height:5px; 
         background-color:#419000; 
         margin: auto; 
-        transform-origin:left
+        transform-origin:left;
+        transition:all 0.3s;
     }
     .m_play>a>.play_arrow1{
         margin-top:4px
@@ -131,6 +133,21 @@
         top:15px;
         width:0
     }
+     div.m_open{
+        transform:rotate(180deg);
+    }
+    body .m_open>a>.play_arrow1, .m_open>a>.play_arrow3{
+        width:0;
+    }
+    body .m_open>a>.play_arrow4, .m_open>a>.play_arrow5{
+        width:30px;
+    }
+    body .m_open>a>.play_arrow4{
+        transform:rotate(45deg);
+    }      
+    body .m_open>a>.play_arrow5{
+        transform:rotate(-45deg);
+    }     
     #wrap h1{
         position:absolute;
         background:url('../img/header-logo.png') no-repeat;
@@ -600,14 +617,16 @@
         border:4px solid #419000;
         padding-top:6px;
         transition:all 0.5s ease-in 0.2s;
-}
+        transform:rotate(0deg);
+    }
     .m_play>a>span{
         display:block; 
         width:40px; 
         height:5px; 
         background-color:#419000; 
         margin: auto; 
-        transform-origin:left
+        transform-origin:left;
+        transition:all 0.3s;
     }
     .m_play>a>.play_arrow1{
         margin-top:4px
@@ -621,6 +640,21 @@
         top:15px;
         width:0
     }
+     div.m_open{
+        transform:rotate(180deg);
+    }
+    body .m_open>a>.play_arrow1, .m_open>a>.play_arrow3{
+        width:0;
+    }
+    body .m_open>a>.play_arrow4, .m_open>a>.play_arrow5{
+        width:30px;
+    }
+    body .m_open>a>.play_arrow4{
+        transform:rotate(45deg);
+    }      
+    body .m_open>a>.play_arrow5{
+        transform:rotate(-45deg);
+    }     
     #wrap h1{
         position:absolute;
         background:url('../img/header-logo.png') no-repeat;
@@ -653,11 +687,11 @@
         background-image:url(../img/mobile-visual2.jpg);
         
     }
-        #main .visual-box>li:nth-child(4){
+    #main .visual-box>li:nth-child(4){
         background-image:url(../img/mobile-visual3.jpg);
         
     }
-        #main .visual-box>li:nth-child(5){
+    #main .visual-box>li:nth-child(5){
         background-image:url(../img/mobile-visual1.jpg);
         
     }
@@ -665,7 +699,7 @@
         height:110vw;
     }
     #main .visual-box>li img{
-    display:none;
+        display:none;
     }
         
     .slide-button-list>button{
@@ -1065,14 +1099,16 @@
         border:4px solid #419000;
         padding-top:6px;
         transition:all 0.5s ease-in 0.2s;
-}
+        transform:rotate(0deg);
+    }
     .m_play>a>span{
         display:block; 
         width:40px; 
         height:5px; 
         background-color:#419000; 
         margin: auto; 
-        transform-origin:left
+        transform-origin:left;
+        transition:all 0.3s;
     }
     .m_play>a>.play_arrow1{
         margin-top:4px
@@ -1086,6 +1122,21 @@
         top:15px;
         width:0
     }
+     div.m_open{
+        transform:rotate(180deg);
+    }
+    body .m_open>a>.play_arrow1, .m_open>a>.play_arrow3{
+        width:0;
+    }
+    body .m_open>a>.play_arrow4, .m_open>a>.play_arrow5{
+        width:30px;
+    }
+    body .m_open>a>.play_arrow4{
+        transform:rotate(45deg);
+    }      
+    body .m_open>a>.play_arrow5{
+        transform:rotate(-45deg);
+    }     
     #wrap h1{
         position:absolute;
         background:url('../img/header-logo.png') no-repeat;

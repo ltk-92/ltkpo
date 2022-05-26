@@ -1,5 +1,5 @@
 $(function(){
-    $("#all_list").find("*").addClass("hidden");
+    $("#all_list").find("*").addClass("hidden");//gnb
    $("#gnb").mouseenter(function(){
      $("#all_list").find("*").removeClass("hidden");
         
@@ -8,12 +8,12 @@ $(function(){
       $("#all_list").find("*").addClass("hidden");
         
    });
-    var visual_width = $(".visual-box>li").width();
+    var visual_width = $(".visual-box>li").width();//메인비주얼
      $(".visual-box").css({"marginLeft":-(visual_width)});
     $(".visual-box").prepend("<li>"+$('.visual-box>li:eq(2)').html()+"</li>");
     $(".visual-box").append("<li>"+$('.visual-box>li:eq(1)').html()+"</li>");
      i = 0;
-    $(".right-button").click(function(){
+    $(".right-button").click(function(){//오른쪽 버튼
         $(this).css({"border":"5px solid transparent"});
         var visual_width = $(".visual-box>li").width(); 
         $('.visual-box').stop().animate({'marginLeft':'-='+visual_width},function(){
@@ -28,7 +28,7 @@ $(function(){
         });
         console.log($(".visual-box").css("marginLeft"));
     });
-     $(".left-button").click(function(){
+     $(".left-button").click(function(){//왼쪽 버튼
          var visual_width = $(".visual-box>li").width(); 
         $('.visual-box').stop().animate({"marginLeft":'+='+visual_width},function(){
              if(parseInt($(".visual-box").css("marginLeft"))>-(visual_width)){
@@ -42,7 +42,7 @@ $(function(){
         });
          console.log($(".visual-box").css("marginLeft"));
     });
-    $(".visual-indicater>li").click(function(){
+    $(".visual-indicater>li").click(function(){//인디케이터 버튼
          var visual_width = $(".visual-box>li").width(); 
         $(".visual-indicater>li").removeClass("on");
         $(this).addClass("on");
@@ -52,7 +52,7 @@ $(function(){
         i= index_num-1;
         console.log(i);
     });
-    $(window).resize(function(){
+    $(window).resize(function(){//반응형 이벤트
         var visual_width = $(".visual-box>li").width(); 
         $(".visual-indicater>li").removeClass("on");
         $(".visual-indicater>li").first().addClass("on");
@@ -71,7 +71,7 @@ $(function(){
    // });
     
     name_data = $("#consultinput").val();
-				$(function(){
+				$(function(){//모바일 gnb
 					
 					$(".gnb_m_sub").slideUp();
 					
@@ -81,41 +81,18 @@ $(function(){
                         $(".gnb_m>li>div").not(this).siblings().stop().slideUp();
 						
 						return false;
-					}) //마우스오버: 자기 밖으로 나간 자식 인정안함
-						//마우스엔터 : 자기 밖으로 나간 자식 인정함. 
-					 $(".play_arrow4").css({"transform":"rotate(44deg)","transition":"all 0.3s"});
-                        $(".play_arrow5").css({"transform":"rotate(-44deg)","transition":"all 0.3s"});
-						
-				 //$(".gnb_m").animate({"marginLeft" : "0px"});
-				$(".m_play").click(function(){
-                       
+					}) 
+				$(".m_play").click(function(){//햄버거버튼
 						if(parseInt($(".mobile-wrap").css("right"))<0){
-						
-							$(".m_play").css({"transform":"rotate(180deg)"});
+                            $(".m_play").addClass("m_open");
 							$(".mobile-wrap").animate({"right" : "0px"});
-						$(".play>a>img").attr("src","images/arrow_stop.png");
-						 
-						  $(".play_arrow1").css({"transition":"all 0.3s","width":"0px"});
-						  $(".play_arrow3").css({"transition":"all 0.3s","width":"0px"});
-						 $(".play_arrow4").css({"transform":"rotate(45deg)","transition":"all 0.3s","width":"30px"});
-                        $(".play_arrow5").css({"transform":"rotate(-45deg)","transition":"all 0.3s","width":"30px"});
-							 $(".gnb_m_sub").slideUp();
 						}
-
-						else if(parseInt($(".mobile-wrap").css("right"))==0)
-						{ 	$(".m_play").css({"transform":"rotate(0deg)"});
+						else if(parseInt($(".mobile-wrap").css("right"))==0){
+                            $(".m_play").removeClass("m_open");
 							$(".mobile-wrap").animate({"right" : "-385px"})
-							$(".m_play>a>img").attr("src","images/arrow_play.png");
-						 $(".play_arrow1").css({"transition":"all 0.3s","width":"40px"});
-						  $(".play_arrow3").css({"transition":"all 0.3s","width":"40px"});
-							 $(".play_arrow4").css({"transform":"rotate(45deg)","transition":"all 0.3s","width":"0px"});
-                        $(".play_arrow5").css({"transform":"rotate(-45deg)","transition":"all 0.3s","width":"0px"});
-						
 						}
-				
 						return false;
 					});
 					
 				});
-
 });
