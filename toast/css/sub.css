@@ -169,6 +169,7 @@ h2.sub-title{
     border:10px solid #419400;
 }
 .sub-tab>li img{
+    filter: grayscale(1);
     width:100%;
     height:75%;
 }
