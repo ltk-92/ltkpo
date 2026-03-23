@@ -224,7 +224,7 @@
                 </div>
             </div>
 
-<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services"></script>
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7"></script>
 
 <script>
 // 1. 전역 변수로 선언하여 HTML의 onsubmit="searchPlaces()"에서 접근 가능하게 합니다.
@@ -385,45 +385,15 @@ $(function () {
 
             if (i===pagination.current) {
                 el.className = 'on';
-            } else {
-                el.onclick = (function(i) {
-                    return function() {
-                        pagination.gotoPage(i);
-                    }
-                })(i);
-            }
-            fragment.appendChild(el);
-        }
-        paginationEl.appendChild(fragment);
-    }
+            } else {	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
 
-    function displayInfowindow(marker, title) {
-        var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
-        infowindow.setContent(content);
-        infowindow.open(map, marker);
-    }
-
-    function removeAllChildNods(el) {   
-        while (el.hasChildNodes()) {
-            el.removeChild (el.lastChild);
-        }
-    }
-
-    // 지도 컨트롤 추가
-    var mapTypeControl = new kakao.maps.MapTypeControl();
-    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-    var zoomControl = new kakao.maps.ZoomControl();
-    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);   
-
-    // 새로고침 버튼
-    $(".default-button").click(function(){
-        location.reload();
-    });
-
-    // 4. 페이지 로드 시 첫 검색 실행
-    searchPlaces();
-});
-</script>
+		var map = new kakao.maps.Map(container, options);
+	</script>
           </section>
         </main>
         <footer id="footer">
