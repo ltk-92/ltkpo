@@ -198,3 +198,6 @@ h2.sub-title{
 .bold{
     font-weight:bold;
 }
+.gray-image{
+    filter:grayscale(1)
+}
