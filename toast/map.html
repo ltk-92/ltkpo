@@ -9,6 +9,7 @@
     <link href="css/map.css" type="text/css" rel="stylesheet">
     <link href="css/response.css" type="text/css" rel="stylesheet">
     <link href="css/sub_response.css" type="text/css" rel="stylesheet">
+	<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services&autoload=false"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/sub.js"></script>
@@ -224,61 +225,58 @@
                 </div>
             </div>
 
-<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services&autoload=false"></script>
-
 <script>
-// 2. 전역 변수 선언 (검색 버튼 등에서 접근 가능하도록)
-var searchPlaces;
+// 1. 전역 변수로 선언하여 어디서든 호출 가능하게 합니다.
+var map;
+var ps;
 
-// 3. SDK 로드가 완전히 완료된 후 내부 코드를 실행합니다.
+// 2. 카카오 라이브러리가 "확실히" 로드된 후 실행합니다.
 kakao.maps.load(function() {
     var container = document.getElementById('map');
     var options = {
-        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 서울 시청 기준 (예시)
+        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 기본 중심 좌표
         level: 3
     };
 
-    // 지도 생성
-    var map = new kakao.maps.Map(container, options);
+    // 지도 객체 생성
+    map = new kakao.maps.Map(container, options);
     
-    // 장소 검색 객체 생성 (libraries=services 파라미터가 있어야 작동함)
-    var ps = new kakao.maps.services.Places(); 
+    // 장소 검색 객체 생성
+    ps = new kakao.maps.services.Places(); 
 
-    // 검색 함수 정의
-    searchPlaces = function() {
-        var keyword = document.getElementById('keyword').value;
-        if (!keyword.replace(/^\s+|\s+$/g, '')) {
-            alert('키워드를 입력해주세요!');
-            return false;
-        }
-        // 장소 검색 실행
-        ps.keywordSearch(keyword, placesSearchCB); 
-    };
-
-    // 장소검색 완료 시 호출되는 콜백함수 (예시)
-    function placesSearchCB (data, status, pagination) {
-        if (status === kakao.maps.services.Status.OK) {
-            // 검색 결과가 있을 때의 로직을 여기에 작성하세요.
-            console.log(data);
-        } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
-            alert('검색 결과가 존재하지 않습니다.');
-        } else if (status === kakao.maps.services.Status.ERROR) {
-            alert('검색 결과 중 오류가 발생했습니다.');
-        }
-    }
-
-    // 초기 실행 (페이지 로드 시 '석봉토스트' 바로 검색)
+    // 페이지 접속하자마자 바로 '석봉토스트' 검색 실행
     searchPlaces();
 });
 
-// 새로고침 버튼 이벤트 (jQuery 사용)
-$(function() {
-    $(".default-button").click(function(){
-        location.reload();
-    });
-});
-</script>
+// 3. 검색 함수 (버튼 클릭이나 엔터 시 실행)
+function searchPlaces() {
+    var keyword = document.getElementById('keyword').value;
 
+    if (!keyword.replace(/^\s+|\s+$/g, '')) {
+        alert('키워드를 입력해주세요!');
+        return false;
+    }
+
+    // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
+    ps.keywordSearch(keyword, placesSearchCB); 
+}
+
+// 4. 장소검색이 완료됐을 때 호출되는 콜백함수
+function placesSearchCB(data, status, pagination) {
+    if (status === kakao.maps.services.Status.OK) {
+        // 정상적으로 검색이 완료됐을 때의 로직 (콘솔에서 확인 가능)
+        console.log("검색 결과:", data);
+        
+        // 여기에 마커를 찍거나 리스트를 만드는 함수(displayPlaces 등)를 연결하세요.
+        // 현재는 에러 해결이 우선이므로 로그만 찍히게 두었습니다.
+        
+    } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+        alert('검색 결과가 존재하지 않습니다.');
+    } else if (status === kakao.maps.services.Status.ERROR) {
+        alert('검색 결과 중 오류가 발생했습니다.');
+    }
+}
+</script>
           </section>
         </main>
         <footer id="footer">
