@@ -9,7 +9,7 @@
     <link href="css/map.css" type="text/css" rel="stylesheet">
     <link href="css/response.css" type="text/css" rel="stylesheet">
     <link href="css/sub_response.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services&autoload=false"></script>
+	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf4e754a7062f09d33803d24580cf0b7&libraries=services"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/sub.js"></script>
@@ -226,56 +226,27 @@
             </div>
 
 <script>
-// 전역 변수 설정
-var map;
-var ps;
-
-// 페이지가 완전히 로드된 후 실행
-window.onload = function() {
-    if (typeof kakao !== 'undefined' && kakao.maps) {
-        kakao.maps.load(function() {
-            var container = document.getElementById('map');
-            var options = {
-                center: new kakao.maps.LatLng(37.566826, 126.9786567),
-                level: 3
-            };
-
-            // 지도 및 서비스 객체 초기화
-            map = new kakao.maps.Map(container, options);
-            ps = new kakao.maps.services.Places(); 
-
-            // 초기 검색 실행
-            searchPlaces();
+// 페이지 로드가 완전히 끝난 후 실행되도록 보장합니다.
+window.addEventListener('load', function() {
+    if (typeof kakao !== 'undefined') {
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.566826, 126.9786567),
+            level: 3
+        };
+        var map = new kakao.maps.Map(container, options);
+        var ps = new kakao.maps.services.Places();
+        
+        // 검색 실행
+        ps.keywordSearch('석봉토스트', function(data, status) {
+            if (status === kakao.maps.services.Status.OK) {
+                console.log('검색 성공:', data);
+            }
         });
     } else {
-        console.error("카카오 지도 SDK가 로드되지 않았습니다.");
+        console.error("SDK 로드 실패: API 키 혹은 도메인 설정을 확인하세요.");
     }
-};
-
-function searchPlaces() {
-    var keyword = document.getElementById('keyword').value;
-
-    if (!keyword.replace(/^\s+|\s+$/g, '')) {
-        alert('키워드를 입력해주세요!');
-        return false;
-    }
-
-    // 장소검색 요청
-    if (ps) {
-        ps.keywordSearch(keyword, placesSearchCB); 
-    }
-}
-
-function placesSearchCB(data, status, pagination) {
-    if (status === kakao.maps.services.Status.OK) {
-        console.log("검색 결과:", data);
-        // 여기에 마커 표시 로직을 추가하면 지도가 완성됩니다.
-    } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
-        alert('검색 결과가 존재하지 않습니다.');
-    } else if (status === kakao.maps.services.Status.ERROR) {
-        alert('검색 중 오류가 발생했습니다.');
-    }
-}
+});
 </script>
           </section>
         </main>
