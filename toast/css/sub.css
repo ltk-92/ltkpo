@@ -172,10 +172,6 @@ h2.sub-title{
     width:100%;
     height:75%;
 }
-.sub-tab:nth-child(1)>li img{
-    filter: grayscale(1);
-
-}
 .sub-tab span{
     display:inline-block;
         width:100%;
