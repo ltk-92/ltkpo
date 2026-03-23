@@ -210,9 +210,9 @@
                 <div id="menu_wrap" class="bg_white">
                     <div class="option">
                         <div>
-                            <form onsubmit="searchPlaces();">
+                             <form onsubmit="searchPlaces(); return false;">
                                 키워드 : <input type="text" value="석봉토스트" id="keyword" > 
-                                <button type="submit">검색하기</button>
+                                <button type="button">검색하기</button>
                                 <button type="button" class="default-button">새로고침</button> 
                             </form>
                             
@@ -335,10 +335,8 @@ kakao.maps.load(function () {
 	                infowindow.close();
 	            };
 	             itemEl.onclick = function () { 
-	                var lo = $(this).find("h5").html();
-	                $("#keyword").val(lo);
-	                console.log($("#keyword").attr("value"));
-	                $("#keyword").submit();
+	            	document.getElementById('keyword').value = title;
+                    searchPlaces();
 	
 	            };
 	
@@ -466,7 +464,7 @@ kakao.maps.load(function () {
 	$(".default-button").click(function(){
 		location.reload()
 	});				
-}
+});
            
 </script>
           </section>
