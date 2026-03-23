@@ -226,41 +226,22 @@
             </div>
 
 <script>
-// 페이지 로드 후 실행
-window.addEventListener('load', function() {
-    
-    // 1. 카카오 SDK가 로드되었는지 반복적으로 체크하는 함수
-    function initializeMap() {
-        if (typeof kakao !== 'undefined' && kakao.maps) {
-            // SDK가 존재하면 실행
-            kakao.maps.load(function() {
-                var container = document.getElementById('map');
-                var options = {
-                    center: new kakao.maps.LatLng(37.566826, 126.9786567),
-                    level: 3
-                };
-
-                // 지도 생성
-                var map = new kakao.maps.Map(container, options);
-                
-                // 장소 검색 서비스 객체 생성
-                var ps = new kakao.maps.services.Places();
-                
-                // 초기 검색 (예: 석봉토스트)
-                ps.keywordSearch('석봉토스트', function(data, status) {
-                    if (status === kakao.maps.services.Status.OK) {
-                        console.log('카카오 지도 로드 및 검색 성공!');
-                    }
-                });
-            });
-        } else {
-            // 아직 로드 전이라면 100ms 후에 다시 시도 (최대 3초간)
-            setTimeout(initializeMap, 100);
-        }
+window.onload = function() {
+    // kakao 객체가 로드되었는지 확인
+    if (typeof kakao !== 'undefined' && kakao.maps) {
+        kakao.maps.load(function() {
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(37.566826, 126.9786567),
+                level: 3
+            };
+            var map = new kakao.maps.Map(container, options);
+            console.log("지도 로드 성공!");
+        });
+    } else {
+        console.error("여전히 403 에러가 난다면 도메인 등록 문제입니다.");
     }
-
-    initializeMap();
-});
+};
 </script>
           </section>
         </main>
