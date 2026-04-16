@@ -1,4 +1,4 @@
-$(function(){
+$(function(){ // 태블릿, 모바일 햄버거버튼
     $(".nav-btn").click(function(){
         var barCenter = $(".nav-btn>div").eq(1);
         var barFirst = $(".nav-btn>div").eq(0);
