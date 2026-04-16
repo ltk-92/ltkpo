@@ -1,8 +1,8 @@
 $(function(){ // 태블릿, 모바일 햄버거버튼
     $(".nav-btn").click(function(){
-        var barCenter = $(".nav-btn>div").eq(1);
-        var barFirst = $(".nav-btn>div").eq(0);
-        var barLast = $(".nav-btn>div").eq(2);
+        let barFirst = $(".nav-btn>div").eq(0); //첫번째 막대기
+        let barCenter = $(".nav-btn>div").eq(1); //가운데 막대기
+        let barLast = $(".nav-btn>div").eq(2); // 새번째 막대기
         if($("nav").hasClass("close")){
             $("nav").removeClass("close");
             $("nav").addClass("open");
