@@ -102,7 +102,7 @@ function pageshow(present) {
 	function slideText(){
 		var interval = 200; // 초설정
 		var idx=0;
-		function textmotion() {	
+		function textmotion() {	// 텍스트 움직이게 하는 함수
 			idx++;
 			$(".greeting-list>p").hide();
 			$(".greeting-list>p").eq(idx).show();
@@ -119,7 +119,7 @@ function pageshow(present) {
 		//console.log("textset:"+textset);
 		//console.log("디스플레이:"+$(".greeting-list>p").css("display"));					
 	};
-	function loadview(){
+	function loadview(){//컨텐츠 가렸다가 보이게 하는 함수
 		var sum = 0;
 		for(l=0;l<5;l++){		
 			var win = $(window).scrollTop();
@@ -139,18 +139,7 @@ function pageshow(present) {
 			slideText();
 		};
 
-	};
-	$(function(){
-		$(window).resize(function(){
-			if($(window).width()<=1430){
-				$(window).scroll(function(){
-					clearInterval(textset);
-					loadview();
-				});
-			};
-		});
-				
-	});      
+	};    
 	
 });
 

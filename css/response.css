@@ -17,65 +17,13 @@
         margin:auto;
     }
     nav{
-        width:100%;
-        height:100vh;
-        position:absolute;
-        z-index:6;
-        top:0;
-        background:linear-gradient(to bottom, #81d3eb, #bbb8dc);
-        transition:all 0.5s;
-    }
-    nav.open{
-        right:0;
-    }
-    nav.close{
-        right:-100%;
-    }
-    .nav-btn{
-        display:block;
-        width:40px;
-        height:40px;
-        position:absolute;
-        right:1%;
-        top:20px;
-        z-index:7;
-        cursor:pointer;
-        border:2px solid #fff;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .nav-btn div{
-        width:80%;
-        height:2px;
-        position:absolute;
-        top:17px;
-        left:10%;
-        background-color:#fff;
-        transform-origin:center left;
-        transition:all 0.3s;
+       width: 100%;
+        position: fixed;
+        z-index: 6;
+        bottom: 0;
+        background: linear-gradient(to bottom, #81d3eb, #bbb8dc);
     }
 
-    .nav-btn div:first-child{ 
-        top:7px;
-    }
-    .nav-btn div:last-child{
-        top:27px;
-        
-    }
-    .main-menu{
-        width:20%;
-        float:right;
-        margin-right:5%;
-        padding-top:100px;
-    }
-    .main-menu li{
-        float:none;
-        width:100%
-    }
-    .main-menu a{
-        text-align:right;
-        letter-spacing: 1px;
-    }    
     .realm h2{
         padding-top:70px;
         width:50%;
@@ -90,6 +38,8 @@
     }
     .main-menu a{
         letter-spacing: 1px;
+        font-family: 'Righteous', cursive;
+
     }    
     section{
         width:100%;
@@ -186,65 +136,23 @@
        padding-top:15px; 
     }
     nav{
-        width:100%;
-        height:100vh;
-        position:absolute;
-        z-index:6;
-        top:0;
-        background:linear-gradient(to bottom, #81d3eb, #bbb8dc);
-        transition:all 0.5s;
-    }
-    nav.open{
-        right:0;
-    }
-    nav.close{
-        right:-100%;
-    }
-    .nav-btn{
-        display:block;
-        width:40px;
-        height:40px;
-        position:absolute;
-        right:1%;
-        top:10px;
-        z-index:7;
-        cursor:pointer;
-        border:2px solid #fff;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .nav-btn div{
-        width:80%;
-        height:2px;
-        position:absolute;
-        top:17px;
-        left:10%;
-        background-color:#fff;
-        transform-origin:center left;
-        transition:all 0.3s;
+       width: 100%;
+        position: fixed;
+        z-index: 6;
+        bottom: 0;
+        background: linear-gradient(to bottom, #81d3eb, #bbb8dc);
     }
 
-    .nav-btn div:first-child{ 
-        top:7px;
-    }
-    .nav-btn div:last-child{
-        top:27px;
-        
-    }
-    .main-menu{
-        width:20%;
-        float:right;
-        margin-right:5%;
-        padding-top:100px;
-    }
-    .main-menu li{
-        float:none;
-        width:100%
-    }
-    .main-menu a{
-        text-align:right;
+     .main-menu a{
         letter-spacing: 1px;
-    }    
+        font-family: 'Righteous', cursive;
+
+    } 
+    .main-menu a{
+        letter-spacing: 1px;
+        font-family: 'Righteous', cursive;
+
+    }  
     #main-wrap .realm, #footer-wrap{
         height:auto;
     }
