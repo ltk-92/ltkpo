@@ -41,6 +41,9 @@
         font-family: 'Righteous', cursive;
 
     }    
+    .main-menu a:hover{
+        color:#fff
+    } 
     section{
         width:100%;
     }
@@ -147,6 +150,9 @@
         letter-spacing: 1px;
         font-family: 'Righteous', cursive;
 
+    }
+    .main-menu a:hover{
+        color:#fff
     } 
     #main-wrap .realm, #footer-wrap{
         height:auto;
