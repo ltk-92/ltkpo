@@ -148,11 +148,6 @@
         font-family: 'Righteous', cursive;
 
     } 
-    .main-menu a{
-        letter-spacing: 1px;
-        font-family: 'Righteous', cursive;
-
-    }  
     #main-wrap .realm, #footer-wrap{
         height:auto;
     }
