@@ -577,7 +577,7 @@ h2.pageshow{
     width:300px;
 }
 #footer-wrap{
-    background: #b0dfd8;
+    background: linear-gradient(to bottom, #bbb8dc, #b0dfd8);
     position:relative;
 }
 #footer-wrap .center-wrap>p{
