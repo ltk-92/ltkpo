@@ -129,7 +129,7 @@
         width:60%;
     }
     #footer-wrap{
-        height:00px;
+        height:1000px;
     }
     .foot-logo-list {    
         padding: 100px 0 100px 0;
@@ -427,11 +427,10 @@
         font-weight:bold;
     }
     #footer-wrap {
-        height: 500px;
+        height: 700px;
     }
 
     .foot-logo-list{
-        width:50%;
-        padding:20px 0 100px 0;
+        /* width:50%; */
     }
 }
