@@ -603,6 +603,9 @@ h2.pageshow{
     vertical-align:middle;
     text-align:center
 }
+.contact-phone a{
+    color:#fff
+} 
 .contact-phone span{
     vertical-align: middle;
     font-weight:bold;
@@ -615,25 +618,7 @@ h2.pageshow{
 .phone-icon img{
     width:100%;
 }
-#contact-form input[type="submit"],#contact-form input[type="reset"]{
-    float:left;
-    display:block;
-    width:20%;
-    height:50px;
-    font-family:'RixYeoljeongdo_Regular';
-    background-color:#4eb8b9;
-    font-size:1.25rem;
-    color:#fff;
-    box-sizing:border-box;
-    border:1px solid #eee;
-    cursor:pointer;
-}
-#contact-form input[type="submit"]:hover,#contact-form input[type="reset"]:hover{
-    background-color:#419697;
-}
-#contact-form input[type="submit"]{
-    margin-left:30%;
-}
+
 .foot-logo-list{
     width:35%;
     display:flex;
