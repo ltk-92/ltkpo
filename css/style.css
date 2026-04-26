@@ -10,11 +10,9 @@
 }
 .wrap .realm{
     height:100vh;
-    display:table;
 }
 #main-wrap article, #footer-wrap article{
     
-    display:table-cell;
     vertical-align:middle;
     
 }
@@ -343,11 +341,6 @@ h2.pageshow{
     background: linear-gradient(to bottom,#9e7eb9,#bbb8dc);
     position:relative;
 }
-.web-list:after{
-    clear:both;
-    display:block;
-    content:"";
-}
 .web-list li{
     width: 30%;
     float: left;
@@ -501,9 +494,9 @@ h2.pageshow{
     color:#fff; 
     text-align:center;
 }
-.left-btn, .right-btn{
+/* .left-btn, .right-btn{
     display:none;
-}
+} */
 .web-info li.main-btn{
     width:100%;
     margin-right:0;
@@ -547,11 +540,11 @@ h2.pageshow{
     width:50%;
     margin:auto;
 }
-.web-info ul:after{
+/* .web-info ul:after{
     display:block;
     content:"";
     clear:both;
-}
+} */
 .web-info li{
     width:22%;
     float:left;

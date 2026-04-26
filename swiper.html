@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<style>
+  .wrap{
+    /* width:100% */
+  }
+   .swiper, ul, li {
+  width: 100%;
+  /* height: 300px; */
+}
+ul{
+  padding:0
+} 
+
+ img{
+  width:100%
+ }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <ul class="swiper-wrapper">
+      <!-- Slides -->
+      <li class="swiper-slide"><img src="img/po.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="img/po.jpg" alt=""></li>
+      <li class="swiper-slide"><img src="img/po.jpg" alt=""></li>
+      ...
+    </ul>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+    <script>
+      const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView:1,
+    spaceBetween: 20,
+    grid: {
+        rows:1,
+        fill: 'row', // 'row' 또는 'column'
+    },
+    // If we need pagination
+ 
+  });
+    </script>
+    </div>
+  </div>
+</body>
+</html>
