@@ -585,7 +585,7 @@ h2.pageshow{
 .contact-form{
     width:50%;
 }
-.contact-phone{
+.address-box{
     width:100%;
     /* height:60px; */
     margin:5% auto;
@@ -596,19 +596,19 @@ h2.pageshow{
     vertical-align:middle;
     text-align:center
 }
-.contact-phone a{
+.address-box a{
     color:#fff
 } 
-.contact-phone span{
+.address-box span{
     vertical-align: middle;
     font-weight:bold;
 }
-.phone-icon{
+.contact-icon{
     display:inline-block;
     width:50px;
     height:50px;
 }
-.phone-icon img{
+.contact-icon img{
     width:100%;
 }
 
