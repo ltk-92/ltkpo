@@ -4,8 +4,8 @@
 		clearInterval(textset);
 		logodel();
 		loadview();
-		console.log("스크롤값"+$(window).scrollTop());
-		console.log("웹랩값"+$("#web-wrap").offset().top);
+		// console.log("스크롤값"+$(window).scrollTop());
+		// console.log("웹랩값"+$("#web-wrap").offset().top);
 	});
 	draw(200, '.icon-bg', ' #b0dfd8', '#4eb8b9');
 	logodel();
